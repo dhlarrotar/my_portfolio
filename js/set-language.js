@@ -1,5 +1,12 @@
 var langList=document.querySelector(".lang-list");
 
+var fullNameInput= document.getElementById("full-name");
+var mailInput= document.getElementById("correoelectronico");
+var messageInput= document.getElementById("message");
+
+
+
+
 setLanguage()
 
 langList.onchange=setLanguage;
@@ -33,25 +40,24 @@ function setLanguage(){
     langDict=eval("data"+lang);
     window.location.hash="#"+lang;
     mostrarTexto(langDict);
-  
     if(langDict==dataes){
-        fullNameInput.placeholder= "Nombre y apellido";
-        subjectInput.placeholder= "Asunto";
-        messageInput.placeholder= "Escribe aqui tu mensaje";
+        fullNameInput.placeholder= "Tu nombre aquí";
+        mailInput.placeholder= "email@dominio.com";
+        messageInput.placeholder= "Escribe aquí tu mensaje";
         mail.href="mailto:dhlarrotar@outlook.com?&subject=Hola Daniel!";
-
+        enviar.value="Enviar mensaje";
 
     }
 
     if(langDict==dataen){
-        fullNameInput.placeholder= "Full name";
-        subjectInput.placeholder= "Subject";
-        messageInput.placeholder= "Your message";
+        fullNameInput.placeholder= "Your name here";
+        mailInput.placeholder= "email@domain.com";
+        messageInput.placeholder= "Your message here";
         mail.href="mailto:dhlarrotar@outlook.com?&subject=Hi Daniel!";
-
+        enviar.value="Send message";
+   
     }
  
-    console.log(langDict);
 }
 
 

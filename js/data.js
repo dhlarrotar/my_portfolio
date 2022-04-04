@@ -24,9 +24,16 @@ var dataen = {
     ".contact-text1":"I'd love to hear from you!",
     ".contact-text2":"You can fill out the next form or get in touch with me at ",
     
-    "#subject-label":"Your subject",
-    "#full-name-label":"Your name",
-    "#message-label":"Your message",
+    "#mail-label":"Email",
+    "#full-name-label":"Full name",
+    "#message-label":"Message",
+    "#success-text":"Your message was successfully sent!",
+    "#error-mail-input":"Your email must include '@' and '.'",
+    "#error-full-name":"Your name must contain between 1 and 50 characters",
+    "#error-message":"Your message must contain between 1 and 300 characters",
+
+
+    
 }
 
 var dataes = {
@@ -54,9 +61,15 @@ var dataes = {
     ".contact-text1":"Me encantaría saber de ti!",
     ".contact-text2":"Puedes llenar el siguiente formulario o escribirme a ",
     
-    "#subject-label":"Your subject",
-    "#full-name-label":"Your name",
-    "#message-label":"Your message",
+    "#mail-label":"Correo",
+    "#full-name-label":"Nombre",
+    "#message-label":"Mensaje",
+    "#success-text":"¡Tu mensaje fue enviado!",
+
+    "#error-mail-input":"El correo electrónico debe contener '@' y '.'",
+    "#error-full-name":"Tu nombre debe contener entre 1 y 50 caracteres",
+    "#error-message":"Tu mensaje debe contener entre 1 y 300 caracteres",
+
 }
 
 
