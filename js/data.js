@@ -1,17 +1,52 @@
 var dataen = {
+   "#light": "Light",
+   "#dark": "Dark",
     "#about-button":"About me",
     ".about-title":"About me",
     ".projects-title":"Projects",
     ".education-title":"Education",
     ".skills-title":"Skills",
+    ".hobbies-title":"hobbies",
     ".contact-title":"Let's connect!",    
-    "#about-text": "Hi there, I'm <strong>Daniel Larrota</strong> 👋 <br><br> I'm a Geologist 🌎, Developer in training 💻, and Astronomy Enthusiast 🔭",
+    
+    "#hi":"Hi",
+    "#name":"I'm Daniel!",
+    "#about-name":"Frontend developer - geologist",
+    ".about-text":"Hi!",
+
+
+    "#hobbies-description":"These are my most recent projects:",
+    "#webdesign":"Web design",
+    "#geospatial":"Geospatial data",
+    "#vector":"Vector & graphics",
+    "#travel":"Travel",
+    "#photo":"Photography",
+    "#science":"Research",
+    "#astronomy":"Astronomy",
+    "#swimming":"Swimming",
+    "#basket":"Basketball",
+
+
+
+    "#unal-title": "B.S. Geology",
+    "#python-title": "Python for Everybody",
+    "#deepl-title": "Deep Learning Specialization",
+    "#esri-title": "Spatial Data Science",
+    "#unesco-title": "Programming for geospatial hydrological applications",
+    "#frontend-title": "Front-end",
+
+
+
+
+
+    "#projects-description":"These are my most recent projects:",
     "#projectstitle": "Projects",
     "#projectslist1": "All",
     "#projectslist2": "Web design",
     "#projectslist3": "Applications",
     "#projectslist4": "Mapping",
     "#projectslist5": "Geology",
+
 
     "#hangman": "Hang Man!",
     "#hangman-description": "Guess the secret word before you get hung up!",
@@ -37,19 +72,57 @@ var dataen = {
 }
 
 var dataes = {
+    "#light": "Claro",
+    "#dark": "Oscuro",
     "#about-button":"Sobre mí",
     ".about-title":"Sobre mí",
     ".education-title":"Formación",
     ".skills-title":"Aptitudes",
     ".projects-title":"Proyectos",
-    ".contact-title":"Contáctame! ",    
-    "#about-text": "Hola, soy <strong>Daniel Larrota</strong> 👋 <br><br> Soy geólogo 🌎, Desarrollador 💻, y amante de la astronomía🔭",
+    ".contact-title":"Contáctame",    
+   
+  
+
+    "#hi":"¡Hola",
+    "#name":"soy Daniel!",
+    "#about-name":"Desarrollador frontend - geólogo",
+
+    
+    "#webdesign":"Diseño web",
+    "#geospatial":"Datos geoespaciales",
+    "#vector":"Gráficos y vectores",
+    "#travel":"Viajes",
+    "#photo":"Fotografía",
+    "#science":"Investigación",
+    "#astronomy":"Astronomía",
+    "#swimming":"Natación",
+    "#basket":"Baloncesto",
+
+
+
+
+
+    "#unal-title": "Geología",
+    "#python-title": "Python para todos",
+    "#deepl-title": "Aprendizaje profundo",
+    "#esri-title": "Ciencia de datos espaciales",
+    "#unesco-title": "Programación para aplicaciones geoespaciales hidrológicas",
+    "#frontend-title": "Formación front-end",
+
+
+
+
+
+
+
+  
     "#projectstitle": "Proyectos",
     "#projectslist1": "Todos",
     "#projectslist2": "Diseño web",
     "#projectslist3": "Aplicaciones",
     "#projectslist4": "Cartografía",
     "#projectslist5": "Geología",
+
     "#hangman": "¡Ahorcado!",
     "#hangman-description": "¡Adivina la palabra secreta antes de quedar colgado!",
     "#encryptor": "Encriptador",
