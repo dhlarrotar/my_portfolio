@@ -12,10 +12,10 @@ var dataen = {
     "#hi":"Hi",
     "#name":"I'm Daniel!",
     "#about-name":"Frontend developer - geologist",
-    ".about-text":"Hi!",
+    ".about-text":"I",
 
 
-    "#hobbies-description":"These are my most recent projects:",
+    "#hobbies-description":"I'm passionate about",
     "#webdesign":"Web design",
     "#geospatial":"Geospatial data",
     "#vector":"Vector & graphics",
