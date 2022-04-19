@@ -40,10 +40,3 @@ window.addEventListener("scroll", reveal);
 
 // To check the scroll position on page load
 
-
-textBox=document.querySelectorAll(".text-box")
-for(let element of textBox){
-  element.addEventListener("touchend", function(event){
-    event.preventDefault();
-  });
-}

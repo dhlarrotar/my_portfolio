@@ -12,14 +12,19 @@ var dataen = {
     "#hi":"Hi",
     "#name":"I'm Daniel!",
     "#about-name":"Frontend developer - geologist",
-    ".about-text":"Hi!",
 
 
-    "#hobbies-description":"These are my most recent projects:",
+    
+    "#about-text-p1":"I'm a <strong>front-end developer</strong> and <strong>geologist</strong> with experience in <strong>geospatial data</strong> management and analysis.",
+    "#about-text-p2":"I’m passionate for exploring new technologies and innovative ideas to address <strong>societal issues</strong> and unravel the mysteries of our surroundings.",
+    "#about-text-p3":"Currently, I’m strengthening my programming skills through the <strong>Oracle Next Education</strong> program.",
+
+
+    "#hobbies-description":"I'm passionate about:",
     "#webdesign":"Web design",
     "#geospatial":"Geospatial data",
     "#vector":"Vector & graphics",
-    "#travel":"Travel",
+    "#travel":"Travelling",
     "#photo":"Photography",
     "#science":"Research",
     "#astronomy":"Astronomy",
@@ -39,7 +44,7 @@ var dataen = {
 
 
 
-    "#projects-description":"These are my most recent projects:",
+    "#projects-description":"Here you can find my most recent projects",
     "#projectstitle": "Projects",
     "#projectslist1": "All",
     "#projectslist2": "Web design",
@@ -53,6 +58,7 @@ var dataen = {
     "#encryptor": "Text encryptor",
     "#encryptor-description": "Encrypt and decrypt your secret messages!",
     "#portfolio": "My portfolio",
+    "#portfolio-description":"Explore my background, recent projects and more!",
     ".probar": "Launch!",
     ".ver-mas": "Github",
 
@@ -87,11 +93,22 @@ var dataes = {
     "#name":"soy Daniel!",
     "#about-name":"Desarrollador frontend - geólogo",
 
+
+
+
+
+
     
+    "#about-text-p1":"Soy <strong> desarrollador front-end</strong> y <strong>geólogo</strong> con experiencia en el manejo y análisis de <strong>datos geoespaciales</strong>.",
+    "#about-text-p2":"Me apasiona explorar nuevas tecnologías e ideas innovadoras para abordar los problemas sociales y desentrañar los misterios de nuestro entorno.",
+    "#about-text-p3":"Actualmente estoy fortaleciendo mis habilidades de programación a través del programa <strong>Oracle Next Education</strong>.",
+
+
+    "#hobbies-description":"Me apasiona:",    
     "#webdesign":"Diseño web",
     "#geospatial":"Datos geoespaciales",
     "#vector":"Gráficos y vectores",
-    "#travel":"Viajes",
+    "#travel":"Viajar",
     "#photo":"Fotografía",
     "#science":"Investigación",
     "#astronomy":"Astronomía",
@@ -115,7 +132,7 @@ var dataes = {
 
 
 
-  
+    "#projects-description":"Aquí encontrarás mis proyectos más recientes",
     "#projectstitle": "Proyectos",
     "#projectslist1": "Todos",
     "#projectslist2": "Diseño web",
@@ -125,9 +142,10 @@ var dataes = {
 
     "#hangman": "¡Ahorcado!",
     "#hangman-description": "¡Adivina la palabra secreta antes de quedar colgado!",
-    "#encryptor": "Encriptador",
+    "#encryptor": "Encriptador de texto",
     "#encryptor-description": "¡Encripta y desencripta tus mensajes secretos!",
     "#portfolio": "Mi portafolio",
+    "#portfolio-description":"Explora mi perfil, proyectos recientes y más!",
     ".probar": "¡Probar!",
     ".ver-mas": "Github",
 
