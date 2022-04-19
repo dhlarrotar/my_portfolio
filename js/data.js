@@ -14,6 +14,7 @@ var dataen = {
     "#about-name":"Frontend developer - geologist",
 
 
+
     
     "#about-text-p1":"I'm a <strong>front-end developer</strong> and <strong>geologist</strong> with experience in <strong>geospatial data</strong> management and analysis.",
     "#about-text-p2":"I’m passionate for exploring new technologies and innovative ideas to address <strong>societal issues</strong> and unravel the mysteries of our surroundings.",
@@ -21,6 +22,7 @@ var dataen = {
 
 
     "#hobbies-description":"I'm passionate about:",
+
     "#webdesign":"Web design",
     "#geospatial":"Geospatial data",
     "#vector":"Vector & graphics",
