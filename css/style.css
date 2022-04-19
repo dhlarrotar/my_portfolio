@@ -91,7 +91,7 @@ a {
 
 .nav-options{
   display: inline-block;
-  margin-right: 40px;
+ 
 }
 
 .nav-options li{
@@ -129,10 +129,12 @@ header {
 
 nav ul{
      display: inline-block;
+     margin-right: 40px;
 }
 
-#options{
-  text-align: right;
+
+.menu i{
+  display: none;
 }
 
 header div, nav li{
@@ -143,8 +145,9 @@ header div, nav li{
 
 header nav a {
     display: inline-block;
-    padding: 7px 16px;
-    font-size: 1rem;
+    padding: 7px 10px;
+    margin-right: 6px;
+    font-size: 1.1rem;
     color: var(--color-2-body);
     border-radius: 5px;
     letter-spacing: 0.5px;
@@ -162,12 +165,7 @@ header nav a:hover{
 }
 
 
-#home-button{
-  padding: 0;
-  margin: 0;
-  margin-right: 10px;
- 
-}
+
 
 header nav .active{
     background: var(--linear-bg-1);
@@ -185,7 +183,14 @@ header nav .active{
 
 
 
+#button-more{
+  display: none;
+  font-weight: 900;
+   background: var(--linear-bg-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
+}
 
 
 
@@ -589,9 +594,8 @@ section .text-container .text-box div{
   padding: 20px;
 }
 
-#home p{
-  font-size: 1.5em;
-  display: block !important;
+header p, i{
+  font-size: 1.1rem;
   color: var(--color-2-body);
 }
 
@@ -704,7 +708,7 @@ strong{
 
 
 #about p{
-  font-size: 20px;
+  font-size: 1.2em;
   text-align: left;
 
 }
@@ -908,7 +912,7 @@ color: #ffffff !important;
 
 
 .slide-circles{
-  margin-left: 13% !important;
+  margin-left: 13%;
 }
 
 /* The dots/bullets/indicators */
@@ -1374,3 +1378,120 @@ footer .icon-section i:hover{
 }
 
 
+
+@media screen and (max-width: 1222px){
+ .menu p{
+  display: none;
+}
+
+.menu i{
+  display: inline;
+}
+
+
+
+.numbertext {
+  top: 19px;
+  left: 45px;
+}
+
+
+
+#projects .text-box {
+  width: 80%;
+  margin-top: 20px;
+ 
+}
+
+#projects .draw{
+  height: 150px;
+}
+
+
+.next {
+  left:86% ;
+
+}
+
+
+/* Position the "next button" to the right */
+.prev {
+  left: 40px;
+
+}
+
+.slide-circles{
+  margin-left: 0%;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1072px){
+
+  .contact-info{
+    margin-right: 0;
+    margin:50px;
+ 
+  }
+
+
+  .form-container{
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    box-shadow: 1px 12px 12px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 12px 12px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 12px 12px -1px rgba(0,0,0,0.75);
+  }
+  }
+  
+
+
+
+
+
+
+
+@media screen and (max-width: 872px){
+#button-more{
+  display: inline;
+}
+
+#headerx{
+  background: none !important;
+  border: 0;
+}
+
+.menu{
+  transform: scale(1.1);
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-2-bg);
+  padding-top: 18px;
+  height: 70px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: var(--linear-bg-1) 1;
+  border-bottom:0;
+  border-left:0;
+  border-right:0;
+}
+
+.nav-options{
+  display: none;
+}
+
+}

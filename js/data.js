@@ -1,7 +1,7 @@
 var dataen = {
    "#light": "Light",
    "#dark": "Dark",
-    "#about-button":"About me",
+   ".home-title":"Home",
     ".about-title":"About me",
     ".projects-title":"Projects",
     ".education-title":"Education",
@@ -47,14 +47,6 @@ var dataen = {
 
 
     "#projects-description":"Here you can find my most recent projects",
-    "#projectstitle": "Projects",
-    "#projectslist1": "All",
-    "#projectslist2": "Web design",
-    "#projectslist3": "Applications",
-    "#projectslist4": "Mapping",
-    "#projectslist5": "Geology",
-
-
     "#hangman": "Hang Man!",
     "#hangman-description": "Guess the secret word before you get hung up!",
     "#encryptor": "Text encryptor",
@@ -82,7 +74,7 @@ var dataen = {
 var dataes = {
     "#light": "Claro",
     "#dark": "Oscuro",
-    "#about-button":"Sobre mí",
+    ".home-title":"Inicio",
     ".about-title":"Sobre mí",
     ".education-title":"Formación",
     ".skills-title":"Aptitudes",
@@ -135,13 +127,6 @@ var dataes = {
 
 
     "#projects-description":"Aquí encontrarás mis proyectos más recientes",
-    "#projectstitle": "Proyectos",
-    "#projectslist1": "Todos",
-    "#projectslist2": "Diseño web",
-    "#projectslist3": "Aplicaciones",
-    "#projectslist4": "Cartografía",
-    "#projectslist5": "Geología",
-
     "#hangman": "¡Ahorcado!",
     "#hangman-description": "¡Adivina la palabra secreta antes de quedar colgado!",
     "#encryptor": "Encriptador de texto",
