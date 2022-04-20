@@ -1353,6 +1353,7 @@ form span{
 
 .enviar{
   width: 40%;
+  min-width: 140px;
   position: relative;
   top: 20px;
   padding: 15px 0;
@@ -1484,13 +1485,8 @@ footer .icon-section i:hover{
 
 
 @media screen and (max-width: 1222px){
- .menu p{
-  display: none;
-}
 
-.menu i{
-  display: inline;
-}
+
 
 
 
@@ -1542,11 +1538,7 @@ footer .icon-section i:hover{
 
 @media screen and (max-width: 1072px){
 
-  .contact-info{
-    margin-right: 0;
-    margin:50px;
  
-  }
 
 
   .form-container{
@@ -1571,9 +1563,19 @@ footer .icon-section i:hover{
   display: inline;
 }
 
+
+.arrow-container{
+  margin-top: 10px;
+}
+
 #headerx{
   background: none !important;
   border: 0;
+}
+
+
+#earth{
+  padding:0;
 }
 
 .menu{
@@ -1603,15 +1605,26 @@ footer .icon-section i:hover{
 
 
 .menu li{
-  margin: 2px;
-}
-.menu i{
-  font-size: 25px;
-}
-.nav-options{
-  display: none;
+  padding: 0;
+  margin: 0;
 }
 
+.menu i, .menu p{
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu p{
+  font-size: 13px;
+  margin-top: 3px;
+}
+.contact-info{
+  margin-right: 0;
+  margin:50px;
+
+}
 
 #about .draw-container{
   margin-top: 120px;
@@ -1633,9 +1646,25 @@ footer{
 
 @media screen and (max-width: 572px){
 
-  #about .draw-container{
-    margin-top: 220px;
+  .menu p{
+    display: none;
   }
 
+  .draw-container{
+    display: none;
+  }
+
+  .form-container{
+    width: 80%;
+  }
+
+  #earth{
+    width: 60%;
+    height: auto;
+  }
+
+  .enviar{
+    top: 0px;
+  }
 
 }
