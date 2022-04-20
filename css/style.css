@@ -1,6 +1,6 @@
 html {
   --color-1: #ffffff;
-  --color-1-main: #FC466B;
+  --color-1-main: #3a4de2;
   --color-1-bg: rgb(28, 40, 74);
 
   --linear-bg-1:  linear-gradient(90deg, #009dff 0%, #3a47d5 100%);
@@ -10,7 +10,7 @@ html {
   --color-2-bg-banner:#ffffff3e;
   --color-2-bg-img-div:#686868f0;
 
-
+  transition: 2s;
 
   scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
@@ -42,6 +42,8 @@ i{
 body {
   background: var(--color-2-bg);
   width: 100%;
+  transition: 2s;
+
 
 }
 
@@ -89,14 +91,94 @@ a {
     text-decoration: none;
   }
 
-.nav-options{
-  display: inline-block;
- 
+
+
+.float-buttons{
+  height: 160px;
+  position: fixed;
+  right: 0px;
+  bottom:30px;
+  background-color: var(--color-2-bg);
+  border: 1px solid var(--color-1-main);
+  border-right: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  transition: 2s;
 }
 
-.nav-options li{
-  display: inline-block;
-  }
+#arrow-options, #arrow-options-right{
+  position: relative;
+  top:40%;
+  padding: 3px;
+  background: var(--linear-bg-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#arrow-options-right{
+  right: 80px;
+  top: -80px;
+  display: none;
+}
+
+
+
+.hidden-buttons{
+display: none;
+margin-left: 16px;
+padding-left: 10px;
+}
+
+.hidden-buttons:focus, .hidden-buttons:active, .hidden-buttons:hover{
+  display: block;
+}
+
+.theme-button,.lang-button{
+  margin: 12px;
+  padding: 8px;
+}
+
+
+.float-buttons:hover{
+  transition: 2s;
+}
+
+
+
+.float-buttons:hover #arrow-options{
+  display: none;
+}
+
+.float-buttons:hover .hidden-buttons, .float-buttons:hover #arrow-options-right{
+  display: block;
+}
+
+
+
+.theme-button p{
+  margin-top: 10px;
+  color: var(--color-2-body);
+}
+
+
+.lang-button:hover{
+  background: var(--linear-bg-1);
+  transform: scale(1.1);
+}
+
+
+
+
+.lang-button:hover p, .lang-button:hover i{
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff; 
+  transition: 0.5s ease-out;
+}
+
+.float-buttons p{
+  font-size: 15px;
+}
 
 
 header li{
@@ -120,6 +202,8 @@ header {
     border-top:0;
     border-left:0;
     border-right:0;
+    transition: 2s;
+
 
 
     padding: 12px;
@@ -196,45 +280,44 @@ header nav .active{
 
 .lang-list {
 	display: inline-block;
-  background-color: var(--color-2-bg);
+  background: none;
 	min-width: 10%;
   padding: 3px 6px;
   font-size: 1rem;
   color: var( --color-2-body);
- 
   letter-spacing: 0.5px;
 	border: none;
 	cursor: pointer;
   font-family: 'Montserrat', sans-serif;
   margin-left: 12px;
   margin-right: 28px;
-  border-width: 1px;
-  border-style: solid;
-  border-image: var(--linear-bg-1) 1;
   vertical-align: middle;
   }
   
+
+  .lang-list:focus,  .lang-list:active{
+    border: 0;
+  }
   
   .lang-list option {
 	padding: 22px 16px;
   font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
 	display: block;
+  color: #282828;
   }
   
-  .lang-list:hover{
-	transform: scale(1.04);
+  .lang-button:hover .lang-list{
+    color: var(--color-1);
   }
 
-    
 
 
 
 
 
 
-
-  header label {
+  .theme-button label {
     display: inline-flex;
     width: 65px;
     height: 23px;
@@ -251,10 +334,11 @@ header nav .active{
 
 
 
-  header label i {
+  .theme-button label i {
     font-size: 18px;
   }
-  header label .fa-sun {
+
+  .theme-button label .fa-sun {
     background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -265,7 +349,7 @@ header nav .active{
   }
 
 
-  header label .fa-moon {
+  .theme-button label .fa-moon {
     color: #fff;
     opacity: 0;
     transition: 0.8s;
@@ -273,7 +357,7 @@ header nav .active{
 
 
 
-  header label .ball {
+  .theme-button label .ball {
     position: absolute;
     display: block;
     width: 23px;
@@ -285,29 +369,29 @@ header nav .active{
     transition: 0.8s;
   }
 
-header label {
+.theme-button label {
   transition: 0.3s;
 }
-header input:checked + label {
+.theme-button input:checked + label {
   background: var(--linear-bg-1);
 }
-header input:checked + label .ball {
+.theme-button input:checked + label .ball {
   transform: translateX(45px);
 }
-header input {
+.theme-button input {
   display: none;
 }
 
 
 
-header input:checked + label .fa-sun {
+.theme-button input:checked + label .fa-sun {
     transform: translateX(37px);
     opacity: 0;
   }
-  header label .fa-moon {
+  .theme-button label .fa-moon {
     transform: translateX(-37px) ;
   }
-  header input:checked + label .fa-moon {
+  .theme-button input:checked + label .fa-moon {
     transform: translateX(0), rotate(0);
     opacity: 1;
   }
@@ -338,12 +422,15 @@ section>div{
   margin: 10px;
   margin-bottom: 40px;
   margin-top: 50px;
+  transition: 2s;
+
 }
 
 
 
 section:nth-child(2) {
   color: var( --color-2-body);
+  
 }
 section:nth-child(3) {
   color: var( --color-2-body);
@@ -370,6 +457,8 @@ section:nth-child(6) {
 section{
   text-align: center;
   align-content: center;
+  transition: 2s;
+
 }
 
 
@@ -579,6 +668,11 @@ section .text-container .text-box div{
 }
 
 
+#home p{
+  color:var(--color-2-body);
+  font-size: 23px;
+}
+
 
 .icon-div:hover{
   background: var(--linear-bg-1);
@@ -612,6 +706,8 @@ header p, i{
 
 
 }
+ 
+
 
 #home .icon-section, #home .icon-div{
   border: 0 !important;
@@ -634,7 +730,8 @@ header p, i{
 }
 
 #about .text-box{
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
 }
 
 .arrow-container{
@@ -713,6 +810,9 @@ strong{
 
 }
 
+#about .draw-container{
+  margin-top: 20px;
+}
 
 
 #hobbies{
@@ -963,6 +1063,9 @@ color: #ffffff !important;
 
 
 
+#projects p{
+  color:var(--color-1);
+}
 
 
 
@@ -1155,7 +1258,8 @@ display: inline;
 
 .contact-info{
   display: inline-block;
-  width: 420px;
+  width: 90%;
+  max-width: 420px;
   margin-right:70px;
 }
 
@@ -1473,15 +1577,14 @@ footer .icon-section i:hover{
 }
 
 .menu{
-  transform: scale(1.1);
   position: fixed;
   bottom: 0;
   left:0;
   width: 100%;
   text-align: center;
   background-color: var(--color-2-bg);
-  padding-top: 18px;
-  height: 70px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-width: 1px;
   border-style: solid;
   border-image: var(--linear-bg-1) 1;
@@ -1490,8 +1593,49 @@ footer .icon-section i:hover{
   border-right:0;
 }
 
+
+.float-buttons{
+
+  bottom:150px
+}
+
+
+
+
+.menu li{
+  margin: 2px;
+}
+.menu i{
+  font-size: 25px;
+}
 .nav-options{
   display: none;
 }
+
+
+#about .draw-container{
+  margin-top: 120px;
+}
+
+
+.contact-info{
+
+  margin:0px;
+}
+
+footer{
+  height: 200px;
+}
+
+
+}
+
+
+@media screen and (max-width: 572px){
+
+  #about .draw-container{
+    margin-top: 220px;
+  }
+
 
 }

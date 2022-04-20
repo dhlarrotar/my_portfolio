@@ -18,40 +18,13 @@
 
     <body>
         
-        <div id="div1"></div>
+   
         <header id="headerx">
             <div class="caja">
+ 
                 <nav>
                  
-                    <ul class="nav-options">
-
-                      <li>
-                        <select class="lang-list">
-                          <option value=default class="language" id="default">Language / Idioma</option>
-                        <option value=en class="language" id="en">English</option>
-                        <option value=es class="language" id="es">Español</option>
-                        </select>
-                      </li>
                   
-
-
-                      <li>
-                      
-                        <div class="switch-container">
-                          <p id="light"></p>
-                          <input type="checkbox" id="switch" />
-                         
-                          <label for="switch">
-                             <i class="fas fa-sun"></i>
-                             <i class="fas fa-moon"></i>
-                             <span class="ball"></span>
-
-                          </label>
-
-                          <p id="dark"></p>
-                       </div>
-                      </li>
-                    </ul>
                    <ul class="menu">
                     <li><a href="#home"  class="active" id="home-button"><i class="fa-solid fa-house"></i><p class="home-title"></p></a></li> 
                       <li><a href="#about"  id="about-button"><i class="fa-solid fa-user"></i><p class="about-title"></p></a></li>
@@ -59,7 +32,7 @@
                       <li><a href="#education" id="education-button"><i class="fa-solid fa-graduation-cap"></i><p class="education-title" ></p></a></li>
                       <li><a href="#projects"  id="projects-button"><i class="fa-solid fa-suitcase"></i><p class="projects-title"></p></a></li>
                       <li></i><a href="#contact"  id="contact-button"><i class="fa-solid fa-envelope"></i><p class="contact-title"></p></a></li>
-                      <li> <i class="fa-solid fa-gear" id="button-more"></i></li>
+              
                    
                     </ul>
                    
@@ -69,15 +42,80 @@
       
         </header>
         
-    
+
+
+
+
+
+
+
+
+       
+        <div class="float-buttons">
+          <i class="fa-solid fa-angle-left" id="arrow-options"></i>
+         
+          <div class="hidden-buttons">
+                <div class="theme-button">
+                  <div class="switch-container">
+                
+                    <input type="checkbox" id="switch" />
+                  
+                    <label for="switch">
+                      <i class="fas fa-sun"></i>
+                      <i class="fas fa-moon"></i>
+                      <span class="ball"></span>
+
+                    </label>
+
+                    <p id="Theme">Theme</p>
+                  </div>
+              </div>
+        
+          
+              <div class="lang-button">
+                <select class="lang-list">
+                  <option value=en class="language" id="en">EN</option>
+                  <option value=es class="language" id="es">ES</option>
+                </select>
+              </div>
+              <i class="fa-solid fa-angle-right" id="arrow-options-right"></i>
+            </div>
+           
+           </div> 
+     
+
+
+
+
+
+
+
+     
+              <div class="lang-list-container">
+               
+              </div>
+         
+        
+
+            
+
+
+     
+                      
+             
+           
        
         <main>
+
+
+
           <section id="home">
             <div class="container reveal fade-bottom">
              
               
                 
               <div>
+                
                 <p id="hi"></p>
                 <h2 id="name"></h2>
                 <p id="about-name"></p>
