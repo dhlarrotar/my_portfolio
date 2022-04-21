@@ -36,7 +36,40 @@ function reveal() {
   }
 }
 
-window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", function(){
+  reveal();
+  hideButtons();
+});
 
 // To check the scroll position on page load
+
+
+
+
+
+var hiddenButtons=document.querySelector("#hidden-buttons");
+var floatButtons=document.querySelector(".float-buttons");
+var floatText=document.querySelector("#float-text");
+var floatClose=document.querySelector("#float-close");
+
+
+
+
+
+floatButtons.onclick=showHiddenButtons;
+
+
+
+function showHiddenButtons(){
+  hiddenButtons.classList.remove("fade-out");
+  floatText.classList.add("fade-out");
+  setTimeout(hideButtons,8000)
+  
+}
+
+function hideButtons(){
+  hiddenButtons.classList.add("fade-out");
+  floatText.classList.remove("fade-out");
+  
+}
 

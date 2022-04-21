@@ -10,7 +10,6 @@ html {
   --color-2-bg-banner:#ffffff3e;
   --color-2-bg-img-div:#686868f0;
 
-  transition: 2s;
 
   scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
@@ -28,7 +27,7 @@ html {
 
   --linear-bg-1:  linear-gradient(90deg, #0388d6 0%, #53d860 100%);
   --color-2-body:#ffffff;
-  --color-2-bg: #282828;
+  --color-2-bg: #474747;
   --color-2-bg-banner:#4a4a4af0;
   --color-2-bg-img-div:#ffffff56;
 }
@@ -42,7 +41,6 @@ i{
 body {
   background: var(--color-2-bg);
   width: 100%;
-  transition: 2s;
 
 
 }
@@ -93,8 +91,13 @@ a {
 
 
 
+
+
+
 .float-buttons{
-  height: 160px;
+  z-index: 1000;
+  cursor: pointer;
+  height: 170px;
   position: fixed;
   right: 0px;
   bottom:30px;
@@ -103,78 +106,81 @@ a {
   border-right: 0;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  transition: 2s;
+
 }
 
-#arrow-options, #arrow-options-right{
+
+
+
+
+.text-options{
+
   position: relative;
-  top:40%;
+  top:50px;
+  transform: rotate(-90deg);
+  background: var(--linear-bg-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+#arrow-options{
+  position: relative;
+  top:20px;
   padding: 3px;
+  background: var(--linear-bg-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+
+}
+
+
+#float-close{
+  position: relative;
+  top:-105px;
+  right: 53px;
+  cursor: pointer;
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#arrow-options-right{
-  right: 80px;
-  top: -80px;
+
+
+.fade-out{
   display: none;
 }
 
-
-
-.hidden-buttons{
-display: none;
-margin-left: 16px;
-padding-left: 10px;
-}
-
-.hidden-buttons:focus, .hidden-buttons:active, .hidden-buttons:hover{
-  display: block;
-}
 
 .theme-button,.lang-button{
-  margin: 12px;
-  padding: 8px;
-}
-
-
-.float-buttons:hover{
-  transition: 2s;
-}
-
-
-
-.float-buttons:hover #arrow-options{
-  display: none;
-}
-
-.float-buttons:hover .hidden-buttons, .float-buttons:hover #arrow-options-right{
-  display: block;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ padding-right: 20px;
+ padding-left: 34px;
 }
 
 
 
-.theme-button p{
-  margin-top: 10px;
+
+
+
+
+
+
+
+
+#hidden-buttons p{
   color: var(--color-2-body);
+  margin-bottom: 9px;
 }
 
 
-.lang-button:hover{
-  background: var(--linear-bg-1);
-  transform: scale(1.1);
+.lang-list:hover{
+  transform: scale(1.05);
 }
 
 
-
-
-.lang-button:hover p, .lang-button:hover i{
-  background: none;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: #ffffff; 
-  transition: 0.5s ease-out;
-}
 
 .float-buttons p{
   font-size: 15px;
@@ -202,7 +208,7 @@ header {
     border-top:0;
     border-left:0;
     border-right:0;
-    transition: 2s;
+
 
 
 
@@ -280,36 +286,28 @@ header nav .active{
 
 .lang-list {
 	display: inline-block;
-  background: none;
-	min-width: 10%;
-  padding: 3px 6px;
+  background: var(--color-2-bg);
+
+
+
+  width: 74px;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 4px;
+ 
+  border-radius: 10px;
+  vertical-align: middle;
   font-size: 1rem;
   color: var( --color-2-body);
   letter-spacing: 0.5px;
-	border: none;
+	border: 1px solid var(--color-1-main);
 	cursor: pointer;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 12px;
-  margin-right: 28px;
-  vertical-align: middle;
   }
   
 
-  .lang-list:focus,  .lang-list:active{
-    border: 0;
-  }
-  
-  .lang-list option {
-	padding: 22px 16px;
-  font-family: 'Montserrat', sans-serif;
-	text-decoration: none;
-	display: block;
-  color: #282828;
-  }
-  
-  .lang-button:hover .lang-list{
-    color: var(--color-1);
-  }
+
 
 
 
@@ -410,7 +408,7 @@ header nav .active{
   
   
 section {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -422,7 +420,6 @@ section>div{
   margin: 10px;
   margin-bottom: 40px;
   margin-top: 50px;
-  transition: 2s;
 
 }
 
@@ -457,7 +454,6 @@ section:nth-child(6) {
 section{
   text-align: center;
   align-content: center;
-  transition: 2s;
 
 }
 
@@ -723,6 +719,12 @@ header p, i{
 
 }
 
+.arrow-container{
+  position: absolute;
+  bottom: 0px;
+ }
+
+
 .arrow-container i{
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
@@ -734,14 +736,8 @@ header p, i{
   max-width: 500px;
 }
 
-.arrow-container{
-  display: block !important;
-  margin-top: 70px;
-}
 
-#skills .arrow-container{
-  margin-top: 20px;
-}
+
 
 
 
@@ -769,7 +765,7 @@ strong{
 
 
 .text-container-skills{
-  display: inline-block;
+  display: inline;
   margin-right: 20px;
   vertical-align: top;
 
@@ -790,6 +786,7 @@ strong{
 .text-container-skills .text-box {
   margin: 5px;
   padding: 10px;
+  display: inline-flexbox;
   text-align: left;
   width: 160px;
   height: 150px;
@@ -886,19 +883,12 @@ color: #ffffff !important;
 
 
 
-.arrow-container-skills{
-  display: block;
-  margin-top: 12px !important;
-  padding: 0px !important;
-  background: var(--linear-bg-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 
 
 .img-text-box{
-  height: 95px;
+  height: 10vh;
   margin-bottom: 10px;
   background-color: var(--color-2-bg);
   border: 0;
@@ -910,6 +900,11 @@ color: #ffffff !important;
 }
 
 
+#education .text-box{
+  height: auto;
+  width: 20wh;
+
+}
 
 
 
@@ -1024,7 +1019,7 @@ color: #ffffff !important;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: 0.6s ease;
 }
 
 .projects-gallery .active, .dot:hover {
@@ -1436,15 +1431,7 @@ footer .icon-section i:hover{
 
 
 
-@media (max-width: 900px) {
-  section h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-  section .text-container {
-    flex-direction: column;
-  }
-}
+
 
 
 @keyframes fade-bottom {
@@ -1494,6 +1481,40 @@ footer .icon-section i:hover{
   top: 19px;
   left: 45px;
 }
+
+
+section>div{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+#education .text-box{
+  height: auto;
+  vertical-align: middle;
+  text-align: left;
+
+}
+
+
+#education .img-text-box{
+  height: 5vh;
+  text-align: left;
+  margin: 0 !important;
+  padding: 0 !important;
+
+}
+
+
+#education .text-box p, #education .text-box h3, #education .text-box img{
+display: inline-block !important;
+vertical-align: middle;
+text-align: left;
+margin: 0 !important;
+padding: 0 !important;
+
+}
+
 
 
 
@@ -1564,9 +1585,11 @@ footer .icon-section i:hover{
 }
 
 
-.arrow-container{
-  margin-top: 10px;
-}
+
+
+
+
+
 
 #headerx{
   background: none !important;
@@ -1585,8 +1608,8 @@ footer .icon-section i:hover{
   width: 100%;
   text-align: center;
   background-color: var(--color-2-bg);
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-width: 1px;
   border-style: solid;
   border-image: var(--linear-bg-1) 1;
@@ -1631,6 +1654,14 @@ footer .icon-section i:hover{
 }
 
 
+#about .text-box{
+  height: auto !important;
+}
+
+#education .img-div{
+  display: none !important;
+}
+
 .contact-info{
 
   margin:0px;
@@ -1645,6 +1676,7 @@ footer{
 
 
 @media screen and (max-width: 572px){
+
 
   .menu p{
     display: none;
@@ -1665,6 +1697,31 @@ footer{
 
   .enviar{
     top: 0px;
+  }
+
+}
+
+
+@media screen and (max-height: 978px) and (max-width:1022px){
+  .draw-container{
+    display: none;
+  }
+
+
+
+
+  #projects .draw-container{
+    display: none !important;
+  }
+
+
+  section>div{
+    min-height: 0vh !important;
+  }
+
+  #earth{
+    height: 100px;
+    width: auto;
   }
 
 }
