@@ -773,8 +773,8 @@ section>div h2{
 }
 
 #skills .text-container{
-  height: auto;
-  width: auto;
+  max-height: 143px !important;
+  width: fit-content;
 }
 
 .container-skills{
@@ -1610,12 +1610,12 @@ section {
 }
 
 #projects .text-box{
-  width: 300px;
+  width: 240px;
   height: 365px;
 }
 
 .numbertext{
-  left:-135px;
+  left:-100px;
 }
 
 
@@ -1624,11 +1624,11 @@ section {
 }
 
 .next{
-  left: 140px;
+  left: 110px;
 }
 
 .prev{
-  left: -125px;
+  left: -95px;
 }
 
 
@@ -1720,6 +1720,12 @@ footer{
     display: none;
   }
 
+  
+  #education .text-box{
+    width: 90%;
+  
+  }
+
 
   .projects-gallery:hover, .img-div:hover{ 
     transform: scale(0.8);
@@ -1781,11 +1787,13 @@ footer{
 
   #skills .text-box{
     height: auto;
-    transform: scale(0.9);
+    transform: scale(0.8);
+    padding: 5px;
+    margin: 0;
   }
 
   #about .text-box:hover, #education .text-box:hover, #skills .text-box:hover, #contact .text-box:hover{
-    transform: scale(0.95);
+    transform: scale(0.85);
   }
 
   #projects .draw-container{
