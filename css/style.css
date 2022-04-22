@@ -464,14 +464,12 @@ section h1 {
 
 
 section h2 {
-  margin-right: 8%;
-  margin-left: 8%;
   font-size: 50px;
   text-align: center;
   margin-bottom: 15px;
-  line-height: 3rem;
+  line-height: 5rem;
   font-weight: 500;
-  padding: 5px;
+  padding: 10px;
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -772,10 +770,6 @@ section>div h2{
   margin-left: 50px;
 }
 
-#skills .text-container{
-  max-height: 143px !important;
-  width: fit-content;
-}
 
 .container-skills{
   display: inline;
@@ -784,12 +778,12 @@ section>div h2{
 }
 
 
-.container-skills .text-box{
-  width: 150px !important;
-  margin: 0 !important;
+#skills .container-skills .text-box{
   background: #cbcaca44;
-
- 
+  width: 150px;
+  height: 153px;
+  margin-right:10px ;
+  margin-bottom: 18px;
 }
 
 .container-skills .icon-div, .container-skills h3{
@@ -807,7 +801,7 @@ section>div h2{
 #skills>div:nth-child(1){
   margin: 1px;
   padding: 2px;
-  width: 40% ;
+  width: 50% ;
 
   background-color: var( --color-2-bg);
   
@@ -841,7 +835,7 @@ section>div h2{
 }
 
 #hobbies-name{
-  margin-top: 7px;
+  margin: 4px;
   display: none;
 }
 
@@ -1021,10 +1015,12 @@ color: #ffffff !important;
 .numbertext {
   position: relative;
   top:37px;
-  left:-235px;
+  left:32px;
   color: var(--color-2-body);
   font-size: 12px;
-  padding: 8px 12px;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: fit-content !important;
 }
 
 
@@ -1121,7 +1117,11 @@ color: #ffffff !important;
 
 #projects-description{
   color: var(--color-1) !important;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
+
+
  #projects .draw-container{
    margin:70px;
    vertical-align: top;
@@ -1602,10 +1602,17 @@ section {
   min-height: 94vh;
 }
 
+
+#hobbies i{
+  padding-right: 10px;
+}
+
+
 #hobbies-name{
   transform: rotate(-90deg);
   position: relative;
-  left:50%;
+  font-weight: 800;
+  left:40%;
   top: 150px;
 }
 
@@ -1614,9 +1621,6 @@ section {
   height: 365px;
 }
 
-.numbertext{
-  left:-100px;
-}
 
 
 .next,.prev{
@@ -1727,13 +1731,11 @@ footer{
   }
 
 
-  .projects-gallery:hover, .img-div:hover{ 
-    transform: scale(0.8);
-  }
-  
 
-  .projects-gallery{
-    transform: scale(0.85);
+  #projects-description{
+  
+    margin-top: 2vh;
+    margin-bottom: 2vh;
   }
 
   .draw-container{
@@ -1764,6 +1766,8 @@ footer{
     display: none;
   }
 
+
+
   h2{
     font-size: 33px !important;
   }
@@ -1784,16 +1788,23 @@ footer{
     height: 30vh;
   }
 
+  #skills .container-skills .text-box{
+    width: 130px;
+    max-height: 123px;
+    margin-right:10px ;
+    margin-bottom: 8px;
+  }
+  
 
-  #skills .text-box{
-    height: auto;
-    transform: scale(0.8);
-    padding: 5px;
-    margin: 0;
+  #skills .container-skills p{
+    font-size: 10px;
   }
 
-  #about .text-box:hover, #education .text-box:hover, #skills .text-box:hover, #contact .text-box:hover{
-    transform: scale(0.85);
+  #skills .container-skills i{
+    font-size: 14px;
+  }
+#skills .container-skills h3{
+    font-size: 14px;
   }
 
   #projects .draw-container{
