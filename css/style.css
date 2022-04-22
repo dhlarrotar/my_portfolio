@@ -97,12 +97,11 @@ a {
 .float-buttons{
   z-index: 1000;
   cursor: pointer;
-  height: 170px;
   position: fixed;
   right: 0px;
-  bottom:30px;
+  bottom: 10%;
   background-color: var(--color-2-bg);
-  border: 1px solid var(--color-1-main);
+  box-shadow: 1px 2px 4px 1px #686868;
   border-right: 0;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -114,7 +113,6 @@ a {
 
 
 .text-options{
-
   position: relative;
   top:50px;
   transform: rotate(-90deg);
@@ -124,26 +122,15 @@ a {
   font-weight: 800;
 }
 
-#arrow-options{
-  position: relative;
-  top:20px;
+#float-text i{
+  display: block;
   padding: 3px;
+  font-size: 24px;
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
  
 
-}
-
-
-#float-close{
-  position: relative;
-  top:-105px;
-  right: 53px;
-  cursor: pointer;
-  background: var(--linear-bg-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 
@@ -154,10 +141,10 @@ a {
 
 
 .theme-button,.lang-button{
- margin-top: 20px;
- margin-bottom: 20px;
+ margin-top: 16px;
+ margin-bottom: 16px;
  padding-right: 20px;
- padding-left: 34px;
+ padding-left: 14px;
 }
 
 
@@ -433,16 +420,16 @@ section:nth-child(3) {
   color: var( --color-2-body);
 }
   
-section:nth-child(4) {
+section:nth-child(5) {
   color: var( --color-2-body);
 }
 
-section:nth-child(5) {
+section:nth-child(6) {
   color: var(--color-2-bg);
   background: var(--linear-bg-1)
 }
 
-section:nth-child(6) {
+section:nth-child(7) {
   color: var( --color-2-body);
 }
 
@@ -636,6 +623,7 @@ section .text-container .text-box div{
 
 .draw-container{
   display: inline-block;
+  vertical-align: top;
 }
 
 
@@ -644,7 +632,6 @@ section .text-container .text-box div{
   height: 230px;
   vertical-align: text-top;
   padding: 10px;
-  padding-top: 30px;
   text-align: center;
   opacity: 0.8;
  
@@ -663,6 +650,10 @@ section .text-container .text-box div{
   -webkit-text-fill-color: transparent;
 }
 
+#home .text-box{
+  vertical-align: top;
+  width: auto;
+}
 
 #home p{
   color:var(--color-2-body);
@@ -681,7 +672,6 @@ section .text-container .text-box div{
 
 #home div{
   display: inline-block;
-  padding: 20px;
 }
 
 header p, i{
@@ -734,6 +724,7 @@ header p, i{
 #about .text-box{
   width: 90%;
   max-width: 500px;
+ 
 }
 
 
@@ -814,14 +805,13 @@ strong{
 
 #hobbies{
   display: block;
-  width: 97%;
+  width: 80%;
   height: auto;
   background: var(--linear-bg-1);
   text-align: center !important;
   align-items: center;
-    text-align: center;
   font-size: 16px;
-  margin-top: 30px;
+  margin:10%;
   padding: 3px;
   align-items: center;
   text-align: center;
@@ -835,8 +825,7 @@ strong{
   display: inline-block;
   text-align: center;
   font-size: 12px;
-  padding: 2px; 
-
+  padding: 12px; 
   align-items: center;
   text-align: center;
   color: #ffffff !important;
@@ -851,8 +840,6 @@ color: #ffffff !important;
 .hobbie-container i{
 
   font-weight: 700 !important;
-  margin: 0;
-  padding: 0;
   text-align: center;
   color: #ffffff;
 }
@@ -902,22 +889,23 @@ color: #ffffff !important;
 
 #education .text-box{
   height: auto;
-  width: 20wh;
+  width: 10wh;
 
 }
 
 
 
-#projects div{
+#projects>div{
   vertical-align: middle;
+  margin-top: 20vh;
 }
 
 #projects .text-box {
-  margin: 10px;
   display: inline-block;
-  padding: 20px;
-  width: 550px;
-  height: auto;
+  padding: 20px; 
+  width: 540px ;
+  height: 230px;
+  
   background: var( --color-2-bg);
   border-radius: 20px;
     background-color: var( --color-2-bg);
@@ -928,13 +916,18 @@ color: #ffffff !important;
 }
 
 
+.projects-gallery{
+  width: auto;
+  height: auto;
+  vertical-align: top;
+}
 
 
 
 /* Slideshow container */
 .slideshow-container {
-  width: 90%;
-  position: relative;
+  height: auto;
+ 
   margin: auto;
 }
 
@@ -946,36 +939,31 @@ color: #ffffff !important;
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
   padding: 11px;
-  
+  position: relative;
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  
+  top:-150px;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  left:106%;
-  border-radius: 3px 0 0 3px;
+  left:266px;
+  border-radius:0 20px 20px 0;
+ 
 }
 
 
 /* Position the "next button" to the right */
 .prev {
-  left: 25px;
-  border-radius: 3px 0 0 3px;
+  left:-236px;
+  border-radius: 20px 0 0 20px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -985,29 +973,21 @@ color: #ffffff !important;
   -webkit-text-fill-color: #ffffff;
 }
 
-/* Caption text */
-.text {
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+
 
 /* Number text (1/3 etc) */
 .numbertext {
+  position: relative;
+  top:37px;
+  left:-235px;
   color: var(--color-2-body);
   font-size: 12px;
   padding: 8px 12px;
-  position: absolute;
-  top: 19px;
-  left: 25px;
 }
 
 
 .slide-circles{
-  margin-left: 13%;
+  display: block;
 }
 
 /* The dots/bullets/indicators */
@@ -1054,12 +1034,14 @@ color: #ffffff !important;
 
 
 
-
+#projects>div{
+  height: 100vh !important;
+}
 
 
 
 #projects p{
-  color:var(--color-1);
+  color: var(--color-2-body);
 }
 
 
@@ -1101,10 +1083,13 @@ color: #ffffff !important;
 
 #projects-description{
   margin-bottom: 15px;
+  color: var(--color-1) !important;
 }
  #projects .draw-container{
    margin:70px;
- }
+   vertical-align: top;
+}
+ 
 
 #projects-draw{
   height: 200px;
@@ -1263,7 +1248,7 @@ display: inline;
   display: inline-block;
   vertical-align: middle;
   width:380px;
-  height: 490px;
+  height: 485px;
   border-width: 1px;
   border-style: solid;
   border-image: var(--linear-bg-1) 1;
@@ -1385,6 +1370,9 @@ form span{
  display: none;
 }
 
+
+
+
 #message-success i{
   margin-top: 100px;
   margin-bottom: 20px;
@@ -1477,10 +1465,6 @@ footer .icon-section i:hover{
 
 
 
-.numbertext {
-  top: 19px;
-  left: 45px;
-}
 
 
 section>div{
@@ -1518,32 +1502,11 @@ padding: 0 !important;
 
 
 
-#projects .text-box {
-  width: 80%;
-  margin-top: 20px;
- 
-}
 
 #projects .draw{
   height: 150px;
 }
 
-
-.next {
-  left:86% ;
-
-}
-
-
-/* Position the "next button" to the right */
-.prev {
-  left: 40px;
-
-}
-
-.slide-circles{
-  margin-left: 0%;
-}
 
 
 
@@ -1585,10 +1548,27 @@ padding: 0 !important;
 }
 
 
+#projects .text-box{
+  width: 300px;
+  height: 365px;
+}
+
+.numbertext{
+  left:-135px;
+}
 
 
+.next,.prev{
+  top:-240px;
+}
 
+.next{
+  left: 140px;
+}
 
+.prev{
+  left: -125px;
+}
 
 
 #headerx{
@@ -1691,8 +1671,9 @@ footer{
   }
 
   #earth{
-    width: 60%;
-    height: auto;
+   
+    height: 15vh !important;
+    margin-top: 20vh !important;
   }
 
   .enviar{
@@ -1707,11 +1688,10 @@ footer{
     display: none;
   }
 
+  #about p, .contact-info p,  .contact-info a{
 
+    font-size: 16px !important;
 
-
-  #projects .draw-container{
-    display: none !important;
   }
 
 
@@ -1720,8 +1700,23 @@ footer{
   }
 
   #earth{
-    height: 100px;
+    margin-top: 10vh;
     width: auto;
+    height: 30vh;
   }
 
+
+  #projects .draw-container{
+    display: none !important;
+  }
+
+
+
+  .form-container{
+    height: 50vh;
+  }
+  
+    #message{
+      height: 5vh;
+    }
 }
