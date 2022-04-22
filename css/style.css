@@ -757,6 +757,11 @@ strong{
   
 }
 
+
+#skills h2{
+ padding: 0;
+}
+
 #skills>div:nth-child(1){
   width: 63% !important;
   max-width:560px !important ;
@@ -767,6 +772,11 @@ strong{
   margin-left: 50px;
 }
 
+#skills .text-container{
+  height: auto;
+  width: auto;
+}
+
 .container-skills{
   display: inline;
   text-align: center;
@@ -775,9 +785,10 @@ strong{
 
 
 .container-skills .text-box{
-  width: 150px;
-  margin: 4px;
-  padding: 3px;
+  width: 150px !important;
+  max-height: 110px !important;
+  margin-bottom: 2vh;
+
  
 }
 
@@ -809,7 +820,7 @@ strong{
 
 
 .container-skills p{
-  margin: 11px;
+  margin: 5px;
   text-align: left;
 }
 
@@ -1621,9 +1632,12 @@ section {
 }
 
 
-#headerx{
+header{
   background: none !important;
-  border: 0;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 
@@ -1639,10 +1653,11 @@ section {
   text-align: center;
   background-color: var(--color-2-bg);
   padding: 1vh;
-  height: 6vh;
+  height: 5vh;
   padding-bottom: 2px;
  border-top: 1px solid #b1b1b1;
 }
+
 
 
 .float-buttons{
@@ -1763,6 +1778,11 @@ footer{
     height: 30vh;
   }
 
+
+  #skills .text-box{
+    height: auto;
+    transform: scale(0.8);
+  }
 
   #projects .draw-container{
     display: none !important;
