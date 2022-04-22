@@ -395,7 +395,7 @@ header nav .active{
   
   
 section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -420,16 +420,16 @@ section:nth-child(3) {
   color: var( --color-2-body);
 }
   
-section:nth-child(5) {
+section:nth-child(4) {
   color: var( --color-2-body);
 }
 
-section:nth-child(6) {
+section:nth-child(5) {
   color: var(--color-2-bg);
   background: var(--linear-bg-1)
 }
 
-section:nth-child(7) {
+section:nth-child(6) {
   color: var( --color-2-body);
 }
 
@@ -653,6 +653,8 @@ section .text-container .text-box div{
 #home .text-box{
   vertical-align: top;
   width: auto;
+  height: auto;
+  margin-bottom: 5vh;
 }
 
 #home p{
@@ -751,22 +753,39 @@ strong{
 #skills-title-text{
   border: 0;
   margin: 0;
+
   
 }
 
-
-.text-container-skills{
-  display: inline;
-  margin-right: 20px;
-  vertical-align: top;
-
+#skills>div:nth-child(1){
+  width: 63% !important;
+  max-width:560px !important ;
 }
 
-.text-container-skills .icon-div, .text-container-skills h3{
+#skills>div:nth-child(2){
+  width: 14% !important;
+  margin-left: 50px;
+}
+
+.container-skills{
+  display: inline;
+  text-align: center;
+ 
+}
+
+
+.container-skills .text-box{
+  width: 150px;
+  margin: 4px;
+  padding: 3px;
+ 
+}
+
+.container-skills .icon-div, .container-skills h3{
   font-weight: 100 !important;
 }
 
-.text-container-skills .icon-div:hover, .text-container-skills .text-box:hover h3{
+.container-skills .icon-div:hover, .container-skills .text-box:hover h3{
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -774,20 +793,24 @@ strong{
 }
 
 
-.text-container-skills .text-box {
-  margin: 5px;
-  padding: 10px;
-  display: inline-flexbox;
-  text-align: left;
-  width: 160px;
-  height: 150px;
+#skills>div:nth-child(1){
+  margin: 1px;
+  padding: 2px;
+  width: 40% ;
+
   background-color: var( --color-2-bg);
   
-
 }
 
-.text-container-skills p{
+#skills ul, #skills li{
+  text-align: left;
+}
+
+
+
+.container-skills p{
   margin: 11px;
+  text-align: left;
 }
 
 
@@ -802,17 +825,29 @@ strong{
   margin-top: 20px;
 }
 
-
 #hobbies{
+  padding: 0;
+}
+
+#hobbies-name{
+  margin-top: 7px;
+  transform: rotate(-90deg);
+  position: relative;
+  left:50%;
+  top: 150px;
+  display: none;
+}
+
+#hobbies .text-box{
   display: block;
-  width: 80%;
+  text-align: left;
   height: auto;
+  width: 100%;
   background: var(--linear-bg-1);
   text-align: center !important;
+  margin: 0;
   align-items: center;
   font-size: 16px;
-  margin:10%;
-  padding: 3px;
   align-items: center;
   text-align: center;
   color: #ffffff !important;
@@ -1012,7 +1047,6 @@ color: #ffffff !important;
 
 
   #projects h3:hover{
-    transform: scale(1.05);
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1035,7 +1069,7 @@ color: #ffffff !important;
 
 
 #projects>div{
-  height: 100vh !important;
+  min-height: 100vh !important;
 }
 
 
@@ -1473,6 +1507,19 @@ section>div{
 }
 
 
+#hobbies-name{
+  display: block;
+}
+
+.hobbie-container{
+  padding: 8px;
+}
+
+
+.hobbie-container p, #hobbies-description{
+  display: none;
+}
+
 #education .text-box{
   height: auto;
   vertical-align: middle;
@@ -1578,7 +1625,7 @@ padding: 0 !important;
 
 
 #earth{
-  padding:0;
+  padding:2px;
 }
 
 .menu{
@@ -1629,10 +1676,6 @@ padding: 0 !important;
 
 }
 
-#about .draw-container{
-  margin-top: 120px;
-}
-
 
 #about .text-box{
   height: auto !important;
@@ -1662,18 +1705,30 @@ footer{
     display: none;
   }
 
+
+  .projects-gallery:hover, .img-div:hover{ 
+    transform: scale(0.85);
+  }
+  
+
+  .projects-gallery{
+    transform: scale(0.8);
+  }
+
   .draw-container{
     display: none;
   }
 
   .form-container{
     width: 80%;
+    margin-top: 1vh;
+    border: 0;
+    box-shadow: 0px 0px 0px 0px #474747;
   }
 
   #earth{
    
     height: 15vh !important;
-    margin-top: 20vh !important;
   }
 
   .enviar{
@@ -1700,7 +1755,6 @@ footer{
   }
 
   #earth{
-    margin-top: 10vh;
     width: auto;
     height: 30vh;
   }
@@ -1718,5 +1772,6 @@ footer{
   
     #message{
       height: 5vh;
+      min-height: 100px;
     }
 }
