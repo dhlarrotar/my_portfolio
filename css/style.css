@@ -25,7 +25,7 @@ html {
   --color-1-main: #07e3ac;
   --color-1-bg: rgb(13, 30, 24);
 
-  --linear-bg-1:  linear-gradient(90deg, #0388d6 0%, #53d860 100%);
+  --linear-bg-1:  linear-gradient(90deg, #40caf8 0%, #5c8df5 100%);
   --color-2-body:#ffffff;
   --color-2-bg: #474747;
   --color-2-bg-banner:#4a4a4af0;
@@ -467,7 +467,7 @@ section h2 {
   font-size: 50px;
   text-align: center;
   margin-bottom: 15px;
-  line-height: 5rem;
+  line-height: 3rem;
   font-weight: 500;
   padding: 10px;
   background: var(--linear-bg-1);
@@ -1641,7 +1641,7 @@ padding: 0 !important;
     text-align: center;
     background-color: var(--color-2-bg);
     padding: 1vh;
-    height: 5vh;
+    height: 6vh;
     padding-bottom: 2px;
    border-top: 1px solid #b1b1b1;
   }
@@ -1713,7 +1713,9 @@ padding: 0 !important;
 }
 
 
-#projects im
+#projects .img-div{
+  margin-bottom: 45px;
+}
 
 .next,.prev{
   top:-240px;
@@ -1728,12 +1730,32 @@ padding: 0 !important;
 }
 
 
+.icon-section{
+  margin-top: 8px;
 
+}
+
+.icon-section i{
+  font-size: 22px;
+}
+
+}
+
+
+@media screen and (max-width: 392px){
+ 
+  .projects-gallery{
+    margin-right: 20px ;
+    transform: scale(0.8);
+  }
 }
 
 
 @media screen and (max-width: 572px){
 
+  .menu{
+    height: 5vh;
+  }
 
   .menu p{
     display: none;
@@ -1857,13 +1879,18 @@ padding: 0 !important;
 
 #projects .button-div{
   padding: 0;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #projects .text-box{
   width: 240px;
   height: 265px;
+}
+
+.button-div a{
+  padding: 2px !important;
+  padding-right: 4px !important;
 }
 
 
