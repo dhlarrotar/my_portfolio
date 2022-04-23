@@ -400,7 +400,6 @@ header nav .active{
   
 section {
   min-height: 100vh;
- overflow: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1440,7 +1439,7 @@ footer{
 }
 
 
-footer .icon-section {
+footer .icon-section{
   border: 0;
 }
 
@@ -1644,7 +1643,7 @@ padding: 0 !important;
   .menu{
     position: fixed;
     bottom: 0;
-    left:0;
+
     width: 100%;
     text-align: center;
     background-color: var(--color-2-bg);
@@ -1661,7 +1660,9 @@ padding: 0 !important;
   }
   
   
-  
+  .menu ul{
+    margin-left:8%;
+  }
   
   .menu li{
     padding: 0;
@@ -1674,11 +1675,12 @@ padding: 0 !important;
     color: #a9a9a9;
     padding: 0;
     margin: 0;
+    font-size: 14px;
   }
   
   .menu p{
     font-size: 13px;
-    margin-top: 3px;
+    margin-top: 5px;
   }
   .contact-info{
     margin-right: 0;
@@ -1704,7 +1706,16 @@ padding: 0 !important;
   
     margin:0px;
   }
+
+  .button-div a{
+    padding: 2px !important;
+    padding-right: 4px !important;
+  }
   
+  #contact{
+    min-height: 720px;
+  }
+
   footer{
     height: 120px;
   }
@@ -1742,8 +1753,8 @@ padding: 0 !important;
 }
 
 
-.icon-section{
-  margin-top: 8px;
+#projects .icon-section{
+  margin-top: 16px;
 
 }
 
@@ -1756,10 +1767,16 @@ padding: 0 !important;
 
 @media screen and (max-width: 392px){
  
-  .projects-gallery{
-    margin-right: 20px ;
-    transform: scale(0.95);
+  .menu ul{
+    margin: 0;
   }
+  
+
+  .projects-gallery{
+    transform: scale(0.90);
+  }
+
+
 }
 
 
@@ -1898,14 +1915,10 @@ padding: 0 !important;
   height: 265px;
 }
 
-.button-div a{
-  padding: 2px !important;
-  padding-right: 4px !important;
-}
 
 
-.icon-section{
-  margin-top: 0px;
+#projects .icon-section{
+  margin-top: 6px;
 
 }
 
@@ -1962,3 +1975,12 @@ padding: 0 !important;
 
 
 }
+
+
+
+@media screen and (max-height: 700px) and (max-width:520px){
+  section>div{
+    margin-bottom:30px ;
+  }
+}
+
