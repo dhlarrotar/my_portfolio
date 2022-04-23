@@ -400,6 +400,7 @@ header nav .active{
   
 section {
   min-height: 100vh;
+ overflow: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -579,13 +580,13 @@ section .text-container .text-box div{
 }
 
 .icon-section{
-  margin-top: 40px;
   border-width: 1px;
   border-style: solid;
   border-image: var(--linear-bg-1) 1;
   border-bottom:0;
   border-left:0;
   border-right:0;
+  margin-top: 12px;
 
 }
 
@@ -753,8 +754,7 @@ strong{
 
 
 #skills-title-text{
-  border: 0;
-  margin: 0;
+  margin: 40px;
 
   
 }
@@ -1029,6 +1029,8 @@ color: #ffffff !important;
 
 
 .slide-circles{
+  position: relative;
+  top: -20px;
   display: block;
 }
 
@@ -1136,7 +1138,7 @@ color: #ffffff !important;
   height: 200px;
 }
 
-#projects .draw-container a{
+#projects .draw-container a, #projects .draw-container p{
   color: var(--color-1);
   background: none;
   -webkit-background-clip: unset;
@@ -1146,6 +1148,7 @@ color: #ffffff !important;
 .project-info{
   vertical-align: top;
 }
+
 
 
 #projects .img-div {
@@ -1236,6 +1239,7 @@ color: #ffffff !important;
 
 #projects .icon-section{
   display: block;
+  margin-top: 40px;
 }
 
 
@@ -1645,7 +1649,6 @@ padding: 0 !important;
     text-align: center;
     background-color: var(--color-2-bg);
     padding: 1vh;
- 
     padding-bottom: 2px;
    border-top: 1px solid #b1b1b1;
   }
@@ -1688,6 +1691,11 @@ padding: 0 !important;
     height: auto !important;
   }
   
+  #skills-title-text{
+    border: 0;
+    margin: 0;
+  }
+
   #education .img-div{
     display: none !important;
   }
@@ -1926,7 +1934,7 @@ padding: 0 !important;
 }
 
 
-@media screen and (max-width: 872px) and (max-height: 630px){
+@media screen and (max-width: 872px) and (max-height: 580px){
 .menu{
   display:none;
 }
