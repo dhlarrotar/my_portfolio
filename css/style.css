@@ -575,7 +575,7 @@ section .text-container .text-box div{
 }
 
 .icon-section{
-  margin-top: 10px;
+  margin-top: 40px;
   border-width: 1px;
   border-style: solid;
   border-image: var(--linear-bg-1) 1;
@@ -1139,16 +1139,19 @@ color: #ffffff !important;
   -webkit-text-fill-color: #ffffff; 
 }
 
-
+.project-info{
+  vertical-align: top;
+}
 
 
 #projects .img-div {
   z-index: 1;
   text-align: center;
   vertical-align: middle;
-  height: 120px;
+  height: 100px;
   margin: 20px;
   border-radius: 12px;
+
 
 }
 
@@ -1589,32 +1592,120 @@ padding: 0 !important;
 
 
 
+  @media screen and (max-width: 872px){
 
 
-
-@media screen and (max-width: 872px){
-#button-more{
-  display: inline;
+  #button-more{
+    display: inline;
+  }
+  
+  
+  section {
+    min-height: 94vh;
+  }
+  
+  
+  #hobbies i{
+    padding-right: 10px;
+  }
+  
+  
+  #hobbies-name{
+    transform: rotate(-90deg);
+    position: relative;
+    font-weight: 800;
+    left:40%;
+    top: 150px;
+  }
+  
+  
+  
+  header{
+    background: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  
+  #earth{
+    padding:2px;
+  }
+  
+  .menu{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-2-bg);
+    padding: 1vh;
+    height: 5vh;
+    padding-bottom: 2px;
+   border-top: 1px solid #b1b1b1;
+  }
+  
+  
+  
+  .float-buttons{
+  
+    bottom:150px
+  }
+  
+  
+  
+  
+  .menu li{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu i, .menu p{
+    display: block;
+    text-align: center;
+    color: #a9a9a9;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu p{
+    font-size: 13px;
+    margin-top: 3px;
+  }
+  .contact-info{
+    margin-right: 0;
+    margin:50px;
+  
+  }
+  
+  
+  #about .text-box{
+    height: auto !important;
+  }
+  
+  #education .img-div{
+    display: none !important;
+  }
+  
+  .contact-info{
+  
+    margin:0px;
+  }
+  
+  footer{
+    height: 120px;
+  }
+  
+  
 }
 
 
-section {
-  min-height: 94vh;
-}
+@media screen and (min-height: 738px) and (max-width: 872px){
 
 
-#hobbies i{
-  padding-right: 10px;
-}
 
 
-#hobbies-name{
-  transform: rotate(-90deg);
-  position: relative;
-  font-weight: 800;
-  left:40%;
-  top: 150px;
-}
 
 #projects .text-box{
   width: 240px;
@@ -1622,6 +1713,7 @@ section {
 }
 
 
+#projects im
 
 .next,.prev{
   top:-240px;
@@ -1635,83 +1727,6 @@ section {
   left: -95px;
 }
 
-
-header{
-  background: none !important;
-  width: 0 !important;
-  height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-
-#earth{
-  padding:2px;
-}
-
-.menu{
-  position: fixed;
-  bottom: 0;
-  left:0;
-  width: 100%;
-  text-align: center;
-  background-color: var(--color-2-bg);
-  padding: 1vh;
-  height: 5vh;
-  padding-bottom: 2px;
- border-top: 1px solid #b1b1b1;
-}
-
-
-
-.float-buttons{
-
-  bottom:150px
-}
-
-
-
-
-.menu li{
-  padding: 0;
-  margin: 0;
-}
-
-.menu i, .menu p{
-  display: block;
-  text-align: center;
-  color: #a9a9a9;
-  padding: 0;
-  margin: 0;
-}
-
-.menu p{
-  font-size: 13px;
-  margin-top: 3px;
-}
-.contact-info{
-  margin-right: 0;
-  margin:50px;
-
-}
-
-
-#about .text-box{
-  height: auto !important;
-}
-
-#education .img-div{
-  display: none !important;
-}
-
-.contact-info{
-
-  margin:0px;
-}
-
-footer{
-  height: 120px;
-}
 
 
 }
@@ -1788,24 +1803,7 @@ footer{
     height: 30vh;
   }
 
-  #skills .container-skills .text-box{
-    width: 130px;
-    max-height: 123px;
-    margin-right:10px ;
-    margin-bottom: 8px;
-  }
-  
 
-  #skills .container-skills p{
-    font-size: 10px;
-  }
-
-  #skills .container-skills i{
-    font-size: 14px;
-  }
-#skills .container-skills h3{
-    font-size: 14px;
-  }
 
   #projects .draw-container{
     display: none !important;
@@ -1821,4 +1819,79 @@ footer{
       height: 5vh;
       min-height: 100px;
     }
+}
+
+
+@media screen and (max-height: 738px) and (max-width: 872px){
+
+
+#skills .container-skills .text-box{
+  width: 130px;
+  max-height: 123px;
+  margin-right:10px ;
+  margin-bottom: 8px;
+}
+
+
+#skills .container-skills p{
+  font-size: 10px;
+}
+
+#skills .container-skills i{
+  font-size: 14px;
+}
+#skills .container-skills h3{
+  font-size: 14px;
+}
+
+
+
+#projects .img-div, img{
+  height: 10vh !important;
+  margin:0;
+}
+
+#projects h3{
+  margin-top:20px !important;
+}
+
+#projects .button-div{
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#projects .text-box{
+  width: 240px;
+  height: 265px;
+}
+
+
+.icon-section{
+  margin-top: 0px;
+
+}
+
+.icon-section i{
+  font-size: 18px;
+}
+
+.next,.prev{
+  top:-240px;
+}
+
+.next{
+  left: 110px;
+}
+
+.prev{
+  left: -95px;
+}
+
+
+
+
+
+
+
 }
