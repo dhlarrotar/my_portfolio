@@ -1601,6 +1601,21 @@ padding: 0 !important;
 
   @media screen and (max-width: 872px){
 
+    .menu{
+      position: fixed;
+      bottom: 0;
+  
+      width: 100%;
+      text-align: center;
+      background-color: var(--color-2-bg);
+      padding: 1vh;
+      padding-bottom: 2px;
+     border-top: 1px solid #b1b1b1;
+    }
+    
+    .menu i{
+      font-size: 22px !important;
+    }
 
   #button-more{
     display: inline;
@@ -1640,18 +1655,7 @@ padding: 0 !important;
     padding:2px;
   }
   
-  .menu{
-    position: fixed;
-    bottom: 0;
 
-    width: 100%;
-    text-align: center;
-    background-color: var(--color-2-bg);
-    padding: 1vh;
-    padding-bottom: 2px;
-   border-top: 1px solid #b1b1b1;
-  }
-  
   
   
   .float-buttons{
@@ -1771,6 +1775,9 @@ padding: 0 !important;
     margin: 0;
   }
   
+  .menu i{
+    font-size: 16px !important;
+  }
 
   .projects-gallery{
     transform: scale(0.90);
@@ -1780,7 +1787,7 @@ padding: 0 !important;
 }
 
 
-@media screen and (max-width: 572px){
+@media screen and (max-width: 639px){
 
 
 
@@ -1862,6 +1869,7 @@ padding: 0 !important;
 
   .form-container{
     height: 50vh;
+    min-height: 450px;
   }
   
     #message{
@@ -1912,7 +1920,7 @@ padding: 0 !important;
 
 #projects .text-box{
   width: 240px;
-  height: 265px;
+  height: 275px;
 }
 
 
@@ -1982,5 +1990,11 @@ padding: 0 !important;
   section>div{
     margin-bottom:30px ;
   }
+
+  #projects .text-box{
+    width: 230px;
+    height: 265px;
+  }
+  
 }
 
