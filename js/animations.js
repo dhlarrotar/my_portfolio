@@ -39,6 +39,7 @@ function reveal() {
 window.addEventListener("scroll", function(){
   reveal();
   hideButtons();
+
 });
 
 // To check the scroll position on page load
@@ -54,10 +55,12 @@ var floatClose=document.querySelector("#float-close");
 
 
 
+var menuNav=document.querySelector(".menu");
+var menuArrow=document.querySelector("#arrow-menu");
 
 
 floatButtons.onclick=showHiddenButtons;
-
+menuArrow.onclick=showMenu;
 
 
 function showHiddenButtons(){
@@ -73,3 +76,16 @@ function hideButtons(){
   
 }
 
+
+function showMenu(){
+ menuNav.style.display = "block";
+ menuArrow.style.display = "none";
+ setTimeout(hideMenu,8000)
+  
+}
+
+function hideMenu(){
+  menuNav.style.display = "none";
+  menuArrow.style.display = "block";
+  
+}

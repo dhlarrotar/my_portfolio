@@ -22,7 +22,7 @@ html {
 
 .dark {
   --color-1: #ffffff;
-  --color-1-main: #07e3ac;
+  --color-1-main: #078fe3;
   --color-1-bg: rgb(13, 30, 24);
 
   --linear-bg-1:  linear-gradient(90deg, #40caf8 0%, #5c8df5 100%);
@@ -209,6 +209,10 @@ nav ul{
      margin-right: 40px;
 }
 
+
+#arrow-menu{
+  display: none;
+}
 
 .menu i{
   display: none;
@@ -1641,7 +1645,7 @@ padding: 0 !important;
     text-align: center;
     background-color: var(--color-2-bg);
     padding: 1vh;
-    height: 6vh;
+ 
     padding-bottom: 2px;
    border-top: 1px solid #b1b1b1;
   }
@@ -1753,9 +1757,7 @@ padding: 0 !important;
 
 @media screen and (max-width: 572px){
 
-  .menu{
-    height: 5vh;
-  }
+
 
   .menu p{
     display: none;
@@ -1925,22 +1927,30 @@ padding: 0 !important;
 
 
 @media screen and (max-width: 872px) and (max-height: 630px){
-
-
-
-.menu, .menu ul{
-  width: auto;
-  background: none;
-  border: 0;
+.menu{
+  display:none;
 }
 
-.menu a{
-  opacity: 0;
+#arrow-menu{
+  display: block;
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  left:48%;
+  background-color: var(--color-2-bg);
+  box-shadow: 1px 2px 4px 1px #686868;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#arrow-menu i{
+  font-size: 20px;
+  background: var(--linear-bg-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 2px;
+  font-weight: 800;
 }
 
-.menu .active{
-  opacity: 1;
-  border-radius: 8px;
-}
+
 
 }
