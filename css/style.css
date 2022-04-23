@@ -1386,6 +1386,7 @@ form span{
 
 .enviar{
   width: 40%;
+
   min-width: 140px;
   position: relative;
   top: 20px;
@@ -1620,6 +1621,11 @@ padding: 0 !important;
      border-top: 1px solid #b1b1b1;
     }
     
+
+    .arrow-index{
+      margin-top: 5px;
+    }
+
     .menu i{
       font-size: 22px !important;
     }
@@ -1736,31 +1742,6 @@ padding: 0 !important;
 
 
 
-
-
-#projects .text-box{
-  width: 240px;
-  height: 365px;
-}
-
-
-#projects .img-div{
-  margin-bottom: 45px;
-}
-
-.next,.prev{
-  top:-240px;
-}
-
-.next{
-  left: 110px;
-}
-
-.prev{
-  left: -95px;
-}
-
-
 #projects .icon-section{
   margin-top: 12px;
   padding: 8px;
@@ -1780,14 +1761,10 @@ padding: 0 !important;
     margin: 0;
   }
   
-  .menu i{
-    font-size: 16px !important;
+  .menu a{
+    margin: 3px;
+    padding: 3px;
   }
-
-  .projects-gallery{
-    transform: scale(0.90);
-  }
-
 
 }
 
@@ -1800,7 +1777,11 @@ padding: 0 !important;
     display: none;
   }
 
-  
+  .menu i{
+    font-size: 22px !important;
+    margin-bottom: 2px;
+  }
+
   #education .text-box{
     width: 90%;
   
@@ -1905,49 +1886,6 @@ padding: 0 !important;
 
 
 
-#projects .img-div, img{
-  height: 10vh !important;
-  margin:0;
-}
-
-#projects h3{
-  margin-top:20px !important;
-}
-
-#projects .button-div{
-  padding: 0;
-  margin-top: 10px;
-  margin-bottom: 12px;
-}
-
-#projects .text-box{
-  width: 240px;
-  height: 275px;
-}
-
-
-
-#projects .icon-section{
-  margin-top: 6px;
-
-}
-
-.icon-section i{
-  font-size: 18px;
-}
-
-.next,.prev{
-  top:-240px;
-}
-
-.next{
-  left: 110px;
-}
-
-.prev{
-  left: -95px;
-}
-
 
 
 
@@ -1999,11 +1937,7 @@ padding: 0 !important;
   }
 
 
-  #projects .text-box{
-    width: 230px;
-    height: 265px;
-  }
-  
+
 }
 
 
@@ -2014,3 +1948,108 @@ padding: 0 !important;
     min-height: 110vh;
   }
 }
+
+@media screen and (max-width: 674px){
+  
+#projects .img-div, img{
+  height: 10vh !important;
+  margin:0;
+}
+
+#projects h3{
+  margin-top:20px !important;
+}
+
+#projects .button-div{
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+#projects .text-box{
+  width: 240px;
+  height: 275px;
+}
+
+
+
+#projects .icon-section{
+  margin-top: 6px;
+
+}
+
+.icon-section i{
+  font-size: 18px;
+}
+
+.next,.prev{
+  top:-240px;
+}
+
+.next{
+  left: 110px;
+}
+
+.prev{
+  left: -95px;
+}
+
+}
+
+
+
+@media screen and (max-width: 674px){
+
+
+  .enviar{
+    margin-top: 10px;
+  }
+  
+  #projects .img-div, img{
+    height: 10vh !important;
+    margin:0;
+  }
+  
+  #projects h3{
+    margin-top:20px;
+  }
+  
+  #projects .button-div{
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 12px;
+  }
+  
+  #projects .text-box{
+    width: 80%;
+    height: 255px;
+  }
+  
+  
+  
+  #projects .icon-section{
+    margin-top: 6px;
+  
+  }
+  
+  .icon-section i{
+    font-size: 18px;
+  }
+  
+  .next,.prev{
+    top:-140px;
+  }
+  
+  .next{
+    left: 34%;
+  }
+  
+  .prev{
+    left: -34%;
+  }
+
+  .numbertext{
+    left:10%;
+  }
+  
+  }
