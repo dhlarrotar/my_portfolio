@@ -1,6 +1,6 @@
 var dataen = {
-   "#light": "Light",
-   "#dark": "Dark",
+   "#theme": "Theme",
+   "#lang-text": "Language",
    ".home-title":"Home",
     ".about-title":"About me",
     ".projects-title":"Projects",
@@ -24,7 +24,7 @@ var dataen = {
     "#hobbies-description":"I'm passionate about:",
 
     "#webdesign":"Web design",
-    "#geospatial":"Geospatial data",
+    "#data-science":"Data science",
     "#vector":"Vector & graphics",
     "#travel":"Travelling",
     "#photo":"Photography",
@@ -72,8 +72,8 @@ var dataen = {
 }
 
 var dataes = {
-    "#light": "Claro",
-    "#dark": "Oscuro",
+    "#theme": "Tema",
+    "#lang-text": "Idioma",
     ".home-title":"Inicio",
     ".about-title":"Sobre mí",
     ".education-title":"Formación",
@@ -100,7 +100,7 @@ var dataes = {
 
     "#hobbies-description":"Me apasiona:",    
     "#webdesign":"Diseño web",
-    "#geospatial":"Datos geoespaciales",
+    "#data-science":"Ciencia de datos",
     "#vector":"Gráficos y vectores",
     "#travel":"Viajar",
     "#photo":"Fotografía",

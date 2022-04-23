@@ -25,9 +25,9 @@ html {
   --color-1-main: #078fe3;
   --color-1-bg: rgb(13, 30, 24);
 
-  --linear-bg-1:  linear-gradient(90deg, #40caf8 0%, #5c8df5 100%);
+  --linear-bg-1:  linear-gradient(90deg, #436bed 0%, #6a52f2 100%);
   --color-2-body:#ffffff;
-  --color-2-bg: #474747;
+  --color-2-bg: #242424;
   --color-2-bg-banner:#4a4a4af0;
   --color-2-bg-img-div:#ffffff56;
 }
@@ -109,6 +109,16 @@ a {
 }
 
 
+
+.arrow-index{
+display: block;
+width: 100%;
+margin-top: 10px;
+background: var(--linear-bg-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
 
 
 
@@ -477,12 +487,6 @@ section h2 {
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-width: 1px;
-  border-style: solid;
-  border-image: var(--linear-bg-1) 1;
-  border-top:0;
-  border-left:0;
-  border-right:0;
 }
 
 
@@ -605,6 +609,7 @@ section .text-container .text-box div{
 
 .draw-legend{
   opacity: 0;
+  margin-top: 3px;
 }
 
 
@@ -612,6 +617,7 @@ section .text-container .text-box div{
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 900;
 }
 
 .draw-container:hover .draw-legend{
@@ -727,6 +733,7 @@ header p, i{
 
 #about .text-box{
   width: 90%;
+  height: auto;
   max-width: 500px;
  
 }
@@ -1113,7 +1120,6 @@ color: #ffffff !important;
   -webkit-background-clip: unset;
   -webkit-text-fill-color: #ffffff;
   border: 0; 
-  border-bottom: 0.5px solid #ffffffba;
 }
 
 #projects h3{
@@ -1371,7 +1377,7 @@ form span{
 	display: block;
 	color: #ea8b07;
   font-weight: 600;
-	margin-top: 3px;
+	margin-top: 5px;
   font-size: 12px;
 }
 
@@ -1441,6 +1447,7 @@ footer{
 
 footer .icon-section{
   border: 0;
+
 }
 
 footer .icon-section i {
@@ -1755,7 +1762,8 @@ padding: 0 !important;
 
 
 #projects .icon-section{
-  margin-top: 16px;
+  margin-top: 12px;
+  padding: 8px;
 
 }
 
@@ -1909,7 +1917,7 @@ padding: 0 !important;
 #projects .button-div{
   padding: 0;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 #projects .text-box{
@@ -1943,8 +1951,13 @@ padding: 0 !important;
 
 
 
+.form-container{
+  height: 425px;
+}
 
-
+#contact{
+  min-height: 115vh;
+}
 
 }
 
@@ -1981,9 +1994,10 @@ padding: 0 !important;
 
 
 @media screen and (max-height: 700px) and (max-width:520px){
-  section>div{
-    margin-bottom:60px ;
+  #projects>div,   #about>div,   #education>div,   #skills>div{
+    margin-bottom:100px ;
   }
+
 
   #projects .text-box{
     width: 230px;
