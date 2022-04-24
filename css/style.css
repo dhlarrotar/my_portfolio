@@ -1737,33 +1737,33 @@ padding: 0 !important;
 }
 
 
-@media screen and (min-height: 738px) and (max-width: 872px){
+@media screen and (max-height: 738px) and (min-width: 674px){
 
 
+  #projects .img-div, #projects img{
+    height: 100px !important;
+  }
 
-#projects .icon-section{
-  margin-top: 12px;
-  padding: 8px;
+  #projects .text-box{
+    height: 185px;
+  }
 
-}
 
-.icon-section i{
-  font-size: 22px;
-}
-
-}
+  #projects .icon-section{
+    margin-top: 2px;
+    padding: 8px;
+  
+  }
+  
+  .icon-section i{
+    font-size: 22px;
+  }
+  
+  }
 
 
 @media screen and (max-width: 392px){
  
-  .menu ul{
-    margin: 0;
-  }
-  
-  .menu a{
-    margin: 7px;
-    padding: 7px;
-  }
 
   #projects .text-box{
     height: 310px !important;
@@ -1791,9 +1791,16 @@ padding: 0 !important;
   }
 
   .menu i{
-    font-size: 22px !important;
+    font-size: 19px !important;
+    padding: 2wh;
+    margin: 2wh !important;
     margin-bottom: 2px;
   }
+
+.menu a{
+  padding: 2wh;
+  margin: 2wh !important;
+}
 
   #education .text-box{
     width: 90%;
@@ -1948,7 +1955,8 @@ padding: 0 !important;
 
 @media screen and (max-height: 700px) and (max-width:520px){
   #projects>div,   #about>div,   #education>div,   #skills>div{
-    margin-bottom:100px ;
+    position: relative;
+    top:-80px;
   }
 
 
@@ -1959,7 +1967,6 @@ padding: 0 !important;
 
 @media screen and (max-height: 484px){
   section{
-    margin-bottom:30px ;
     min-height: 110vh;
   }
 
@@ -1979,18 +1986,22 @@ padding: 0 !important;
   }
   
   #projects .img-div, img{
-    height: 50px !important;
+    height: 100px !important;
     margin:0;
   }
   
   #projects h3{
     margin-top:20px;
   }
+
+  #projects .text-box-description{
+    display: none;
+  }
   
   #projects .button-div{
     padding: 0;
-    margin-top: 10px;
-    margin-bottom: 12px;
+    margin-top: 8px;
+    margin-bottom: 5px;
   }
   
   #projects .text-box{
@@ -2001,7 +2012,7 @@ padding: 0 !important;
   
   
   #projects .icon-section{
-    margin-top: 6px;
+    margin-top: 2px;
   
   }
   
