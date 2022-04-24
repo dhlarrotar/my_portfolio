@@ -1972,14 +1972,16 @@ padding: 0 !important;
 
 
 @media screen and (max-height: 700px) and (max-width:520px){
-    #education>div, #projects>div {
+
+
+section{ 
     position: relative;
-    top:-15px;
+    top:-28px;
   }
 
-  #skills>div,  #about>div{
+  #skills>div, #home>div{ 
     position: relative;
-    top:-30px;
+    top:-45x;
   }
 
 }
