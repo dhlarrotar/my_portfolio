@@ -4,7 +4,7 @@ html {
   --color-1-bg: rgb(28, 40, 74);
 
   --linear-bg-1:  linear-gradient(90deg, #009dff 0%, #3a47d5 100%);
-
+  --linear-bg-2:  linear-gradient(90deg, #009dff 0%, #3a47d5 100%);
   --color-2-body:#686868;
   --color-2-bg: #f9f9f9;
   --color-2-bg-banner:#ffffff3e;
@@ -23,9 +23,10 @@ html {
 .dark {
   --color-1: #ffffff;
   --color-1-main: #5506ff;
-  --color-1-bg: rgb(17, 13, 30);
+  --color-1-bg: rgb(13, 17, 30);
 
-  --linear-bg-1:  linear-gradient(90deg, #436bed 0%, #6a52f2 100%);
+  --linear-bg-1:  linear-gradient(90deg, #4fa4ff 0%, #7f43ff 100%);
+  --linear-bg-2:   linear-gradient(90deg, #3895f7 0%, #683ffb 100%);
   --color-2-body:#ffffff;
   --color-2-bg: #242424;
   --color-2-bg-banner:#4a4a4af0;
@@ -438,7 +439,7 @@ section:nth-child(4) {
 
 section:nth-child(5) {
   color: var(--color-2-bg);
-  background: var(--linear-bg-1)
+  background: var(--linear-bg-2)
 }
 
 section:nth-child(6) {
@@ -852,7 +853,7 @@ section>div h2{
   text-align: left;
   height: auto;
   width: 100%;
-  background: var(--linear-bg-1);
+  background: var(--linear-bg-2);
   text-align: center !important;
   margin: 0;
   align-items: center;
