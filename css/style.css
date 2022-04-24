@@ -419,8 +419,6 @@ section {
 section>div{
   width: 90%;
   margin: 10px;
-  margin-bottom: 50px;
-  margin-top: 0px;
 
 }
 
@@ -1621,12 +1619,13 @@ padding: 0 !important;
     }
     
 
+
     .arrow-index{
       margin-top: 5px;
     }
 
     .menu i{
-      font-size: 22px !important;
+      font-size: 22px ;
     }
 
   #button-more{
@@ -1739,6 +1738,7 @@ padding: 0 !important;
 
 @media screen and (max-height: 738px) and (min-width: 674px){
 
+  
 
   #projects .img-div, #projects img{
     height: 100px !important;
@@ -1746,8 +1746,8 @@ padding: 0 !important;
 
   #projects .text-box{
     height: 185px;
-  }
 
+  }
 
   #projects .icon-section{
     margin-top: 2px;
@@ -1764,6 +1764,24 @@ padding: 0 !important;
 
 @media screen and (max-width: 392px){
  
+
+  .menu i{
+    font-size: 16px !important;
+    padding: 1wh !important;
+    margin: 1wh !important;
+   
+  }
+
+
+  
+  .menu a{
+   
+    padding: 4px!important;
+    margin: 2px !important;
+ 
+  }
+
+
 
   #projects .text-box{
     height: 310px !important;
@@ -1791,15 +1809,15 @@ padding: 0 !important;
   }
 
   .menu i{
-    font-size: 19px !important;
+    font-size: 19px ;
     padding: 2wh;
-    margin: 2wh !important;
+    margin: 2wh ;
     margin-bottom: 2px;
   }
 
 .menu a{
   padding: 2wh;
-  margin: 2wh !important;
+  margin: 2wh;
 }
 
   #education .text-box{
@@ -1851,9 +1869,7 @@ padding: 0 !important;
   }
 
 
-  section>div{
-    min-height: 0vh !important;
-  }
+
 
   #earth{
     width: auto;
@@ -1954,9 +1970,9 @@ padding: 0 !important;
 
 
 @media screen and (max-height: 700px) and (max-width:520px){
-  #projects>div,   #about>div,   #education>div,   #skills>div{
+  #about>div,   #education>div,   #skills>div{
     position: relative;
-    top:-80px;
+    top:-15px;
   }
 
 
@@ -2046,3 +2062,5 @@ padding: 0 !important;
       display: none;
     }
   }
+
+
