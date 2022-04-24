@@ -1634,9 +1634,7 @@ padding: 0 !important;
   }
   
   
-  section {
-    min-height: 94vh;
-  }
+
   
   
   #hobbies i{
@@ -1739,7 +1737,9 @@ padding: 0 !important;
 
 @media screen and (max-height: 738px) and (min-width: 674px){
 
-  
+  section{
+    min-height: 110vh;
+  }
 
   #projects .img-div, #projects img{
     height: 100px !important;
@@ -1777,8 +1777,8 @@ padding: 0 !important;
   
   .menu a{
    
-    padding: 4px!important;
-    margin: 2px !important;
+    padding: 3px!important;
+    margin: 4px !important;
  
   }
 
@@ -1840,7 +1840,7 @@ padding: 0 !important;
 
   #earth{
    
-    height: 15vh !important;
+    height: 12vh !important;
   }
 
   .enviar{
@@ -1944,6 +1944,10 @@ padding: 0 !important;
   display:none;
 }
 
+section{
+  min-height: 110vh;
+}
+
 #arrow-menu{
   display: block;
   z-index: 1000;
@@ -1971,12 +1975,15 @@ padding: 0 !important;
 
 
 @media screen and (max-height: 700px) and (max-width:520px){
-  #about>div,   #education>div,   #skills>div{
+    #education>div, #projects>div {
     position: relative;
     top:-15px;
   }
 
-
+  #skills>div,  #about>div{
+    position: relative;
+    top:-30px;
+  }
 
 }
 
