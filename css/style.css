@@ -1974,15 +1974,21 @@ padding: 0 !important;
 @media screen and (max-height: 700px) and (max-width:520px){
 
 
-section{ 
+section>div{ 
     position: relative;
-    top:-28px;
+    top:-25px;
   }
 
-  #skills>div, #home>div{ 
+ #home>div{ 
     position: relative;
     top:-45x;
   }
+
+  #skills>div{ 
+    position: relative;
+    top:-75x;
+  }
+
 
 }
 
@@ -2030,6 +2036,7 @@ section{
   #projects .text-box{
     width: 80%;
     height: 255px;
+    margin-top: 4px;
   }
   
   
