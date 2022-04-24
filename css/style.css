@@ -1944,9 +1944,6 @@ padding: 0 !important;
   display:none;
 }
 
-section{
-  min-height: 110vh;
-}
 
 #arrow-menu{
   display: block;
