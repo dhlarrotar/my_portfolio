@@ -1982,7 +1982,7 @@ section>div{
     top:-35px;
   }
 
- #home>div{ 
+ #home>div, #projects>div{ 
     position: relative;
     top:-45x;
   }
@@ -2083,6 +2083,7 @@ section>div{
 
   .numbertext{
     left:10%;
+    top: 30px;
   }
   
   }

@@ -34,6 +34,9 @@ function mostrarTexto(langDict){
 
 
 function setLanguage(){
+ 
+    var cv= document.querySelector("#cv-download");
+
     lang=langList.value; 
     document.getElementsByTagName('html')[0].setAttribute('lang',lang);
     datadefault=dataen;
@@ -47,6 +50,10 @@ function setLanguage(){
         mail.href="mailto:dhlarrotar@outlook.com?&subject=Hola Daniel!";
         enviar.value="Enviar mensaje";
 
+        cv.setAttribute("href","daniel_larrota_cv_es.pdf");
+    
+
+
     }
 
     if(langDict==dataen){
@@ -55,6 +62,9 @@ function setLanguage(){
         messageInput.placeholder= "Your message here";
         mail.href="mailto:dhlarrotar@outlook.com?&subject=Hi Daniel!";
         enviar.value="Send message";
+
+        cv.setAttribute("href","daniel_larrota_cv_en.pdf");
+
    
     }
  
