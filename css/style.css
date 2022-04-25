@@ -115,6 +115,7 @@ a {
 display: block;
 width: 100%;
 margin-top: 10px;
+z-index: 5;
 background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -762,18 +763,21 @@ strong{
 
 #skills-title-text{
   margin: 40px;
-
+  margin-left:0 ;
+  margin-right:0 ;
   
 }
 
 
 section>div h2{
  padding: 2px !important;
+ overflow: visible;
 }
 
 #skills>div:nth-child(1){
   width: 63% !important;
   max-width:560px !important ;
+
 }
 
 #skills>div:nth-child(2){
@@ -785,6 +789,7 @@ section>div h2{
 .container-skills{
   display: inline;
   text-align: center;
+  overflow: visible;
  
 }
 
