@@ -22,11 +22,11 @@ html {
 
 .dark {
   --color-1: #ffffff;
-  --color-1-main: #5506ff;
+  --color-1-main: #5849ff;
   --color-1-bg: rgb(13, 17, 30);
 
-  --linear-bg-1:  linear-gradient(90deg, #4fa4ff 0%, #7f43ff 100%);
-  --linear-bg-2:   linear-gradient(90deg, #3895f7 0%, #683ffb 100%);
+  --linear-bg-1:  linear-gradient(90deg, #4289fb 0%, #7159fc 100%);
+  --linear-bg-2:  linear-gradient(90deg, #3c7feaed 0%, #634ce6ea 100%);
   --color-2-body:#ffffff;
   --color-2-bg: #242424;
   --color-2-bg-banner:#4a4a4af0;
@@ -1985,7 +1985,7 @@ section>div{
 
   #skills>div{ 
     position: relative;
-    top:-125x;
+    top:-65px;
   }
 
 
@@ -1996,15 +1996,19 @@ section>div{
 @media screen and (max-height: 484px){
   section{
     min-height: 120vh;
+    margin-bottom: 5px;
    
   }
 
-  section>div{
+  html,body, section{
+    transition: 0ms;
+  }
 
+  section>div{
+    margin-top: 5px;
     position: relative;
     top:0px !important;
-    transition: 0ms;
-    transform: scale(0.8);
+    transition: 0ms !important;
   }
 
 
