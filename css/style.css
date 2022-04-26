@@ -1,6 +1,6 @@
 html {
   --color-1: #ffffff;
-  --color-1-main: #3a4de2;
+  --color-1-main: #2a42ff;
   --color-1-bg: rgb(28, 40, 74);
 
   --linear-bg-1:  linear-gradient(90deg, #009dff 0%, #3a47d5 100%);
@@ -22,11 +22,11 @@ html {
 
 .dark {
   --color-1: #ffffff;
-  --color-1-main: #5849ff;
+  --color-1-main: #0be4b5;
   --color-1-bg: rgb(13, 17, 30);
 
-  --linear-bg-1:  linear-gradient(90deg, #4391fe 0%, #7d49ff 100%);
-  --linear-bg-2:  linear-gradient(90deg, #3c7feaed 0%, #634ce6ea 100%);
+  --linear-bg-1:  linear-gradient(90deg, #189aeb 0%, #07ef83 100%);
+  --linear-bg-2: linear-gradient(90deg, #0d476b 0%, #056337 100%);
   --color-2-body:#ffffff;
   --color-2-bg: #242424;
   --color-2-bg-banner:#4a4a4af0;
@@ -483,7 +483,7 @@ section h2 {
   text-align: center;
   margin-bottom: 15px;
   line-height: 3rem;
-  font-weight: 500;
+
   padding: 10px;
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
@@ -1104,9 +1104,8 @@ color: #ffffff !important;
 
 
 #projects .icon-section{
-  background: var(--linear-bg-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+color: var(--color-2-body);
+font-weight: 600;
 }
 
 .header-projects{
@@ -1213,7 +1212,9 @@ color: #ffffff !important;
   font-size: 16px;
   font-weight: 900;
   border-radius: 10px;
-  border: 1px solid var(--color-1-main);
+  box-shadow: 3px 5px 8px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 5px 8px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 5px 8px -4px rgba(0,0,0,0.75);
   cursor: pointer;
 
 
@@ -1745,8 +1746,8 @@ padding: 0 !important;
   }
 
   .button-div a{
-    padding: 2px !important;
-    padding-right: 4px !important;
+    padding-top: 5px !important;
+    padding: 8px !important;
   }
   
 
@@ -1769,7 +1770,7 @@ padding: 0 !important;
   }
 
   #projects .text-box{
-    height: 185px;
+    height: 190px;
 
   }
 
@@ -2066,13 +2067,13 @@ section>div{
   
   #projects .button-div{
     padding: 0;
-    margin-top: 8px;
-    margin-bottom: 5px;
+    margin: 0;
+    margin-bottom: 15px;
   }
 
   #projects .button-div a{
     padding-top: 5px !important;
-    padding: 2px;
+    padding: 8px !important;
    
   }
   
