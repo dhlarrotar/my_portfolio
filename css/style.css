@@ -25,7 +25,7 @@ html {
   --color-1-main: #5849ff;
   --color-1-bg: rgb(13, 17, 30);
 
-  --linear-bg-1:  linear-gradient(90deg, #4289fb 0%, #7159fc 100%);
+  --linear-bg-1:  linear-gradient(90deg, #4391fe 0%, #8e0cff 100%);
   --linear-bg-2:  linear-gradient(90deg, #3c7feaed 0%, #634ce6ea 100%);
   --color-2-body:#ffffff;
   --color-2-bg: #242424;
@@ -603,9 +603,15 @@ section .text-container .text-box div{
   
 }
 
+
+.icon-div p{
+  font-weight: 900;
+  
+}
+
 .icon-div i{
   font-size: 25px;
-  
+  font-weight: 900;
   
 }
 
@@ -1198,7 +1204,8 @@ color: #ffffff !important;
   display: inline-block;
   padding:  8px;
   margin: 8px;
-
+  margin-right: 4px;
+  margin-left: 4px;
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1206,9 +1213,8 @@ color: #ffffff !important;
   
   font-size: 16px;
   font-weight: 900;
-  border-width: 1px;
-  border-style: solid;
-  border-image: var(--linear-bg-1) 1;
+  border-radius: 10px;
+  border: 1px solid var(--color-1-main);
   cursor: pointer;
 
 
@@ -1236,10 +1242,19 @@ color: #ffffff !important;
 }
 
 
+#projects .button-div a i, #projects .button-div a p{
+font-weight: 900;
+font-size: 15px;
+ 
+  
+}
+
+
 #projects .button-div a p{
   display: inline-block;
   color:  var( --color-2-body);
   margin-top: 2px;
+ 
   
 }
 
@@ -1802,7 +1817,7 @@ padding: 0 !important;
   }
 
   .next, .prev{
-    top:-170px !important;
+    top:-240px !important;
     transform: scale(0.8);
     
   }
@@ -2074,7 +2089,7 @@ section>div{
   }
   
   .next,.prev{
-    top:-140px;
+    top:-190px;
     transform: scale(0.8);
   }
   
