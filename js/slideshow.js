@@ -42,5 +42,5 @@ function changeSlide(){
 
 
 
-setInterval(changeSlide, 6000); // Change image every 2 seconds
+setInterval(changeSlide, 15000); // Change image every 2 seconds
 

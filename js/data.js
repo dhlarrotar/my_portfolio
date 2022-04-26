@@ -46,7 +46,7 @@ var dataen = {
 
 
 
-    "#projects-description":"Here you can explore my latest projects",
+    "#projects-description":"Here you can explore my latest projects!",
     "#hangman": "Hang Man!",
     "#hangman-description": "Guess the secret word before you get hung up!",
     "#encryptor": "Text encryptor",
