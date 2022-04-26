@@ -22,11 +22,11 @@ html {
 
 .dark {
   --color-1: #ffffff;
-  --color-1-main: #04d4cd;
-  --color-1-bg: rgb(14, 30, 13);
+  --color-1-main: #ffffff;
+  --color-1-bg: rgb(7, 8, 7);
 
   --linear-bg-1:  linear-gradient(90deg, #0c97ed 0%, #07df7a 100%);
-  --linear-bg-2: linear-gradient(90deg, #107fc4 0%, #02bb65 100%);
+  --linear-bg-2: linear-gradient(90deg, #0c97ed15 0%, #07df7a27 100%);
   --color-2-body:#ffffff;
   --color-2-bg: #242424;
   --color-2-bg-banner:#4a4a4af0;
@@ -269,8 +269,6 @@ header nav .active{
     transition: 0.5s ease-out;
     transform: scale(1.04);
 }
-
-
 
 
 
@@ -951,7 +949,6 @@ color: #ffffff !important;
 
 #projects>div{
   vertical-align: middle;
-  margin-top: 20vh;
 }
 
 #projects .text-box {
