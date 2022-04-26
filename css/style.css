@@ -1197,6 +1197,9 @@ color: #ffffff !important;
   margin-top: 10px;
   margin-bottom: 10px;
   display: inline-block;
+  background: var(--linear-bg-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #projects .button-div a{
@@ -1206,9 +1209,7 @@ color: #ffffff !important;
   margin: 8px;
   margin-right: 4px;
   margin-left: 4px;
-  background: var(--linear-bg-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  
 
   
   font-size: 16px;
@@ -2069,6 +2070,12 @@ section>div{
     padding: 0;
     margin-top: 8px;
     margin-bottom: 5px;
+  }
+
+  #projects .button-div a{
+    padding-top: 5px !important;
+    padding: 2px;
+   
   }
   
   #projects .text-box{
