@@ -52,7 +52,7 @@ var dataen = {
     "#encryptor": "Text encryptor",
     "#encryptor-description": "Encrypt and decrypt your secret messages!",
     "#portfolio": "My portfolio",
-    "#portfolio-description":"Explore my background, latest projects and more!",
+    "#portfolio-description":"Explore my background, latest projects, and get in touch!!",
     ".probar": "Launch!",
     ".ver-mas": "Github",
 
