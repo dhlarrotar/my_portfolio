@@ -17,7 +17,7 @@ var dataen = {
 
     
     "#about-text-p1":"I'm a <strong>front-end developer</strong> and <strong>geologist</strong> with experience in <strong>geospatial data</strong> management and analysis.",
-    "#about-text-p2":"I’m passionate for exploring new technologies and innovative ideas to address <strong>societal issues</strong> and unravel the mysteries of our surroundings.",
+    "#about-text-p2":"I’m passionate about exploring new technologies and innovative ideas to address <strong>societal issues</strong> and unravel the mysteries of our surroundings.",
     "#about-text-p3":"Currently, I’m strengthening my programming skills through the <strong>Oracle Next Education</strong> program.",
 
 

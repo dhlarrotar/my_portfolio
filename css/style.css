@@ -46,6 +46,15 @@ body {
 
 }
 
+.photo-container{
+  margin: 30px;
+}
+
+.photo{
+  height:100px;
+  border-radius: 50px;
+}
+
 .banner{
  
     z-index: 0;
@@ -698,7 +707,7 @@ header p, i{
   font-size: 3em !important;
   line-height: 1.5em;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   padding: 0;
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
