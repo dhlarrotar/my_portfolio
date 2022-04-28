@@ -285,13 +285,6 @@ header nav .active{
 
 
 
-#button-more{
-  display: none;
-   background: var(--linear-bg-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-}
 
 
 
@@ -588,6 +581,8 @@ section .text-container .text-box div{
 
 .text-box-description{
   font-size: 14px !important;
+  max-width: 270px;
+  line-height: 1.2rem;
 }
 
 .icon-section{
@@ -964,7 +959,7 @@ color: #ffffff !important;
   display: inline-block;
   padding: 20px; 
   width: 540px ;
-  height: 230px;
+  height: 210px !important;
   margin-top: 28px;
   
   background: var( --color-2-bg);
@@ -1216,9 +1211,9 @@ font-weight: 600;
   font-size: 16px;
   font-weight: 900;
   border-radius: 10px;
-  box-shadow: 3px 5px 8px -4px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 3px 5px 8px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 5px 8px -4px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 5px -4px rgba(46,46,46,0.75);
+  -webkit-box-shadow: 0px 5px 5px -4px rgba(46,46,46,0.75);
+  -moz-box-shadow: 0px 5px 5px -4px rgba(46,46,46,0.75);
   cursor: pointer;
 
 
@@ -1268,7 +1263,6 @@ font-size: 15px;
 
 #projects .icon-section{
   display: block;
-  margin-top: 40px;
 }
 
 
@@ -1815,10 +1809,6 @@ padding: 0 !important;
     height: 310px !important;
   }
 
-  #projects .icon-section{
-    position: relative;
-    top:50px;
-  }
 
   .next, .prev{
     top:-240px !important;
@@ -2083,7 +2073,7 @@ section>div{
   
   #projects .text-box{
     width: 80%;
-    height: 255px;
+    height: 255px !important;
     margin-top: 4px;
   }
   
@@ -2120,7 +2110,7 @@ section>div{
 
 
 
-  @media screen and (max-width: 313px){
+  @media screen and (max-width: 333px){
     #projects .icon-section{
       display: none;
     }
