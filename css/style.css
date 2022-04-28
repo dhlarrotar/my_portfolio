@@ -1627,6 +1627,11 @@ padding: 0 !important;
 
   @media screen and (max-width: 872px){
 
+    .float-buttons{
+      bottom: 80px !important;
+  
+    }
+
     .menu{
       position: fixed;
       bottom: 0;
@@ -1932,6 +1937,9 @@ padding: 0 !important;
 
 @media screen and (max-height: 738px) and (max-width: 872px){
 
+
+
+  
 
 #skills .container-skills .text-box{
   width: 130px;
