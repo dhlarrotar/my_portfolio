@@ -111,7 +111,7 @@ a {
   right: 0px;
   bottom: 10%;
   background-color: var(--color-2-bg);
-  box-shadow: 1px 2px 4px 1px #686868;
+  box-shadow: 1px 2px 4px 1px #464646;
   border-right: 0;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -1636,7 +1636,19 @@ padding: 0 !important;
       background-color: var(--color-2-bg);
       padding: 1vh;
       padding-bottom: 2px;
-     border-top: 1px solid #b1b1b1;
+     border-width: 0.5px;
+     border-style: solid;
+     
+     
+     border-width: 1px;
+     border-style: solid;
+     border-image: var(--linear-bg-1) 1;
+     
+     border-left:0;
+     border-right:0;
+
+     border-bottom: 0;
+   
     }
     
 
