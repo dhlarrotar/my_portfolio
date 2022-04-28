@@ -1811,7 +1811,7 @@ padding: 0 !important;
 
 
   .next, .prev{
-    top:-240px !important;
+    top:-170px !important;
     transform: scale(0.8);
     
   }
@@ -2072,7 +2072,7 @@ section>div{
   }
   
   #projects .text-box{
-    width: 80%;
+    width: 78%;
     height: 255px !important;
     margin-top: 4px;
   }
@@ -2089,7 +2089,7 @@ section>div{
   }
   
   .next,.prev{
-    top:-190px;
+    top:-160px;
     transform: scale(0.8);
   }
   
