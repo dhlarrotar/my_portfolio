@@ -21,7 +21,7 @@ var dataen = {
     "#about-text-p3":"Currently, I’m strengthening my programming skills through the <strong>Oracle Next Education</strong> program.",
 
 
-    "#hobbies-description":"I'm passionate about:",
+    "#hobbies-description":"I'm fond of:",
 
     "#webdesign":"Web design",
     "#data-science":"Data science",
