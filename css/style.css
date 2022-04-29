@@ -113,13 +113,13 @@ a {
   cursor: pointer;
   position: fixed;
   right: 0px;
-  bottom:30%;
+  bottom:12%;
   
   background-color: var(--color-2-bg);
-  box-shadow: -1px 3px 7px -2px rgba(15,15,15,0.75);
--webkit-box-shadow: -1px 3px 7px -2px rgba(15,15,15,0.75);
--moz-box-shadow: -1px 3px 7px -2px rgba(15,15,15,0.75);
-  border: 1px solid #5a5a5adb;
+  box-shadow: 0px 3px 6px -6px var(--color-2-body);
+  -webkit-box-shadow: 0px 3px 6px -6px var(--color-2-body);
+  -moz-box-shadow: 0px 3px 6px -6px var(--color-2-body);
+  border: 1px solid #5a5a5a8f;
   border-right: 0;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -165,6 +165,7 @@ background: var(--linear-bg-1);
 
 
 
+
 .fade-out{
   display: none;
 }
@@ -204,12 +205,6 @@ background: var(--linear-bg-1);
 }
 
 
-header li{
-    list-style: none;
-    display: inline-block;
-    text-align: left;
-}
-
 
 
 header {
@@ -218,22 +213,25 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: var( --color-2-bg);
-    border-width: 1px;
-    border-style: solid;
-    border-image: var(--linear-bg-1) 1;
-    border-top:0;
-    border-left:0;
-    border-right:0;
-
-
-
-
-
     padding: 12px;
     text-align: right;
     vertical-align: middle;
+    background-color: var(--color-2-bg);
  }
+
+.header-border{
+  box-shadow: 0px 3px 6px -6px var(--color-2-body);
+  -webkit-box-shadow: 0px 3px 6px -6px var(--color-2-body);
+  -moz-box-shadow: 0px 3px 6px -6px var(--color-2-body);
+}
+
+ header li{
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+}
+
+
 
 nav ul{
      display: inline-block;
@@ -964,8 +962,18 @@ color: #ffffff !important;
   vertical-align: middle;
 }
 
+#projects ul{
+  margin: 20px !important;
+  margin-bottom: 0 !important;
+}
+
+
+#projects ul li{
+  margin-right: 20px;
+  font-size: 14px;  
+}
+
 #projects .text-box {
-  display: inline-block;
   padding: 20px; 
   width: 540px ;
   height: 210px !important;
@@ -982,6 +990,7 @@ color: #ffffff !important;
 
 
 .projects-gallery{
+  display: none;
   width: auto;
   height: auto;
   vertical-align: top;
@@ -1649,19 +1658,10 @@ padding: 0 !important;
       text-align: center;
       background-color: var(--color-2-bg);
       padding: 1vh;
-      padding-bottom: 2px;
-     border-width: 0.5px;
-     border-style: solid;
-     
-     
-     border-width: 1px;
-     border-style: solid;
-     border-image: var(--linear-bg-1) 1;
-     
-     border-left:0;
-     border-right:0;
-
-     border-bottom: 0;
+      padding-bottom: 5px;
+      box-shadow: 0px 3px 4px 1px var(--color-2-body);
+      -webkit-box-shadow: 0px 3px 4px 1px var(--color-2-body);
+      -moz-box-shadow: 0px 3px 4px 1px var(--color-2-body);
    
     }
     

@@ -3,6 +3,7 @@ let menu = document.querySelectorAll("header nav a");
 reveal();
 
 window.onscroll = () => {
+
   section.forEach((i) => {
     let top = window.scrollY;
     let offset = i.offsetTop - 150;
@@ -39,6 +40,8 @@ function reveal() {
 window.addEventListener("scroll", function(){
   reveal();
   hideButtons();
+  showHeaderBorder();
+  
 
 });
 
@@ -52,6 +55,7 @@ var hiddenButtons=document.querySelector("#hidden-buttons");
 var floatButtons=document.querySelector(".float-buttons");
 var floatText=document.querySelector("#float-text");
 var floatClose=document.querySelector("#float-close");
+var header= document.querySelector("header");
 
 
 
@@ -65,6 +69,7 @@ menuArrow.onclick=showMenu;
 
 function showHiddenButtons(){
   hiddenButtons.classList.remove("fade-out");
+
   floatText.classList.add("fade-out");
   setTimeout(hideButtons,8000)
   
@@ -83,6 +88,11 @@ function showMenu(){
  setTimeout(hideMenu,8000)
   
 }
+
+function showHeaderBorder(){
+  header.classList.add("header-border");
+}
+
 
 function hideMenu(){
   menuNav.style.display = "none";
