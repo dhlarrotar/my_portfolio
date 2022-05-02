@@ -1897,8 +1897,9 @@ padding: 0 !important;
    
   }
 
-  #projects .text-box{
-transform: scale(0.85) !important;
+  #projects-gallery, #research-gallery{
+    position: relative;
+    left:-9px;
   }
   
   .menu a{
