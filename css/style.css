@@ -2177,13 +2177,14 @@ section>div{
   }
 
   #projects .button-div a{
-    padding-top: 5px !important;
-    padding: 8px !important;
+
+    padding: 2px !important;
+    padding-right: 4px !important;
    
   }
   
   #projects .text-box{
-    width: 230px !important;
+    width: 220px !important;
     height: 295px !important;
     margin-top: 4px;
   }
