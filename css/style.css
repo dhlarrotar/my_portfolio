@@ -104,9 +104,9 @@ a {
 
 
 
-.float-buttons{
+body .float-buttons{
  
-    user-select: none;
+  user-select: none !important;
    
 
   z-index: 1000;
@@ -142,6 +142,7 @@ background: var(--linear-bg-1);
 
 
 .text-options{
+  user-select: none !important;
   position: relative;
   top:50px;
   transform: rotate(-90deg);
@@ -149,10 +150,11 @@ background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
-  user-select: none;
+
 }
 
 #float-text i{
+  user-select: none !important;
   display: block;
   padding: 3px;
   font-size: 24px;
@@ -164,7 +166,9 @@ background: var(--linear-bg-1);
 }
 
 
-
+#float-text{
+  user-select: none !important;
+}
 
 .fade-out{
   display: none;
@@ -173,6 +177,7 @@ background: var(--linear-bg-1);
 
 
 .theme-button,.lang-button{
+ user-select: none !important;
  margin-top: 16px;
  margin-bottom: 16px;
  padding-right: 20px;
@@ -192,6 +197,7 @@ background: var(--linear-bg-1);
 #hidden-buttons p{
   color: var(--color-2-body);
   margin-bottom: 9px;
+  user-select: none !important;
 }
 
 
@@ -761,7 +767,7 @@ header p, i{
 
 
 #about .text-box p{
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6em;
   padding: 8px;
 }
@@ -1718,6 +1724,7 @@ padding: 0 !important;
 
     .float-buttons{
       bottom: 80px !important;
+      user-select: none !important;
   
     }
 
@@ -1890,7 +1897,9 @@ padding: 0 !important;
    
   }
 
-
+  #projects .text-box{
+transform: scale(0.85) !important;
+  }
   
   .menu a{
    
