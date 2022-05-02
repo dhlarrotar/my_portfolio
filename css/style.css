@@ -1711,12 +1711,6 @@ padding: 0 !important;
 
   @media screen and (max-width: 872px){
 
-    .projects-tag{
-      
-     top: -118px;
-     left:110px;
-
-    }
     
     
 
@@ -1950,7 +1944,7 @@ padding: 0 !important;
   #projects-description{
   
     margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
   }
 
   .draw-container{
@@ -2194,18 +2188,18 @@ section>div{
     margin-top: 4px;
   }
   
-  
-  
-  .projects-tag{
-    position: relative;
-    left:-75px ;
+
+  #projects-gallery .tag-container{
+   top: -118px;
+   left: 90px;
   }
 
 
-  .research-tag1{
-    position: absolute;
-    top:-17px;
-    left:-200px ;
+  
+
+  #research-gallery .tag-container{
+    top: -6px;
+    left: 70px;
   }
 
 

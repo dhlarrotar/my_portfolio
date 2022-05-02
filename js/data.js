@@ -135,7 +135,7 @@ var dataes = {
 
 
 
-    "#projects-description":"Aquí encontrarás mis proyectos más recientes",
+    "#projects-description":"Aquí podrás explorar mis proyectos recientes",
     "#hangman": "¡Ahorcado!",
     "#hangman-description": "¡Adivina la palabra secreta antes de quedar colgado!",
     "#encryptor": "Encriptador de texto",
