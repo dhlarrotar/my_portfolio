@@ -56,6 +56,15 @@ var dataen = {
     ".probar": "Launch!",
     ".ver-mas": "Github",
 
+
+    "#web-design-button":"Web design",
+    "#research-button":"Research",
+    ".projects-tag":"Web design",
+    ".research-tag1":"Earth Sciences",
+    ".read":"Read",
+    
+    "#guaviare-title":"Petrography and geochemistry of the San José del Guaviare Nepheline Syenite in the vicinity of El Capricho",
+
     ".contact-text1":"I'd love to hear from you!",
     ".contact-text2":"You can fill out the next form or get in touch with me at ",
     
@@ -135,6 +144,24 @@ var dataes = {
     "#portfolio-description":"Explora mi perfil, proyectos recientes y más!",
     ".probar": "¡Probar!",
     ".ver-mas": "Github",
+
+
+
+    "#web-design-button":"Diseño web",
+    "#research-button":"Investigación",
+    ".projects-tag":"Diseño web",
+    ".research-tag1":"Ciencias de la Tierra",
+    ".read":"Leer",
+    
+    "#guaviare-title":"Petrografía y geoquímica de la Sienita Nefelínica de San José del Guaviare en cercanías de El Capricho",
+
+
+
+
+
+
+
+
 
     ".contact-text1":"Me encantaría saber de ti!",
     ".contact-text2":"Puedes llenar el siguiente formulario o escribirme a ",

@@ -557,32 +557,51 @@
               <section id="projects">
                 <div class="container reveal fade-bottom">
                   <h2 class="projects-title"></h2>
-                  <p id="projects-description"></p>
+                <p id="projects-description"></p>
+                  <div class="gallery-container">
+                    <nav>
+                      <ul>
+                        <li id="web-design-button"></li>
+                        <li id="research-button"></li>
+                    
+                      </ul>
+                    </nav>
+            
+                  
 
-      
+
+
+
+
 
 
                   <!-- Slideshow container -->
-                  <div class="projects-gallery">
+                  <div id="projects-gallery">
+        
                   <div class="slideshow-container">
 
-           
+
                                             
       
 
                     
 
                     <!-- Full-width images with number and caption text -->
-                    <div class="mySlides fade">
+                    <div class="mySlides1 fade">
                       <div class="numbertext">1 / 3</div>
                           <!--Hangman-->
+                         
                           <div class="text-container">
                             <div class="text-box">
+                        
                                  <div class="img-div">
                                     <img src="img/projects/hangman.png" class="img-text-box" alt="Hangman logo">
                                   </div> 
-                               
-                                  <div class="project-info">        
+                                  
+                                  <div class="project-info">
+                                    <div class="tag-container">
+                                    <p class="projects-tag">Web design</p>
+                                    </div>        
                                     <h3 id="hangman"></h3>
                                     <p class="text-box-description" id="hangman-description"></p>
       
@@ -640,16 +659,21 @@
                        
 
 
-                          <div class="mySlides fade">
+                          <div class="mySlides1 fade">
                             <div class="numbertext">2 / 3</div>
                               <!--Text Encryptor-->
+                              
                               <div class="text-container">
                                 <div class="text-box">
+                              
                                   <div class="img-div">
                                     <img src="img/projects/text-encryptor.png" class="img-text-box" alt="Encryptor logo">
                                   </div> 
                                
-                                  <div  class="project-info">        
+                                  <div  class="project-info">
+                                    <div class="tag-container">
+                                    <p class="projects-tag">Web design</p> 
+                                    </div>       
                                   <h3 id="encryptor"></h3>
                                   <p class="text-box-description" id="encryptor-description"></p>
       
@@ -703,16 +727,22 @@
 
                
 
-                    <div class="mySlides fade">
+                    <div class="mySlides1 fade">
                         <div class="numbertext">3 / 3</div>
                           <!--Portfolio-->
+                     
                             <div class="text-container">
+                       
                               <div class="text-box">
+                              
                                 <div class="img-div">
                                   <img src="img/projects/portfolio.png" class="img-text-box" alt="portfolio logo">
                                 </div> 
                              
-                                <div  class="project-info">        
+                                <div  class="project-info">
+                                  <div class="tag-container">
+                                  <p class="projects-tag">Web design</p>
+                                  </div>        
                                   <h3 id="portfolio"></h3>
                                   <p class="text-box-description" id="portfolio-description"></p>
       
@@ -759,6 +789,12 @@
       
       
                          
+                            
+                        
+      
+
+
+
 
                     <!-- Next and previous buttons -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -771,10 +807,77 @@
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
+            
                   </div>
                  </div>
 
 
+                 <div id="research-gallery">
+        
+                  <div class="slideshow-container">
+
+                         
+                            
+                          <div class="mySlides2 fade">
+                            <div class="numbertext">1 / 1</div>
+                              <!--Text Encryptor-->
+                              
+                              <div class="text-container">
+                                <div class="text-box">
+                              
+                                  
+                               
+                                  <div  class="project-info">
+                                    <div class="tag-container">
+                                    <p class="research-tag1"></p>        
+                                   </div>
+                                  <p class="research-description"id="guaviare-authors">Larrota Rincón, D. H., & Concha Perdomo, A. E.</p>
+                                  <p class="research-title" id="guaviare-title"></p>
+                                  <p  class="research-info" id="guaviare-info">Geología Colombiana vol 41 (2018)</p>
+      
+                                  <div class="button-div">
+                                    <a href="https://dhlarrotar.github.io/text_encryptor/" class="launch">
+                                      <i class="fa-solid fa-book-open-reader"></i>
+                                      <p class="read"></p>
+                                    </a>
+      
+                    
+                                  </div>
+                                  </div>       
+                                 
+                               
+      
+                                    
+                                  
+                                </div>
+      
+      
+      
+                              </div>
+      
+      
+      
+      
+                            </div>
+      
+      
+
+
+
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                 <br>
+
+                  <!-- The dots/circles -->
+                  <div class="slide-circles">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                  </div>
+                 </div>
+
+           
 
 
 
@@ -782,7 +885,7 @@
 
 
 
-
+                </div>
 
                   <div class="draw-container">
                     <img class= "draw" id="projects-draw" src="img/man_with_documents.png" alt="man_documents">

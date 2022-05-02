@@ -13,7 +13,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName("mySlides1");
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -44,3 +44,31 @@ function changeSlide(){
 
 setInterval(changeSlide, 15000); // Change image every 2 seconds
 
+
+var webDesign=document.querySelector("#projects-gallery");
+var researchArea=document.querySelector("#research-gallery");
+var webButton=document.querySelector("#web-design-button");
+var researchButton=document.querySelector("#research-button");
+
+showWebDesign();
+webButton.onclick=showWebDesign;
+researchButton.onclick=showResearch;
+
+
+
+ function showWebDesign(){
+  webDesign.style.display = "inline-block";
+  researchArea.style.display = "none";
+  webButton.classList.add("active");
+  researchButton.classList.remove("active");
+ }
+
+
+function showResearch(){
+  webDesign.style.display = "none";
+  researchArea.style.display = "inline-block";
+  researchButton.classList.add("active");
+  webButton.classList.remove("active");
+
+
+}
