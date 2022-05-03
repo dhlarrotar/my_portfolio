@@ -2138,6 +2138,10 @@ section>div{
     transition: 0ms !important;
   }
 
+  #projects-gallery, #research-gallery{
+  transform: scale(0.85) !important;
+  }
+
 
 
   #home .text-box{
