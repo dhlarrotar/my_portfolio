@@ -2142,13 +2142,9 @@ section>div{
   }
 	
  
-#projects>div{
-	
-	
-	
-	
-
-transform: scale(0.9);
+#projects>div, #contact>div{
+min-height: 110vh;
+top:40px;
 	
 }
 	
