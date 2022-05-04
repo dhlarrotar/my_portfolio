@@ -2126,6 +2126,8 @@ section>div{
     margin-bottom: 5px;
    
   }
+	
+	
 
   html,body, section{
     transition: 0ms;
@@ -2136,14 +2138,20 @@ section>div{
     position: relative;
     top:0px !important;
     transition: 0ms !important;
+	  
   }
+	
+ 
+#projects>div{
+	
+	
+	
+	
 
-  #projects-gallery, #research-gallery{
-  transform: scale(0.85) !important;
-  }
-
-
-
+transform: scale(0.9);
+	
+}
+	
   #home .text-box{
     margin-bottom: 2px !important;
   }
