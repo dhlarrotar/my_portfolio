@@ -119,7 +119,7 @@ body .float-buttons{
   box-shadow: 0px 3px 6px -6px var(--color-2-body);
   -webkit-box-shadow: 0px 3px 6px -6px var(--color-2-body);
   -moz-box-shadow: 0px 3px 6px -6px var(--color-2-body);
-  border: 1px solid #5a5a5a8f;
+  border: 1px solid #a8a8a85c;
   border-right: 0;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -129,7 +129,7 @@ body .float-buttons{
 
 
 .arrow-index{
-display: block;
+display: block !important;
 width: 100%;
 margin-top: 10px;
 z-index: 5;
@@ -138,7 +138,6 @@ background: var(--linear-bg-1);
   -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
-
 
 
 .text-options{
@@ -531,7 +530,7 @@ section .text-container {
 
 
 #about .text-box:hover, #education .text-box:hover, #skills .text-box:hover, #contact .text-box:hover{
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 
@@ -660,8 +659,8 @@ section .text-container .text-box div{
 
 
 .draw{
-  height: 230px;
-  vertical-align: text-top;
+  height: 130px;
+  vertical-align: baseline;
   padding: 10px;
   text-align: center;
   opacity: 0.8;
@@ -755,6 +754,7 @@ header p, i{
 }
 
 #about .text-box{
+  margin-top: 10px;
   width: 90%;
   height: auto;
   max-width: 500px;
@@ -803,7 +803,6 @@ section>div h2{
   width: 14% !important;
   margin-left: 50px;
 }
-
 
 .container-skills{
   display: inline;
@@ -865,8 +864,15 @@ section>div h2{
   margin-top: 20px;
 }
 
-#hobbies{
+section #hobbies{
   padding: 0;
+  display: inline !important;
+  width: 10% !important;
+}
+
+
+#about h2{
+  margin-bottom: 5px;
 }
 
 #hobbies-name{
@@ -1658,7 +1664,8 @@ section>div{
 
 
 #education .img-text-box{
-  height: 5vh;
+  height: 0vh;
+  display: block  !important;
   text-align: left;
   margin: 0 !important;
   padding: 0 !important;
