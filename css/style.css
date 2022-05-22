@@ -4,7 +4,7 @@ html {
   --color-1-bg: rgb(28, 40, 74);
 
   --linear-bg-1:  linear-gradient(90deg, #009dff 0%, #3a47d5 100%);
-  --linear-bg-2:  linear-gradient(90deg, #e5f5ff4d 0%, #ebeef68b 100%);
+  --linear-bg-2:  linear-gradient(90deg, #dcebf577 0%, #dde1ecb0 100%);
   --color-2-body:#686868;
   --color-2-bg: #f9f9f9;
   --color-2-bg-banner:#ffffff3e;
@@ -457,7 +457,6 @@ section:nth-child(4) {
 }
 
 section:nth-child(5) {
-  color:var(--color-1-main);
   background: var(--linear-bg-2)
 }
 
@@ -549,7 +548,7 @@ section .text-container .text-box h3 {
   margin-top: 7px;
   margin-bottom: 8px;
   color: var(--color-2-body);
-  font-weight: 700;
+
 
 }
 
@@ -1026,13 +1025,13 @@ color: #ffffff !important;
 
 
 #projects ul li:hover{
-  font-weight: 700;
+  color: var(--color-1-main);
 
 }
 
-
 #projects nav .active{
-  font-weight: 700;
+  color: var(--color-1-main);
+  font-weight: 400;
 }
 
 
@@ -1074,14 +1073,13 @@ color: #ffffff !important;
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  padding: 7px;
+  padding: 4px;
   position: relative;
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 0px #00000000;
   top:-150px;
-  font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
 
@@ -1347,7 +1345,6 @@ font-weight: 500;
 
 
 #projects .button-div a i, #projects .button-div a p{
-font-weight: 900;
 font-size: 15px;
  
   
