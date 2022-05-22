@@ -4,7 +4,7 @@ html {
   --color-1-bg: rgb(28, 40, 74);
 
   --linear-bg-1:  linear-gradient(90deg, #009dff 0%, #3a47d5 100%);
-  --linear-bg-2:  linear-gradient(90deg, #009dff 0%, #3a47d5 100%);
+  --linear-bg-2:  linear-gradient(90deg, #e5f5ff4d 0%, #ebeef68b 100%);
   --color-2-body:#686868;
   --color-2-bg: #f9f9f9;
   --color-2-bg-banner:#ffffff3e;
@@ -25,7 +25,7 @@ html {
   --color-1-main: #ffffff;
   --color-1-bg: rgb(7, 8, 7);
 
-  --linear-bg-1:  linear-gradient(90deg, #0c97ed 0%, #07df7a 100%);
+  --linear-bg-1:  linear-gradient(90deg, #087fc9 0%, #0cc56f 100%);
   --linear-bg-2: linear-gradient(90deg, #0c97ed15 0%, #07df7a27 100%);
   --color-2-body:#ffffff;
   --color-2-bg: #242424;
@@ -457,7 +457,7 @@ section:nth-child(4) {
 }
 
 section:nth-child(5) {
-  color: var(--color-2-bg);
+  color:var(--color-1-main);
   background: var(--linear-bg-2)
 }
 
@@ -803,6 +803,7 @@ color: var(--color-1-main);
 
 section>div h2{
  padding: 2px !important;
+ line-height: 4rem;
  overflow: visible;
 }
 
@@ -1005,7 +1006,6 @@ color: #ffffff !important;
   padding: 3px;
   font-size: 14px;
   cursor: pointer;
-  color: var(--color-1);  
 
 }
 
@@ -1136,14 +1136,14 @@ color: #ffffff !important;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: rgba(187, 187, 187, 0.236);
   border-radius: 50%;
   display: inline-block;
   transition: 0.6s ease;
 }
 
 #projects-gallery .active, .dot:hover {
-  background-color: #ffffff;
+  background-color: var(--color-1-main)
 }
 
 #projects-gallery:hover, #research-gallery:hover{ 
@@ -1210,10 +1210,6 @@ font-weight: 500;
 
 #projects h2{
   
-
-  background: none;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: #ffffff;
   border: 0; 
 }
 
@@ -1222,7 +1218,6 @@ font-weight: 500;
 }
 
 #projects-description{
-  color: var(--color-1) !important;
   margin-top: 20px;
   margin-bottom: 18px;
 }
@@ -1252,10 +1247,7 @@ font-weight: 500;
 }
 
 #projects .draw-container a, #projects .draw-container p{
-  color: var(--color-1);
-  background: none;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: #ffffff; 
+  color: var(--color-2-body);
 }
 
 .project-info{
