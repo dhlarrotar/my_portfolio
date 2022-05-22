@@ -22,7 +22,7 @@ html {
 
 .dark {
   --color-1: #ffffff;
-  --color-1-main: #37c3ae;
+  --color-1-main:#a9feec;
   --color-1-bg: rgb(7, 8, 7);
 
   --linear-bg-1:  linear-gradient(90deg, #087fc9 0%, #0cc56f 100%);
@@ -611,7 +611,7 @@ section .text-container .text-box div{
   border-left:0;
   border-right:0;
   margin-top: 12px;
-  font-weight: 900;
+  font-weight: 600;
 
 }
 
@@ -788,7 +788,6 @@ header p, i{
 strong{
 
 color: var(--color-1-main);
-  font-weight: 600;
 }
 
 
@@ -1712,8 +1711,9 @@ padding: 0 !important;
 
 @media screen and (max-width: 1072px){
 
- 
-
+  .icon-section{
+    font-weight: 600;
+  }
 
   .form-container{
     margin: 0;
