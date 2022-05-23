@@ -22,10 +22,10 @@ html {
 
 .dark {
   --color-1: #ffffff;
-  --color-1-main:#a9feec;
+  --color-1-main:#c8fcf0;
   --color-1-bg: rgb(7, 8, 7);
 
-  --linear-bg-1:  linear-gradient(90deg, #087fc9 0%, #0cc56f 100%);
+  --linear-bg-1:  linear-gradient(90deg, #23a2f1 0%, #24f091 100%);
   --linear-bg-2: linear-gradient(90deg, #0c97ed15 0%, #07df7a27 100%);
   --color-2-body:#ffffff;
   --color-2-bg: #242424;
@@ -786,7 +786,7 @@ header p, i{
 
 
 strong{
-
+font-weight: 300;
 color: var(--color-1-main);
 }
 
@@ -1074,9 +1074,7 @@ color: #ffffff !important;
   cursor: pointer;
   padding: 4px;
   position: relative;
-  background: var(--linear-bg-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #b0b0b0b1;
   text-shadow: 0px 0px #00000000;
   top:-150px;
   font-size: 18px;
@@ -1101,9 +1099,9 @@ color: #ffffff !important;
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: #ffffff;
+  background: var(--linear-bg-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -1308,15 +1306,11 @@ font-weight: 500;
   margin-right: 4px;
   margin-left: 4px;
   
-
   
   font-size: 16px;
   font-weight: 900;
   border-radius: 10px;
-  box-shadow: 0px 5px 5px -4px rgba(46,46,46,0.75);
-  -webkit-box-shadow: 0px 5px 5px -4px rgba(46,46,46,0.75);
-  -moz-box-shadow: 0px 5px 5px -4px rgba(46,46,46,0.75);
-  cursor: pointer;
+  background-color: #dfdfdf14;
 
 
 
@@ -1354,6 +1348,7 @@ font-size: 15px;
   display: inline-block;
   color:  var( --color-2-body);
   margin-top: 2px;
+  font-weight: 600;
  
   
 }
