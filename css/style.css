@@ -25,7 +25,7 @@ html {
   --color-1-main:#ffffff;
   --color-1-bg: rgb(7, 8, 7);
 
-  --linear-bg-1:  linear-gradient(90deg, #23a2f1 0%, #24f091 100%);
+  --linear-bg-1:  linear-gradient(90deg, #1387d9 -16%, #17e658 116%);
   --linear-bg-2: linear-gradient(90deg, #0c97ed15 0%, #07df7a27 100%);
   --color-2-body:#ffffff;
   --color-2-bg: #242424;
@@ -296,6 +296,9 @@ header nav .active{
 }
 
 
+header nav .active p{
+  text-shadow: 2px 1px #595959b4;
+}
 
 
 
@@ -925,6 +928,7 @@ section #hobbies{
 .hobbie-container p{
 font-size: 12px !important;
 color: #ffffff !important;
+text-shadow: 2px 1px #595959b4;
 }
 
 .hobbie-container i{
@@ -932,6 +936,7 @@ color: #ffffff !important;
   font-weight: 700 !important;
   text-align: center;
   color: #ffffff;
+  text-shadow: 2px 1px #bdbdbdb4;
 }
 
 
@@ -956,6 +961,7 @@ color: #ffffff !important;
 
 #hobbies-description{
   margin: 18px;
+  text-shadow: 2px 1px #595959b4;
 }
 
 
@@ -1205,7 +1211,9 @@ font-weight: 500;
 
 
 #projects h2{
-  
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: var(--color-1-main);
   border: 0; 
 }
 
@@ -1311,7 +1319,7 @@ font-weight: 500;
   font-size: 16px;
   font-weight: 900;
   border-radius: 10px;
-  background-color: #c6c3c322;
+  background-color: #c6c3c30f;
 
 
 
@@ -1646,6 +1654,7 @@ section>div{
 
 #hobbies-name{
   display: block;
+  text-shadow: 2px 1px #595959b4;
 }
 
 .hobbie-container{
@@ -1655,6 +1664,7 @@ section>div{
 
 .hobbie-container p, #hobbies-description{
   display: none;
+  text-shadow: 2px 1px #595959b4;
 }
 
 #education .text-box{
@@ -1773,6 +1783,7 @@ padding: 0 !important;
   
   #hobbies i{
     padding-right: 10px;
+    text-shadow: 2px 1px #595959b4;
   }
   
   
@@ -1780,6 +1791,7 @@ padding: 0 !important;
     transform: rotate(-90deg);
     position: relative;
     font-weight: 800;
+    text-shadow: 2px 1px #595959b4;
     left:40%;
     top: 150px;
   }
