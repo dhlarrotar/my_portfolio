@@ -1,6 +1,6 @@
 html {
   --color-1: #ffffff;
-  --color-1-main: #0970e5;
+  --color-1-main: #0970e5d3;
   --color-1-bg: rgb(28, 40, 74);
 
   --linear-bg-1:  linear-gradient(90deg, #009dff 0%, #3a47d5 100%);
@@ -22,7 +22,7 @@ html {
 
 .dark {
   --color-1: #ffffff;
-  --color-1-main:#c8fcf0;
+  --color-1-main:#ffffff;
   --color-1-bg: rgb(7, 8, 7);
 
   --linear-bg-1:  linear-gradient(90deg, #23a2f1 0%, #24f091 100%);
@@ -786,7 +786,7 @@ header p, i{
 
 
 strong{
-font-weight: 300;
+font-weight: 600;
 color: var(--color-1-main);
 }
 
@@ -1024,13 +1024,14 @@ color: #ffffff !important;
 
 
 #projects ul li:hover{
+  font-weight: 600;
   color: var(--color-1-main);
 
 }
 
 #projects nav .active{
   color: var(--color-1-main);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 
@@ -1310,7 +1311,7 @@ font-weight: 500;
   font-size: 16px;
   font-weight: 900;
   border-radius: 10px;
-  background-color: #dfdfdf14;
+  background-color: #c6c3c322;
 
 
 
