@@ -69,7 +69,6 @@ menuArrow.onclick=showMenu;
 
 function showHiddenButtons(){
   hiddenButtons.classList.remove("fade-out");
-
   floatText.classList.add("fade-out");
   setTimeout(hideButtons,8000)
   

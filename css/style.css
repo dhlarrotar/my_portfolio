@@ -7,7 +7,7 @@ html {
   --linear-bg-2:  linear-gradient(90deg, #dcebf577 0%, #dde1ecb0 100%);
   --color-2-body:#686868;
   --color-2-bg: #f9f9f9;
-  --color-2-bg-banner:#ffffff3e;
+  --color-2-bg-banner:#ffffff;
   --color-2-bg-img-div:#686868f0;
 
 
@@ -16,6 +16,7 @@ html {
   text-align: center;
 
 }
+
 
 
 
@@ -107,7 +108,7 @@ a {
 body .float-buttons{
  
   user-select: none !important;
-   
+  -webkit-user-select: none;
 
   z-index: 1000;
   cursor: pointer;
@@ -141,6 +142,7 @@ background: var(--linear-bg-1);
 
 .text-options{
   user-select: none !important;
+  -webkit-user-select: none;
   position: relative;
   top:50px;
   transform: rotate(-90deg);
@@ -168,10 +170,12 @@ background: var(--linear-bg-1);
 
 #float-text{
   user-select: none !important;
+  -webkit-user-select: none;
 }
 
 .fade-out{
   display: none;
+
 
 }
 
@@ -191,7 +195,10 @@ background: var(--linear-bg-1);
 
 
 
-
+#hidden-buttons{
+  user-select: none !important;
+  -webkit-user-select: none;
+}
 
 
 #hidden-buttons p{
