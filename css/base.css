@@ -97,7 +97,7 @@ html {
   color: var(--color-body);
   border-radius: 5px;
   letter-spacing: 0.5px;
-  user-select: none;
+  -webkit-user-select: none;
   text-decoration: none;
   justify-content: left;
   margin-top: 1rem;
