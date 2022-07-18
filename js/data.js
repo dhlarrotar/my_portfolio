@@ -10,17 +10,13 @@ var dataen = {
     ".contact-title":"Let's connect!",    
     
     "#hi":"Hi",
-    "#name":"I'm Daniel!",
-    "#about-name":"Frontend developer - geologist",
+    "#myname":"I'm Daniel!",
+    "#mytitle":"Geologist | Web Developer",
 
 
 
     
-    "#about-text-p1":"I'm a <strong>front-end developer</strong> and <strong>geologist</strong> with experience in <strong>geospatial data</strong> management and analysis.",
-    "#about-text-p2":"I’m passionate about exploring new technologies and innovative ideas to address <strong>societal issues</strong> and unravel the mysteries of our surroundings.",
-    "#about-text-p3":"Currently, I’m strengthening my programming skills through the <strong>Oracle Next Education</strong> program.",
-
-
+    "#about-text":"Hi! My name is Daniel and I’m a graduate in <strong>geology</strong>. As part of my studies and work experience, I have developed technical skills in geospatial data analysis, <strong>web design</strong>, and petrologic/geophysical methods. I’m passionate about exploring new technologies and innovative ideas to address socio-environmental issues and unravel the mysteries of our surroundings.",  
     "#hobbies-description":"I'm fond of:",
 
     "#webdesign":"Web design",
@@ -40,7 +36,7 @@ var dataen = {
     "#deepl-title": "Deep Learning Specialization",
     "#esri-title": "Spatial Data Science",
     "#unesco-title": "Programming for geospatial hydrological applications",
-    "#frontend-title": "Front-end",
+
 
 
 
@@ -66,12 +62,12 @@ var dataen = {
     "#guaviare-title":"Petrography and geochemistry of the San José del Guaviare Nepheline Syenite in the vicinity of El Capricho",
 
     ".contact-text1":"I'd love to hear from you!",
-    ".contact-text2":"You can fill out the next form or get in touch with me at ",
+    ".contact-text2":"You can fill out the next form or get in touch with me at: ",
     
     "#mail-label":"Email",
     "#full-name-label":"Full name",
     "#message-label":"Message",
-    "#success-text":"Your message was successfully sent!",
+    ".success-text":"Your message was successfully sent!",
     "#error-mail-input":"Your email must include '@' and '.'",
     "#error-full-name":"Your name must contain between 1 and 50 characters",
     "#error-message":"Your message must contain between 1 and 300 characters",
@@ -93,8 +89,8 @@ var dataes = {
   
 
     "#hi":"¡Hola",
-    "#name":"soy Daniel!",
-    "#about-name":"Desarrollador frontend - geólogo",
+    "#myname":"soy Daniel!",
+    "#mytitle":"Geólogo | Desarrollador web",
 
 
 
@@ -102,10 +98,7 @@ var dataes = {
 
 
     
-    "#about-text-p1":"Soy <strong> desarrollador front-end</strong> y <strong>geólogo</strong> con experiencia en el manejo y análisis de <strong>datos geoespaciales</strong>.",
-    "#about-text-p2":"Me apasiona explorar nuevas tecnologías e ideas innovadoras para abordar los problemas sociales y desentrañar los misterios de nuestro entorno.",
-    "#about-text-p3":"Actualmente estoy fortaleciendo mis habilidades de programación a través del programa <strong>Oracle Next Education</strong>.",
-
+    "#about-text":"¡Hola! Mi nombre es Daniel y soy <strong>geólogo</strong>. Como parte de mis estudios y experiencia laboral, he desarrollado habilidades técnicas en análisis de datos geoespaciales, <strong>diseño web</strong> y métodos petrológicos / geofísicos. Me apasiona explorar nuevas tecnologías e ideas innovadoras para abordar problemas socioambientales y desentrañar los misterios de nuestro entorno.",
 
     "#hobbies-description":"Me apasiona:",    
     "#webdesign":"Diseño web",
@@ -127,7 +120,7 @@ var dataes = {
     "#deepl-title": "Aprendizaje profundo",
     "#esri-title": "Ciencia de datos espaciales",
     "#unesco-title": "Programación para aplicaciones geoespaciales hidrológicas",
-    "#frontend-title": "Formación front-end",
+  
 
 
 
@@ -164,19 +157,17 @@ var dataes = {
 
 
     ".contact-text1":"Me encantaría saber de ti!",
-    ".contact-text2":"Puedes llenar el siguiente formulario o escribirme a ",
+    ".contact-text2":"Puedes llenar el siguiente formulario o escribirme a: ",
     
     "#mail-label":"Correo",
     "#full-name-label":"Nombre",
     "#message-label":"Mensaje",
-    "#success-text":"¡Tu mensaje fue enviado!",
+    ".success-text":"¡Tu mensaje fue enviado!",
 
     "#error-mail-input":"El correo electrónico debe contener '@' y '.'",
     "#error-full-name":"Tu nombre debe contener entre 1 y 50 caracteres",
     "#error-message":"Tu mensaje debe contener entre 1 y 300 caracteres",
 
 }
-
-
 
 

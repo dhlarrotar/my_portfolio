@@ -47,7 +47,7 @@ function setLanguage(){
         fullNameInput.placeholder= "Tu nombre aquí";
         mailInput.placeholder= "email@dominio.com";
         messageInput.placeholder= "Escribe aquí tu mensaje";
-        mail.href="mailto:dhlarrotar@outlook.com?&subject=Hola Daniel!";
+        // mail.href="mailto:dhlarrotar@outlook.com?&subject=Hola Daniel!";
         enviar.value="Enviar mensaje";
 
         cv.setAttribute("href","daniel_larrota_cv_es.pdf");
@@ -60,7 +60,7 @@ function setLanguage(){
         fullNameInput.placeholder= "Your name here";
         mailInput.placeholder= "email@domain.com";
         messageInput.placeholder= "Your message here";
-        mail.href="mailto:dhlarrotar@outlook.com?&subject=Hi Daniel!";
+        // mail.href="mailto:dhlarrotar@outlook.com?&subject=Hi Daniel!";
         enviar.value="Send message";
 
         cv.setAttribute("href","daniel_larrota_cv_en.pdf");

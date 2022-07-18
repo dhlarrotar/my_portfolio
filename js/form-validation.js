@@ -33,12 +33,12 @@ fullNameInput.addEventListener("input", function(){
     if(inputLength<=50 && inputLength!=0){
         fullNameInput.classList.remove("error-form"); 
         nombreAceptado=true; 
-        errorName.classList.add("fadeOut");
+        errorName.classList.add("hide");
     }
     else{
         nombreAceptado=false;
         fullNameInput.classList.add("error-form");
-        errorName.classList.remove("fadeOut");
+        errorName.classList.remove("hide");
     }
     validarValores();
 });
@@ -52,13 +52,13 @@ mailInput.addEventListener("input", function(){
     if(inputLength!=0 && inputValue.includes("@") && inputValue.includes(".")){
         mailAceptado=true;
         mailInput.classList.remove("error-form");
-        errorMail.classList.add("fadeOut");
+        errorMail.classList.add("hide");
    
     }
     else{
         mailAceptado=false;
         mailInput.classList.add("error-form");
-        errorMail.classList.remove("fadeOut");  
+        errorMail.classList.remove("hide");  
     }
     validarValores();
 });
@@ -74,12 +74,12 @@ messageInput.addEventListener("input", function(){
     if(inputLength<=300 && inputLength!=0){
         mensajeAceptado=true;
         messageInput.classList.remove("error-form");
-        errorMensaje.classList.add("fadeOut");      
+        errorMensaje.classList.add("hide");      
     }
     else{
         mensajeAceptado=false;
         messageInput.classList.add("error-form");
-        errorMensaje.classList.remove("fadeOut");  
+        errorMensaje.classList.remove("hide");  
     }
     validarValores();
 });

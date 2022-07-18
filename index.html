@@ -1,990 +1,931 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width"> 
-        <title> My portfolio! -- Daniel Larrota Rincón</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/style.css">
 
-        <meta property="og:title" content="Welcome to my portfolio! -- Daniel Larrota Rincón" />
-        <meta property="og:description" content="Explore my latest projects, background, and get in touch!" />
-        <meta property="og:image" content="https://i.postimg.cc/2yX8PfMY/portfolio.png">
-
-        
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-        <script src="https://kit.fontawesome.com/9fb909ccd9.js" crossorigin="anonymous"></script>
-
-    </head>
-
-    <body>
-        
-   
-        <header id="headerx">
-            <div class="caja">
- 
-                <nav>
-                  <div class="menu">
-                   
-                 
-                   <ul>
-                     
-                    <li><a href="#home"  class="active" id="home-button"><i class="fa-solid fa-house"></i><p class="home-title"></p></a></li> 
-                      <li><a href="#about"  id="about-button"><i class="fa-solid fa-user"></i><p class="about-title"></p></a></li>
-                      <li><a href="#skills" id="skills-button"><i class="fa-solid fa-dumbbell"></i><p class="skills-title"></p></a></li>
-                      <li><a href="#education" id="education-button"><i class="fa-solid fa-graduation-cap"></i><p class="education-title" ></p></a></li>
-                      <li><a href="#projects"  id="projects-button"><i class="fa-solid fa-suitcase"></i><p class="projects-title"></p></a></li>
-                      <li></i><a href="#contact"  id="contact-button"><i class="fa-solid fa-envelope"></i><p class="contact-title"></p></a></li>
-              
-                   
-                    </ul>
-                  </div>
-                </nav>
-        
-            </div>
-      
-        </header>
-        
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title> My portfolio! -- Daniel Larrota Rincón</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/education.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/contact.css">
 
 
+  <meta property="og:title" content="Welcome to my portfolio! -- Daniel Larrota Rincón" />
+  <meta property="og:description" content="Explore my latest projects, background, and get in touch!" />
+  <meta property="og:image" content="https://i.postimg.cc/2yX8PfMY/portfolio.png">
 
-        <div id="arrow-menu">
-        <i class="fa-solid fa-angles-up" ></i>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/9fb909ccd9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+  <header class="headerPrincipal">
+    <div class="container">
+
+      <h1 class="headerTitle">Daniel Larrota R.</h1>
+
+      <nav>
+        <ul>
+
+          <li><a href="#home" class="active" id="home-button"><i class="fa-solid fa-house"></i>
+              <p class="home-title"></p>
+            </a></li>
+
+          <li><a href="#about" id="about-button"><i class="fa-solid fa-user"></i>
+              <p class="about-title"></p>
+            </a></li>
+          <li><a href="#skills" id="skills-button"><i class="fa-solid fa-dumbbell"></i>
+              <p class="skills-title"></p>
+            </a></li>
+          <li><a href="#education" id="education-button"><i class="fa-solid fa-graduation-cap"></i>
+              <p class="education-title"></p>
+            </a></li>
+          <li><a href="#projects" id="projects-button"><i class="fa-solid fa-suitcase"></i>
+              <p class="projects-title"></p>
+            </a></li>
+          <li></i><a href="#contact" id="contact-button"><i class="fa-solid fa-envelope"></i>
+              <p class="contact-title"></p>
+            </a></li>
+
+        </ul>
+
+
+      </nav>
+
+
+
+
+
+
+      <ul class="settingsContainer">
+        <li class="settingsItem">
+
+          <ul class="theme-button">
+            <li>
+              <p id="theme"></p>
+            </li>
+            <li>
+              <input type="checkbox" id="switch" title="lang-check-box" />
+              <label for="switch">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span class="ball"></span>
+
+              </label>
+            </li>
+
+
+
+          </ul>
+
+        </li>
+
+        <li class="settingsItem">
+
+
+          <ul class="lang-button">
+            <li>
+              <p id="lang-text"></p>
+            </li>
+
+
+            <li>
+
+              <select class="lang-list" title="lang-list">
+                <option value=en class="language" id="en">EN</option>
+                <option value=es class="language" id="es">ES</option>
+              </select>
+
+
+            </li>
+
+          </ul>
+
+
+        </li>
+      </ul>
+
+
+
+
+
+  </header>
+
+
+
+
+
+
+  <div class="menuButton">
+
+    <div class="float-text">
+
+      <i class="fa-solid fa-bars"></i>
+
+
+    </div>
+
+
+
+  </div>
+
+
+  <div >
+
+    <a class="arrowTopButton" href="#home">
+
+      <i class="fa-solid fa-arrow-up"></i>
+
+
+    </a>
+
+
+
+  </div>
+
+
+  
+
+
+  <div class="closeMenu"> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+
+
+
+    <section id="home">
+
+      <!-- <div  class="fade-out" class="photoInfoContainer">
+        <p class="apodTitle"></p>
+        <p class="apodCopy"></p>
+        <p class="apodDate"></p>
+        <p  class="apodPhoto"></p>
+        <p  class="apodExplanation"></p>
+
+      </div> -->
+
+
+
+      <div class="container reveal fade-bottom">
+
+
+        <div class="home_container">
+
+
+
+
+
+          <div class="greetingContainer">
+
+            <ul class="greetingLines">
+
+              <li>
+                <p class="greeting" id="hi"></p>
+
+              </li>
+              <li>
+                <h1 class="title" id="myname"></h1>
+
+              </li>
+              <li>
+                <p class="personalDescription" id="mytitle"></p>
+
+
+              </li>
+
+
+            </ul>
+
+
+
+            <ul class="home__social-section">
+              <li class="socialItem"> <a href="https://www.linkedin.com/in/dhlarrotar/">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <p>LinkedIn</p>
+                </a>
+              </li>
+
+              <li class="socialItem"> <a href="https://github.com/dhlarrotar">
+                  <i class="fa-brands fa-github"></i>
+                  <p>GitHub</p>
+                </a>
+              </li>
+
+              <li class="socialItem"> <a href="https://www.instagram.com/dlar_geo">
+                  <i class="fa-brands fa-instagram"></i>
+                  <p>Instagram</p>
+                </a>
+              </li>
+
+
+              <li class="socialItem"> <a id="cv-download" href="daniel_larrota_cv_en.pdf">
+                  <i class="fa-solid fa-download"></i>
+                  <p>CV</p>
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+
+
+          <div class="arrowContainer">
+            <i class="fa-solid fa-circle-arrow-down"></i>
+          </div>
+          <!-- 
+          <div class="home__drawContainer">
+            <div class="home__drawContainer__draw" ></div> 
+            <p class="draw-legend">Illustration modified from <a
+                href="https://icons8.com/illustrations/author/o43Gv9Q60NW0">Dmitry Nikulnikov</a>, <a
+                href="https://icons8.com/illustrations">Ouch!</a></p>
+          </div> -->
+        </div>
+
       </div>
 
 
+
+    </section>
+
+
+
+
+
+
+
+
+    <section id="about">
+
+
+      <div class="container reveal fade-bottom">
+        <div class="aboutContainer">
+          <div class="aboutContainer__text">
+            <h2 class="about-title"></h2>
+            <p class="about-text" id="about-text"></p>
+
+          </div>
+
+          <!-- <div class="draw-container">
+            <img class="draw" id="about-draw" src="img/man_presenting.png" alt="man_presenting">
+            <p class="draw-legend">Illustration by <a href="https://iradesign.io">IRA Design</a> </p>
+          </div> -->
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+    <section id="skills">
+
+      <div class="container reveal fade-bottom">
+        <div class="skillsContainer">
+
+
+
+          <h2 class="skills-title" id="skills-title-text"></h2>
+          <div class="skillsContainer__hardSkills">
+
+
+
+            <ul>
+              <li class="skillsItem">
+                <i class="fa-brands fa-html5"></i>
+                HTML5
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-brands fa-js-square"></i>
+                JavaScript
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-brands fa-css3"></i>
+                CSS3
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-brands fa-python"></i>
+                Python
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-brands fa-github"></i>
+                Git · GitHub
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-solid fa-globe"></i>
+                ArcGIS · QGIS
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-solid fa-database"></i>
+                SQLite
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-brands fa-figma"></i>
+                Figma
+              </li>
+
+
+
+
+
+
+            </ul>
+
+          </div>
+
+
+
+
+
+
+
+
+          <!-- 
+
+          <p id="hobbies-name">Hobbies</p>
+
+
+          <div class="skillsContainer__hobbies">
+
        
-          <div class="float-buttons">
-              <div id="float-text">
-             
-                <i class="fa-solid fa-gear"></i>
-                   <i class="fa-solid fa-angle-left" id="arrow-options"></i>
-           
-             </div>
+      
 
-                <div class= "fade-out" id="hidden-buttons">
+            <ul>
 
-                    <div class="theme-button">
-                      <p id="theme"></p>
-                      <div class="switch-container">
-                    
-                        <input type="checkbox" id="switch" />
-                      
-                        <label for="switch">
-                          <i class="fas fa-sun"></i>
-                          <i class="fas fa-moon"></i>
-                          <span class="ball"></span>
+              <li class="skillsItem">
+                <i class="fa-solid fa-plane"></i>
+                <p id="travel"></p>
 
-                        </label>
+              </li>
 
-                      
-                      </div>
+              <li class="skillsItem">
+                <i class="fa-solid fa-camera"></i>
+                <p id="photo"></p>
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-solid fa-microscope"></i>
+                <p id="science"></p>
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <p id="astronomy"></p>
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-solid fa-person-swimming"></i>
+                <p id="swimming"></p>
+              </li>
+
+              <li class="skillsItem">
+                <i class="fa-regular fa-futbol"></i>
+                <p>Fútbol</p>
+              </li>
+
+
+              <li class="skillsItem">
+                <i class="fa-solid fa-basketball"></i>
+                <p id="basket"></p>
+
+              </li>
+
+
+
+
+
+            </ul>
+
+
+
+          </div>
+ -->
+
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="education">
+
+      <div class="container reveal fade-left">
+
+
+
+
+
+        <div class="educationContainer">
+
+          <h2 class="education-title"></h2>
+
+          <ul class="educationList">
+            <li class="educationItem">
+              <div class="education__imgContainer">
+                <img src="img/education/one.png" class="educationImg" alt="ONE logo">
+              </div>
+
+
+
+              <h3>Oracle Next Education (ONE)</h3>
+              <p class="text-box-description" id="frontend-description"> Front-end + Java</p>
+              <p class="text-box-description" id="frontend-description">Oracle + Alura - 2022</p>
+
+
+
+            </li>
+
+
+
+
+
+            <li class="educationItem">
+              <div class="education__imgContainer">
+                <img src="img/education/unesco.png" class="educationImg" alt="UNESCO">
+              </div>
+
+
+
+              <h3 id="unesco-title"></h3>
+              <p class="text-box-description" id="unesco-description"></p>
+              <p class="text-box-description" id="unesco-description">UNESCO Open Learning</p>
+
+
+
+            </li>
+
+
+
+            <li class="educationItem">
+              <div class="education__imgContainer">
+                <img src="img/education/esri.jpeg" class="educationImg" alt="ESRI logo">
+              </div>
+
+
+
+              <h3 id="esri-title"></h3>
+              <p class="text-box-description" id="esri-description">Esri Training</p>
+
+
+            </li>
+
+
+
+
+
+
+
+
+
+            <li class="educationItem">
+              <div class="education__imgContainer">
+                <img src="img/education/unal.png" class="educationImg" alt="unal logo">
+              </div>
+
+
+
+              <h3 id="unal-title"></h3>
+              <p class="text-box-description" id="unal-description">Universidad Nacional de Colombia</p>
+
+
+
+            </li>
+
+
+          </ul>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="projects">
+      <div class="container reveal fade-right">
+
+
+
+        <div class="projectsContainer">
+          <h2 class="projects-title"></h2>
+
+
+          <!-- <nav class="projects-grid__menu">
+            <ul>
+              <li class="projects-grid__menu__link" id="web-design-button"></li>
+              <li class="projects-grid__menu__link" id="research-button"></li>
+
+            </ul>
+          </nav> -->
+
+
+
+
+          <div class="projectsContainer__grid">
+
+
+
+
+            <!--Hangman-->
+
+            <div>
+              <div class="projectsItem">
+                <div class="hangmanImg">
+                  <div class="box">
+                    <h3 id="hangman"></h3>
                   </div>
-            
-              
-                    <div class="lang-button">
-                      <p id="lang-text"></p>
-                      <select class="lang-list">
-                        <option value=en class="language" id="en">EN</option>
-                        <option value=es class="language" id="es">ES</option>
-                      </select>
-                    </div>
-              
-                  
+
+
+
+
                 </div>
-           
-            </div> 
-     
+
+
+
+
+                <div class="projectsItem__iconsContainer">
+                  <!-- <p class="projectDescription" id="hangman-description"></p> -->
+
+                  <ul>
+                    <li class="projectsItem__iconItem">
+                      <i class="fa-brands fa-html5"></i>
+                      HTML5
+                    </li>
+
+                    <li class="projectsItem__iconItem">
+                      <i class="fa-brands fa-js-square"></i>
+
+                      JavaScript
+                    </li>
+
+                    <li class="projectsItem__iconItem">
+                      <i class="fa-brands fa-css3"></i>
+
+                      CSS3
+                    </li>
+
+                  </ul>
 
 
 
 
 
+                </div>
+                <div class="projectsItem__buttonContainer">
 
-
-  
-        
-
-            
-
-
-     
-                      
-             
-           
-       
-        <main>
-
-
-
-          <section id="home">
-            <div class="container reveal fade-bottom">
-            
-
-        
-                
-              <div class="text-box">
-
-                
-                
-                <p id="hi"></p>
-                <h2 id="name"></h2>
-                <p id="about-name"></p>
-            
-
-                <div class="icon-section">
-                  <a href="https://www.linkedin.com/in/dhlarrotar/"  class="icon-div">
-                    <i class="fa-brands fa-linkedin"></i>
-                    Linkedin
-                  </a> 
-                  
-                  <a href="https://github.com/dhlarrotar" class="icon-div">
-                    <i class="fa-brands fa-github"></i>
-                    Github
-                  </a>
-
-                  <a href="https://www.instagram.com/dlar_geo" class="icon-div">
-                      <i class="fa-brands fa-instagram"></i>
-                      Instagram
-                  </a>
-
-
-                  <a class="icon-div" id="cv-download" href="daniel_larrota_cv_en.pdf">
-                    <i class="fa-solid fa-download"></i>
-                    CV
-                </a>
-
-              </div>   
-              
+                  <ul>
+                    <li>
+                      <a href="https://dhlarrotar.github.io/hang_man/" class="launch">
+                        <i class="fa-solid fa-rocket"></i>
+                        <p class="probar"></p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/dhlarrotar/hang_man" class="more">
+                        <i class="fa-brands fa-github"></i>
+                        <p class="ver-mas"></p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="draw-container">
-                <img class="draw" id="earth" src="img/earth2.png" alt="Earth and moon">
-                <p class="draw-legend">Illustration modified from <a href="https://icons8.com/illustrations/author/o43Gv9Q60NW0">Dmitry Nikulnikov</a>, <a href="https://icons8.com/illustrations">Ouch!</a></p>
+
+
+
+
+
+
+
+
+              <div class="projectsItem">
+                <div class="encryptorImg">
+                  <div class="box">
+                    <h3 id="encryptor"></h3>
+                  </div>
+
+                </div>
+
+
+
+                <div class="projectsItem__iconsContainer">
+                  <!-- <p class="projectDescription" id="hangman-description"></p> -->
+
+                  <ul>
+                    <li class="projectsItem__iconItem">
+                      <i class="fa-brands fa-html5"></i>
+                      HTML5
+                    </li>
+
+                    <li class="projectsItem__iconItem">
+                      <i class="fa-brands fa-js-square"></i>
+
+                      JavaScript
+                    </li>
+
+                    <li class="projectsItem__iconItem">
+                      <i class="fa-brands fa-css3"></i>
+
+                      CSS3
+                    </li>
+
+                  </ul>
+
+
+
+
+
+                </div>
+                <div class="projectsItem__buttonContainer">
+
+                  <ul>
+                    <li>
+                      <a href="https://dhlarrotar.github.io/text_encryptor/" class="launch">
+                        <i class="fa-solid fa-rocket"></i>
+                        <p class="probar"></p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/dhlarrotar/text_encryptor" class="more">
+                        <i class="fa-brands fa-github"></i>
+                        <p class="ver-mas"></p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              
-              <div class="arrow-index">
-              <i class="fa-solid fa-arrow-down"></i>
+
+
+
+
+
+
+
+              <!--Portfolio-->
+
+
+
+
+
+              <div class="projectsItem">
+                <div class="portfolioImg">
+                  <div class="box">
+                    <h3 id="portfolio"></h3>
+                  </div>
+
+                </div>
+
+
+
+                <div class="projectsItem__iconsContainer">
+                  <!-- <p class="projectDescription" id="hangman-description"></p> -->
+
+                  <ul>
+                    <li class="projectsItem__iconItem">
+                      <i class="fa-brands fa-html5"></i>
+                      HTML5
+                    </li>
+
+                    <li class="projectsItem__iconItem">
+                      <i class="fa-brands fa-js-square"></i>
+
+                      JavaScript
+                    </li>
+
+                    <li class="projectsItem__iconItem">
+                      <i class="fa-brands fa-css3"></i>
+
+                      CSS3
+                    </li>
+
+                  </ul>
+
+
+
+
+
+                </div>
+                <div class="projectsItem__buttonContainer">
+
+                  <ul>
+                    <li>
+                      <a href="https://github.com/dhlarrotar/my_portfolio" class="more">
+                        <i class="fa-brands fa-github"></i>
+                        <p class="ver-mas"></p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+
+
+
+
+              <!-- 
+              <div class="projectsItem">
+
+
+
+                <div class="projectsItem__info">
+                  <div class="tag-container">
+                    <p class="research-tag1"></p>
+                  </div>
+                  <p class="research-description" id="guaviare-authors">Larrota Rincón, D. H., & Concha Perdomo, A.
+                    E.
+                  </p>
+                  <h3 class="research-title" id="guaviare-title"></h3>
+                  <p class="research-info" id="guaviare-info">Geología Colombiana vol 41 (2018)</p>
+
+                  <div class="projectsItem__buttonContainer">
+                    <a href="https://revistas.unal.edu.co/index.php/geocol/article/view/77446" class="launch">
+                      <i class="fa-solid fa-book-open-reader"></i>
+                      <p class="read"></p>
+                    </a>
+
+
+                  </div>
+                </div> -->
+
+
+
+
+
             </div>
-          </section>
 
 
 
 
+            <!-- <div class="draw-container">
+                <img class="draw" id="projects-draw" src="img/man_with_documents.png" alt="man_documents">
+                <p class="draw-legend">Illustration by <a href="https://iradesign.io">IRA Design</a> </p>
+              </div> -->
 
 
 
 
-          <section id="about">
-          
 
-            <div class="container reveal fade-bottom">
-              <h2 class="about-title"></h2>
-              <div class="text-container">
 
-                <div class="text-box">
-                   
-                 <p class="about-text" id="about-text-p1"></p>
-                
-                 <p class="about-text" id="about-text-p2"></p>
-            
-                 <p class="about-text" id="about-text-p3"></p>
-  
-                  </div>
+          </div>
 
-                
 
-           
-                  
 
-                <div class="draw-container">
-                  <img class="draw" id="about-draw" src="img/man_presenting.png" alt="man_presenting">
-                  <p class="draw-legend">Illustration by  <a href="https://iradesign.io">IRA Design</a> </p>
-                  </div>
 
-                </div>
+    </section>
 
-                  <div class="arrow-index">
-                    <i class="fa-solid fa-arrow-down"></i>
-                  </div>
-               
-           
-               
-            </section>
 
 
 
 
-            <section id="skills">
-  
-              
-                <div class="container reveal fade-left" >
-                 
 
-                  <div class="skills-area">         
-                  <div class="container-skills">
-                    <h2 class="skills-title" id="skills-title-text"></h2>        
-                
-                    
+    <section id="contact">
+      <div class="container reveal fade-left">
+        <div class="contactContainer">
 
-                    <div class="text-container">
+          <h2 class="contact-title"></h2>
+          <div class="contact-info">
+            <p class="contact-text1"></p>
+            <p class="contact-text2"></p><a id="mail"> <strong>dhlarrotar@outlook.com</strong></a>
+          </div>
 
-                      <div class="text-box">
-                        
-                        <h3 id="webdesign"></h3>
 
-                        <ul class="icon-section">
-                          <li class="icon-div">
-                            <i class="fa-brands fa-html5"></i>
-                            HTML5
-                          </li> 
-                          
-                          <li class="icon-div">
-                            <i class="fa-brands fa-js-square"></i>
-                            JavaScript
-                          </li>
-  
-                          <li class="icon-div">
-                              <i class="fa-brands fa-css3"></i>
-                              CSS3
-                          </li>
+          <div class="form-container">
+            <div class="hide" id="message-success">
+              <i class="fa-regular fa-circle-check"></i>
+              <p class="success-text"></p>
+            </div>
 
-                        </ul>
-                                                               
-                      </div>
-                    </div>
-
-
-
-
-
-                    <div class="text-container">
-
-                      <div class="text-box">
-                        
-                        <h3 id="data-science"></h3>
-
-                        <ul class="icon-section">
-
-                            <li class="icon-div">
-                              <i class="fa-brands fa-python"></i>
-                             Python
-                            </li> 
-                            
-                            <li class="icon-div">
-                              <i class="fa-solid fa-database"></i>
-                              SQLite
-                            </li>
-    
-                        </ul>
-                                                               
-                      </div>
-                    </div>
-
-
-
-                  
-                      <div class="text-container">
-
-                        
-
-
-
-                        <div class="text-box">
-                          
-                          <h3 id="vector"></h3>
-  
-                          <ul class="icon-section">
-                            <li class="icon-div">
-                              <i class="fa-solid fa-vector-square"></i>
-                              Inkscape, Canva
-                            </li> 
-
-                    
-                            
-
-                            <li class="icon-div">
-                              <i class="fa-brands fa-figma"></i>
-                              Figma
-                            </li>
-  
-                            
-                        
-      
-                          </ul>
-                        </div>                                      
-                       
-                      
-
-                         
-     
-                        </div> 
-                   
-
-                  </div>
-
-
-       
-          
-                
-           
-                </div>
-                <div class="arrow-index">
-                  <i class="fa-solid fa-arrow-down"></i>
-                </div>
-                </div>
-                   
-                <div id="hobbies">
-
-              
-                
-                  <div class="text-box">
-                    <p id="hobbies-name">Hobbies</p>        
-                  <p id="hobbies-description"></p>
-                 
-                    
-                  <div class="hobbie-container" >
-                    <i class="fa-solid fa-plane"></i>
-                    <p id="travel"></p>
-                    
-                  </div>
-  
-                  <div class="hobbie-container" >
-                    <i class="fa-solid fa-camera"></i>
-                    <p id="photo"></p>
-                  </div>
-  
-                  <div class="hobbie-container" >
-                    <i class="fa-solid fa-microscope" ></i>
-                    <p id="science"></p>
-                  </div>
-  
-                  <div class="hobbie-container" >
-                    <i class="fa-solid fa-user-astronaut"></i>
-                    <p id="astronomy"></p>
-                  </div>
-  
-                  <div class="hobbie-container" >
-                    <i class="fa-solid fa-person-swimming"></i>
-                    <p id="swimming"></p>
-                  </div>
-                  
-                  <div class="hobbie-container">
-                    <i class="fa-regular fa-futbol"></i>
-                    <p>Fútbol</p>
-                  </div>
-  
-  
-                  <div class="hobbie-container" >
-                    <i class="fa-solid fa-basketball" ></i>
-                    <p id="basket"></p>
-                  
-                  </div>
-                  
-                </div>
-                     </div>
-             
-                    
-                  
-      
-                  
-             
-              </section>
-           
-            
-
-
-
-
-
-
-
-
-
-
-
-
-              <section id="education">
-              
-                <div class="container reveal fade-left">
-                  <h2 class="education-title"></h2>
-                  
-        
-  
-
-                  <div class="text-container" id="education-container">
-                    
-                    <div class="text-box">
-                      <div class="img-div">
-                        <img src="img/education/one.png" class="img-text-box" alt="ONE logo">
-                      </div> 
-                    
-                    
-
-                      <h3 id="frontend-title"></h3>
-                      <p class="text-box-description" id="frontend-description">Oracle Next Education (ONE)</p>
-                      <p class="text-box-description" id="frontend-description">Oracle + Alura - 2022</p>
-                  
-                   
-                                                             
-                    </div>
-
-                  
-
-
-
-                    <div class="text-box">
-                      <div class="img-div">
-                        <img src="img/education/unesco.png" class="img-text-box" alt="UNESCO" logo">
-                      </div> 
-                    
-                    
+            <form id="contact-form">
+              <label for="full-name" class="contact-label" id="full-name-label"></label>
+              <input type="text" id="full-name" title="full-name" class="input-contacto" required>
+              <span class="hide" id="error-full-name"></span>
 
-                      <h3 id="unesco-title"></h3>
-                      <p class="text-box-description" id="unesco-description"></p>
-                      <p class="text-box-description" id="unesco-description">UNESCO Open Learning -2021</p>
-                  
-                   
-                                                             
-                    </div>
+              <label for="mail-input" class="contact-label" id="mail-label"></label>
+              <input type="email" id="correoelectronico" title="mail-input" class="input-contacto" required>
+              <span class="hide" id="error-mail-input"></span>
 
+              <label for="message" class="contact-label" id="message-label"></label>
+              <textarea cols="70" rows="10" id="message" class="input-contacto" title="message" required></textarea>
+              <span class="hide" id="error-message"></span>
 
+              <input type="submit" class="enviar" disabled>
 
-                    <div class="text-box">
-                      <div class="img-div">
-                        <img src="img/education/esri.jpeg" class="img-text-box" alt="ESRI logo">
-                      </div> 
-                    
-                    
+            </form>
+          </div>
 
-                      <h3 id="esri-title"></h3>
-                      <p class="text-box-description" id="esri-description">Esri training</p>
-                      <p class="text-box-description" id="esri-description">2020</p>
-                   
-                                                             
-                    </div>
 
-               
-                   
 
 
 
 
-                    <div class="text-box">
-                      <div class="img-div">
-                        <img src="img/education/deepl.png" class="img-text-box" alt="DeepLearning logo">
-                      </div> 
-                    
-                    
+        </div>
+      </div>
+    </section>
+  </main>
 
-                      <h3 id="deepl-title"></h3>
-                      <p class="text-box-description" id="deepl-description">DeepLearning.AI</p>
-                      <p class="text-box-description" id="deepl-description">Coursera - 2020</p>
-                  
-                   
-                                                             
-                    </div>
 
+  <footer>
+    <div class="icon-section">
+      <a href="https://www.linkedin.com/in/dhlarrotar/" class="icon-div">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
 
-                 
+      <a href="https://github.com/dhlarrotar" class="icon-div">
+        <i class="fa-brands fa-github"></i>
 
+      </a>
 
+      <a href="https://www.instagram.com/dlar_geo/" class="icon-div">
+        <i class="fa-brands fa-instagram"></i>
 
+      </a>
+    </div>
+    <p class="copyright">&copy Daniel Larrota Rincón - 2022</p>
+  </footer>
 
 
-                    <div class="text-box">
-                      <div class="img-div">
-                        <img src="img/education/python.jpeg" class="img-text-box" alt="Michigan logo">
-                      </div> 
-                    
-                    
 
-                      <h3 id="python-title"></h3>
-                      <p class="text-box-description" id="python-description">University of Michigan</p>
-                      <p class="text-box-description" id="python-year">Coursera - 2020</p>
-                   
-                                                             
-                    </div>
+  <!-- <script src="js/apod-request.js"></script> -->
+  <script src="js/data.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/dark-mode.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/set-language.js"></script>
 
+</body>
 
-
-
-                  
-
-
-
-
-                    <div class="text-box">
-                      <div class="img-div">
-                        <img src="img/education/unal.png" class="img-text-box" alt="unal logo">
-                      </div> 
-                    
-                    
-
-                      <h3 id="unal-title"></h3>
-                      <p class="text-box-description" id="unal-description">Universidad Nacional de Colombia</p>
-                      <p class="text-box-description" id="unal-year">2013-2018</p>
-                   
-                                                             
-                    </div>
-
-
-
-
-                  </div>
-
-
-           
-
-
-
-                </div>
-              </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <section id="projects">
-                <div class="container reveal fade-bottom">
-                  <h2 class="projects-title"></h2>
-                <p id="projects-description"></p>
-                  <div class="gallery-container">
-                    <nav>
-                      <ul>
-                        <li id="web-design-button"></li>
-                        <li id="research-button"></li>
-                    
-                      </ul>
-                    </nav>
-            
-                  
-
-
-
-
-
-
-
-                  <!-- Slideshow container -->
-                  <div id="projects-gallery">
-        
-                  <div class="slideshow-container">
-
-
-                                            
-      
-
-                    
-
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides1 fade">
-                      <div class="numbertext">1 / 3</div>
-                          <!--Hangman-->
-                         
-                          <div class="text-container">
-                            <div class="text-box">
-                        
-                                 <div class="img-div">
-                                    <img src="img/projects/hangman.png" class="img-text-box" alt="Hangman logo">
-                                  </div> 
-                                  
-                                  <div class="project-info">
-                                    <div class="tag-container">
-                                    <p class="projects-tag">Web design</p>
-                                    </div>        
-                                    <h3 id="hangman"></h3>
-                                    <p class="text-box-description" id="hangman-description"></p>
-      
-      
-                                  <div class="button-div">
-                                    <a href="https://dhlarrotar.github.io/hang_man/" class="launch">
-                                      <i class="fa-solid fa-rocket"></i>
-                                      <p class="probar"></p>
-                                    </a>
-      
-                                    <a href="https://github.com/dhlarrotar/hang_man" class="more">
-                                      <i class="fa-brands fa-github"></i>
-                                    <p class="ver-mas"></p>
-                                    </a>   
-                                  </div>
-                                  </div>       
-                                 
-
-
-
-
-
-                             <div class="icon-section">
-                                <div class="icon-div">
-                                  <i class="fa-brands fa-html5"></i>
-                                  <br>
-                                  HTML5
-                                </div> 
-                                
-                                <div class="icon-div">
-                                  <i class="fa-brands fa-js-square"></i>
-                                  <br>
-                                  JavaScript
-                                </div>
-
-                                <div class="icon-div">
-                                    <i class="fa-brands fa-css3"></i>
-                                    <br>
-                                    CSS3
-                                  </div>
-                                </div>
-                                
-                              </div>
-    
-    
-    
-                            </div>
-    
-    
-    
-    
-                          </div>
-    
-    
-                       
-
-
-                          <div class="mySlides1 fade">
-                            <div class="numbertext">2 / 3</div>
-                              <!--Text Encryptor-->
-                              
-                              <div class="text-container">
-                                <div class="text-box">
-                              
-                                  <div class="img-div">
-                                    <img src="img/projects/text-encryptor.png" class="img-text-box" alt="Encryptor logo">
-                                  </div> 
-                               
-                                  <div  class="project-info">
-                                    <div class="tag-container">
-                                    <p class="projects-tag">Web design</p> 
-                                    </div>       
-                                  <h3 id="encryptor"></h3>
-                                  <p class="text-box-description" id="encryptor-description"></p>
-      
-                                  <div class="button-div">
-                                    <a href="https://dhlarrotar.github.io/text_encryptor/" class="launch">
-                                      <i class="fa-solid fa-rocket"></i>
-                                      <p class="probar"></p>
-                                    </a>
-      
-                                    <a href="https://github.com/dhlarrotar/text_encryptor" class="more">
-                                      <i class="fa-brands fa-github"></i>
-                                    <p class="ver-mas"></p>
-                                    </a>
-                                  </div>
-                                  </div>       
-                                 
-                                  <div class="icon-section">
-      
-                                    <div class="icon-div">
-                                      <i class="fa-brands fa-html5"></i>
-                                      <br>
-                                      HTML5
-                                    </div> 
-                                    
-                                    <div class="icon-div">
-                                      <i class="fa-brands fa-js-square"></i>
-                                      <br>
-                                      JavaScript
-                                    </div>
-      
-                                    <div class="icon-div">
-                                      <i class="fa-brands fa-css3"></i>
-                                      <br>
-                                      CSS3
-                                    </div>
-                                  </div>
-                                  
-                                </div>
-      
-      
-      
-                              </div>
-      
-      
-      
-      
-                            </div>
-      
-      
-
-
-               
-
-                    <div class="mySlides1 fade">
-                        <div class="numbertext">3 / 3</div>
-                          <!--Portfolio-->
-                     
-                            <div class="text-container">
-                       
-                              <div class="text-box">
-                              
-                                <div class="img-div">
-                                  <img src="img/projects/portfolio.png" class="img-text-box" alt="portfolio logo">
-                                </div> 
-                             
-                                <div  class="project-info">
-                                  <div class="tag-container">
-                                  <p class="projects-tag">Web design</p>
-                                  </div>        
-                                  <h3 id="portfolio"></h3>
-                                  <p class="text-box-description" id="portfolio-description"></p>
-      
-    
-                                <div class="button-div">
-                                  <a href="https://github.com/dhlarrotar/my_portfolio" class="more" id="more-portfolio">
-                                    <i class="fa-brands fa-github"></i>
-                                    <p class="ver-mas"></p>
-                                  </a>
-                                 
-                                </div>
-                                </div>       
-                               
-                                <div class="icon-section">
-                                  <div class="icon-div">
-                                    <i class="fa-brands fa-html5"></i>
-                                    <br>
-                                    HTML5
-                                  </div> 
-                                  
-                                  <div class="icon-div">
-                                    <i class="fa-brands fa-js-square"></i>
-                                    <br>
-                                    JavaScript
-                                  </div>
-          
-                                  <div class="icon-div">
-                                      <i class="fa-brands fa-css3"></i>
-                                      <br>
-                                      CSS3
-                                  </div>
-                                </div>
-                                  
-                              </div>
-      
-      
-      
-                              </div>
-      
-      
-      
-      
-                            </div>
-      
-      
-                         
-                            
-                        
-      
-
-
-
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                 <br>
-
-                  <!-- The dots/circles -->
-                  <div class="slide-circles">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-            
-                  </div>
-                 </div>
-
-
-                 <div id="research-gallery">
-        
-                  <div class="slideshow-container">
-
-                         
-                            
-                          <div class="mySlides2 fade">
-                            <div class="numbertext">1 / 1</div>
-                              <!--Text Encryptor-->
-                              
-                              <div class="text-container">
-                                <div class="text-box">
-                              
-                                  
-                               
-                                  <div  class="project-info">
-                                    <div class="tag-container">
-                                    <p class="research-tag1"></p>        
-                                   </div>
-                                  <p class="research-description"id="guaviare-authors">Larrota Rincón, D. H., & Concha Perdomo, A. E.</p>
-                                  <h3 class="research-title" id="guaviare-title"></h3>
-                                  <p  class="research-info" id="guaviare-info">Geología Colombiana vol 41 (2018)</p>
-      
-                                  <div class="button-div">
-                                    <a href="https://revistas.unal.edu.co/index.php/geocol/article/view/77446" class="launch">
-                                      <i class="fa-solid fa-book-open-reader"></i>
-                                      <p class="read"></p>
-                                    </a>
-      
-                    
-                                  </div>
-                                  </div>       
-                                 
-                               
-      
-                                    
-                                  
-                                </div>
-      
-      
-      
-                              </div>
-      
-      
-      
-      
-                            </div>
-      
-      
-
-
-
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-                 <br>
-
-                  <!-- The dots/circles -->
-                  <div class="slide-circles">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                  </div>
-                 </div>
-
-           
-
-
-
-
-
-
-
-                </div>
-
-                  <div class="draw-container">
-                    <img class= "draw" id="projects-draw" src="img/man_with_documents.png" alt="man_documents">
-                    <p class="draw-legend">Illustration by  <a href="https://iradesign.io">IRA Design</a> </p>
-                    </div>
-
-                 
-
-
-
-
-                </div>
-
-
-                          
-              
-              </section>
-
-
-
-
-  
-              
-              <section id="contact">
-                <div class="container reveal fade-left">
-                  <div class="contact-info">
-                    <h2 class="contact-title"></h2>
-                    <p class="contact-text1"></p><br><br>
-                    <p class="contact-text2"></p><a id ="mail">dhlarrotar@outlook.com</a>.
-                  </div>
-
-                  
-                  <div class="form-container">
-                    <div class="hide" id="message-success">
-                      <i class="fa-regular fa-circle-check"></i>
-                      <p id="success-text"></p>
-                    </div>
-
-                    <form id="contact-form">
-                      <label for="full-name" class="contact-label" id="full-name-label"></label>
-                      <input type="text" id="full-name" class="input-contacto" required>
-                      <span class="fadeOut"id="error-full-name"></span>
-
-                      <label for="mail-input" class="contact-label" id="mail-label"></label>
-                      <input type="email" id="correoelectronico" class="input-contacto" required>
-                      <span class="fadeOut"id="error-mail-input"></span>
-      
-                      <label for="message" class="contact-label" id="message-label"></label>
-                      <textarea cols="70" rows="10" id="message" class="input-contacto"  required></textarea>
-                      <span class="fadeOut"id="error-message"></span>
-                      
-                      <input type="submit"  class="enviar" disabled>
-                      
-                  </form>
-                </div>
-
-
-
-
-
-
-                </div>
-              </section>
-        </main>
-
-            
-        <footer>
-          <div class="icon-section">
-            <a href="https://www.linkedin.com/in/dhlarrotar/"  class="icon-div">
-              <i class="fa-brands fa-linkedin"></i>
-            </a> 
-            
-            <a href="https://github.com/dhlarrotar" class="icon-div">
-              <i class="fa-brands fa-github"></i>
-              
-            </a>
-
-            <a href="https://www.instagram.com/dlar_geo/" class="icon-div">
-                <i class="fa-brands fa-instagram"></i>
-                
-            </a>
-
-            <p class="copyright">&copy Daniel Larrota Rincón - 2022</p>
-        </footer>
-        
-
-        <script src="js/slideshow.js"></script>
-        <script src="js/data.js"></script>
-        <script src="js/form-validation.js"></script>
-        <script src="js/dark-mode.js"></script>
-        <script src="js/animations.js"></script>
-        <script src="js/set-language.js"></script>
-
-    </body>
 </html>

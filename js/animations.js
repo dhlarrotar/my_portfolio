@@ -3,8 +3,8 @@ let menu = document.querySelectorAll("header nav a");
 reveal();
 
 window.onscroll = () => {
-
-  section.forEach((i) => {
+  showArrowTop();
+   section.forEach((i) => {
     let top = window.scrollY;
     let offset = i.offsetTop - 150;
     let height = i.offsetHeight;
@@ -39,7 +39,6 @@ function reveal() {
 
 window.addEventListener("scroll", function(){
   reveal();
-  hideButtons();
   showHeaderBorder();
   
 
@@ -51,50 +50,49 @@ window.addEventListener("scroll", function(){
 
 
 
-var hiddenButtons=document.querySelector("#hidden-buttons");
-var floatButtons=document.querySelector(".float-buttons");
-var floatText=document.querySelector("#float-text");
-var floatClose=document.querySelector("#float-close");
+var headerPrincipal=document.querySelector(".headerPrincipal");
+var menuButton=document.querySelector(".menuButton");
+var closeMenu=document.querySelector(".closeMenu");
 var header= document.querySelector("header");
+var arrowTop= document.querySelector(".arrowTopButton");
 
 
 
-var menuNav=document.querySelector(".menu");
-var menuArrow=document.querySelector("#arrow-menu");
+
+menuButton.onclick=showMenu;
+closeMenu.onclick=hideMenu;
+arrowTop.onclick=hideArrowTop;
 
 
-floatButtons.onclick=showHiddenButtons;
-menuArrow.onclick=showMenu;
 
 
-function showHiddenButtons(){
-  hiddenButtons.classList.remove("fade-out");
-  floatText.classList.add("fade-out");
-  setTimeout(hideButtons,8000)
-  
+function showArrowTop(){
+  arrowTop.style.display ="flex"; 
 }
 
-function hideButtons(){
-  hiddenButtons.classList.add("fade-out");
-  floatText.classList.remove("fade-out");
-  
+
+function hideArrowTop(){
+  arrowTop.style.display ="none"; 
 }
 
 
 function showMenu(){
- menuNav.style.display = "block";
- menuArrow.style.display = "none";
- setTimeout(hideMenu,8000)
+  headerPrincipal.style.display ="flex";
+  closeMenu.style.display ="flex";
   
 }
+
+
+function hideMenu(){
+  headerPrincipal.style.display ="none";
+  closeMenu.style.display ="none";
+  
+}
+
+
 
 function showHeaderBorder(){
   header.classList.add("header-border");
 }
 
 
-function hideMenu(){
-  menuNav.style.display = "none";
-  menuArrow.style.display = "block";
-  
-}

@@ -1,0 +1,198 @@
+.settingsContainer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+
+
+
+.theme-button,
+.lang-button {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+
+
+}
+
+
+
+.menuButton{
+    background: var(--color-main);
+    width: auto;
+    position: fixed;
+    left: 4%;
+    bottom: 3%;
+    border-radius: 8px;
+    font-size: 1.5rem;
+   text-shadow: 1px 1px 2px rgb(69, 69, 69); ;
+    padding: 10px;
+    color: #ffffff;
+    z-index: 199;
+    border: 1px solid var(--color-border);
+}
+
+
+.arrowTopButton {
+    display: none;    
+    background: var(--color-main);
+    width: auto;
+    position: fixed;
+    right: 4%;
+    bottom: 3%;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #ffffff;
+    border: 1px solid var(--color-body);
+    text-shadow: 1px 1px 2px rgb(69, 69, 69); 
+    z-index: 199;
+}
+
+
+
+
+
+
+.closeMenu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #5454546e;
+    width: 100%;
+    height: 100%;
+    z-index: 199;
+
+}
+
+
+
+/*language switch */
+
+.lang-list {
+    display: flex;
+     width: 78px;
+    height: 30px;
+    padding: 2px 4px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--color-2-body);
+    letter-spacing: 0.5px;
+    border: 1px solid var(--color-border);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+/*Theme switch */
+
+
+.theme-button label {
+    display: flex;
+    position: relative;
+    text-align: center;
+    width: 65px;
+    height: 23px;
+    padding: 3px 6px;
+    background: #e0dfdf;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid var(--color-border);
+
+
+}
+
+
+
+
+.theme-button label i {
+    font-size: 18px;
+
+}
+
+.theme-button label .fa-sun {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    background: var(--linear-bg-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px #00000000;
+    font-weight: bolder;
+    transition: 0.8s;
+    opacity: 1;
+
+    transform: translateX(37px);
+}
+
+
+.theme-button label .fa-moon {
+    display: block;
+    color: #fff;
+    opacity: 0;
+    transition: 0.8s;
+    position: absolute;
+    top: 7px;
+    left: 48px;
+}
+
+
+
+.theme-button label .ball {
+    position: absolute;
+    display: block;
+    width: 27px;
+    height: 27px;
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.8s;
+    border: 1px solid var(--color-border);
+}
+
+.theme-button label {
+    transition: 0.3s;
+}
+
+
+
+
+.theme-button input:checked+label {
+    background: var(--linear-bg-1);
+}
+
+.theme-button input:checked+label .ball {
+    transform: translateX(48px);
+}
+
+.theme-button input {
+    display: none;
+}
+
+
+
+.theme-button input:checked+label .fa-sun {
+    transform: translateX(37px);
+    opacity: 0;
+}
+
+.theme-button label .fa-moon {
+    transform: translateX(-37px);
+}
+
+.theme-button input:checked+label .fa-moon {
+    transform: translateX(0), rotate(0);
+    opacity: 1;
+}

@@ -1,0 +1,149 @@
+.home_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/51201259879_f72e03ff51_o.jpg);
+    background-position: center center;
+}
+
+
+
+.home_container p, .aboutContainer p{
+    color: var(--color-body);
+
+}
+
+
+.aboutContainer p{
+    line-height: 2.4rem;
+}
+
+.greetingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 50vh;
+    min-height: 320px;
+    padding: 10%;
+    background-color: var(--bg-banner);
+}
+
+
+.greetingLines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 17vh;
+    max-height: 130px;
+    min-height: 122px;
+    border-radius: 15px;
+
+}
+
+
+.greetingLines p {
+    color: var(--color-body);
+    font-size: 1.3rem;
+}
+
+
+
+.home__social-section i {
+    display: none;
+}
+
+.home__social-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24vh;
+    max-height: 180px;
+    min-height: 150px;
+    text-align: center;
+
+}
+
+
+.home__social-section p,
+.home__social-section i {
+    color: var(--color-body);
+    font-size: 1rem;
+}
+
+
+.socialItem {
+    background-color: var(--bg-button);
+    border-radius: 7px;
+    line-height: 1.8rem;
+}
+
+
+
+
+
+.socialItem:hover{
+  background: var(--linear-bg-1);
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff;
+  transition: 0.5s ease-out;
+}
+
+
+.socialItem:hover p{
+    color: #ffffff;
+}
+
+
+.arrowContainer{
+position: absolute;
+bottom: 10%;
+left: calc(50% - 0.6rem);
+color: #ffffff;
+}
+
+
+.arrowContainer i{
+    font-size: 1.2rem;
+}
+
+.home__drawContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+
+
+.aboutContainer{
+     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    min-height: 370px;
+    margin-right:10%;
+    margin-left:10%;
+}
+
+
+.aboutContainer__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+ }
+
+
+ .aboutContainer p{
+    margin-top: 30px;
+ }
+
+
