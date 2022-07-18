@@ -157,7 +157,7 @@ var dataes = {
 
 
     ".contact-text1":"Me encantaría saber de ti!",
-    ".contact-text2":"Puedes llenar el formulario disponible en esta sección o escribirme a: ",
+    ".contact-text2":"Puedes llenar el formulario en esta sección o escribirme a: ",
     
     "#mail-label":"Correo",
     "#full-name-label":"Nombre",
