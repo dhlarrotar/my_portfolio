@@ -97,11 +97,10 @@ html {
   color: var(--color-body);
   border-radius: 5px;
   letter-spacing: 0.5px;
-  font-weight: semi-bold;
   user-select: none;
   text-decoration: none;
   justify-content: left;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .headerPrincipal nav a {
@@ -141,6 +140,7 @@ html {
 
 section:nth-child(2) {
   background-color: var(--bg-body-light);
+  
 }
 
 

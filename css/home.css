@@ -6,7 +6,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/51201259879_f72e03ff51_o.jpg);
+    background-image: url(../img/moon-background.jpg);
     background-position: center center;
 }
 
@@ -40,6 +40,7 @@
     justify-content: space-around;
     text-align: center;
     height: 17vh;
+    line-height: 1.9rem;
     max-height: 130px;
     min-height: 122px;
     border-radius: 15px;
@@ -127,10 +128,9 @@ color: #ffffff;
      display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
-    min-height: 370px;
-    margin-right:10%;
-    margin-left:10%;
+    min-height: 100vh;
+    height: max-content;
+    padding: 10%;
 }
 
 
@@ -138,8 +138,7 @@ color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 50vh;
- }
+   }
 
 
  .aboutContainer p{
