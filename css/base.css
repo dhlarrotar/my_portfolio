@@ -6,7 +6,7 @@ html {
   --color-error:rgb(229, 112, 40);
  
   --linear-bg-1: linear-gradient(90deg, #06a7e7 0%, #3f4de3 80%);
-  --linear-bg-2: linear-gradient(90deg, #ebf4fa21 0%, #edeff5b0 100%);
+
 
   --bg-body-light: rgb(244, 244, 244);
   --bg-body-dark: rgb(237, 237, 240);
@@ -29,12 +29,13 @@ html {
 
 .dark {
   --color-body: #ffffff;
-   --color-main: #ffd311;
+  --color-main: #ffc800;
    --color-border:rgba(39, 39, 39, 0.119);
    --color-error:rgb(255, 132, 94);
 
-  --linear-bg-1: linear-gradient(90deg, #ffb301 0%, #ffff01 100%);
-  --linear-bg-2: linear-gradient(90deg, #0c97ed15 0%, #07df7a27 100%);
+   
+  --linear-bg-1:  #ffc800;
+
  
   --bg-body-light: rgb(68, 68, 68);
   --bg-body-dark: rgb(57, 57, 57);
@@ -80,13 +81,11 @@ html {
 .headerTitle {
   display: flex;
   flex-direction: column;
-
+  font-family: 'Pacifico', cursive;
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 800;
   font-size: 1.6rem;
-  line-height: 1.6rem;
 }
 
 
@@ -105,8 +104,11 @@ html {
   -webkit-user-select: none;
   text-decoration: none;
   flex-direction: column;
-  margin-top: 1rem;
-  border-bottom: 1px solid #d4d4d490;
+  margin-top: 1.4rem;
+  box-shadow: 0px 3px 6px -6px var(--color-2-body);
+  -webkit-box-shadow: 0px 3px 6px -6px var(--color-2-body);
+  -moz-box-shadow: 0px 3px 6px -6px var(--color-2-body);
+
 }
 
 
@@ -199,10 +201,16 @@ h2 {
 }
 
 
+
+
 strong {
-  color: var(--color-main);
+color: var(--color-main);
+  font-weight: 500;
 
 }
+
+
+
 
 a{
   text-decoration: none;

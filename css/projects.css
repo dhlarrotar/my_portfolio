@@ -8,14 +8,14 @@
 }
 
 
-.projectsContainer h2{
+.projectsContainer h2 {
   padding: 25px 0px 25px 0px;
 }
 
 
-.projectsContainer h3{
+.projectsContainer h3 {
   font-size: 1.5rem;
-  
+
 }
 
 
@@ -25,7 +25,7 @@
   justify-content: center;
   padding: 16px;
   text-align: center;
-  
+
   background-color: var(--bg-banner);
   border: 1px solid var(--color-border);
   margin-bottom: 18px;
@@ -39,10 +39,10 @@
 }
 
 
-.hangmanImg{
+.hangmanImg {
   width: 100%;
   max-width: 600px;
-  height: 40vh;
+  height: 30vh;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,10 +53,10 @@
 
 }
 
-.encryptorImg{
+.encryptorImg {
   width: 100%;
   max-width: 600px;
-  height: 40vh;
+  height: 30vh;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,10 +68,10 @@
 }
 
 
-.portfolioImg{
+.portfolioImg {
   width: 100%;
   max-width: 600px;
-  height: 40vh;
+  height: 30vh;
   display: flex;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,7 +93,7 @@
   justify-content: center;
   text-align: center;
   color: var(--color-main);
-font-size: 1.3rem;
+  font-size: 1.3rem;
 
 }
 
@@ -109,16 +109,16 @@ font-size: 1.3rem;
 
 
 
-.projectsItem__info{
+.projectsItem__info {
   display: none;
 }
 
 
-.projectsItem__info h3{
- color: var(--color-main);
+.projectsItem__info h3 {
+  color: var(--color-main);
 }
 
-.projectsItem__description{
+.projectsItem__description {
   margin-top: 15px;
   font-size: 0.9rem;
   line-height: 1.3rem;
@@ -134,7 +134,7 @@ font-size: 1.3rem;
 
 }
 
-.usedTech i{
+.usedTech i {
   display: none;
 }
 
@@ -157,7 +157,7 @@ font-size: 1.3rem;
   vertical-align: middle;
 }
 
-.projectsItem__buttonContainer a{
+.projectsItem__buttonContainer a {
   display: flex;
   justify-content: center;
   vertical-align: middle;
@@ -171,12 +171,15 @@ font-size: 1.3rem;
 }
 
 
-.projectsItem__buttonContainer a:hover{
- background-color: var(--color-main);
- color: #fff;
+.projectsItem__buttonContainer a:hover {
+  background-color: var(--color-main);
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgb(69, 69, 69);
+  transition: 0.5s ease-out;
 }
 
-.projectsItem__buttonContainer i{
+.projectsItem__buttonContainer i {
   margin-right: 8px;
 }
 
@@ -184,85 +187,89 @@ font-size: 1.3rem;
 
 
 
-@media screen and (min-width: 822px){
+@media screen and (min-width: 822px) {
 
 
-  .projectsContainer{
+  .projectsContainer {
     padding-top: 5%;
     padding-bottom: 3%;
   }
 
-  .projectsItem{
-  flex-direction: row-reverse;
-  justify-content: space-between;
- }
+  .projectsItem {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 
-.box {
- display: none;
+  .box {
+    display: none;
 
-}
-
-
-.projectsItem__info{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  }
 
 
-.hangmanImg, .encryptorImg, .portfolioImg {
-  max-width: 400px;
+  .projectsItem__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 
-}
+  .hangmanImg,
+  .encryptorImg,
+  .portfolioImg {
+    max-width: 400px;
+    height: 270px;
+
+
+  }
 
 
 
-.projectsItem__iconsContainer {
-  flex-direction: column;
-  width: 260px;
-  padding: 50px 20px 50px 20px;
-  border: 0;
+  .projectsItem__iconsContainer {
+    flex-direction: column;
+    width: 260px;
+    padding: 50px 20px 50px 20px;
+    border: 0;
 
-}
+  }
 
 
-.usedTech i{
-  display: block;
-  font-size: 1.8rem;
-  margin-bottom: 6px;
-}
+  .usedTech i {
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+  }
 
-.projectsItem__iconsContainer {
-  flex-direction: column;
-  width: 260px;
-  padding: 20px;
-  border: 0;
+  .projectsItem__iconsContainer {
+    flex-direction: column;
+    width: 260px;
+    padding: 20px;
+    border: 0;
 
-}
-/* .projectsItem__buttonContainer a{
+  }
+
+  /* .projectsItem__buttonContainer a{
   transform: scale(1.2);
   margin-right:25px ;
 } */
 
 
-  
+
 }
 
 
 
 
 
-@media screen and (min-width: 1022px){
+@media screen and (min-width: 1022px) {
 
-.projectsContainer {
-  padding-left:19%;
-  padding-right:19%;
-    }
-
+  .projectsContainer {
+    padding-left: 19%;
+    padding-right: 19%;
   }
 
-  /* #projects>div{
+}
+
+/* #projects>div{
     vertical-align: middle;
   }
   

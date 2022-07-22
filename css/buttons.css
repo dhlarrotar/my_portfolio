@@ -1,6 +1,8 @@
 .settingsContainer {
     display: flex;
     flex-direction: column;
+    height: 17vh;
+    justify-content: space-around;
     margin-right: 10%;
     margin-left: 10%;
 }
@@ -25,7 +27,7 @@
 
 
 .menuButton {
-    background: var(--color-main);
+    background: var(--linear-bg-1);
     width: auto;
     position: fixed;
     left: 4%;
@@ -33,17 +35,17 @@
     border-radius: 8px;
     font-size: 1.5rem;
     text-shadow: 1px 1px 2px rgb(69, 69, 69);
-    ;
+    box-shadow: 1px 1px 2px 1px rgb(69, 69, 69);
     padding: 10px;
     color: #ffffff;
     z-index: 199;
-    border: 1px solid var(--color-border);
+   
 }
 
 
 .arrowTopButton {
     display: none;
-    background: var(--color-main);
+    background: var(--linear-bg-1);
     width: auto;
     position: fixed;
     right: 4%;
@@ -52,7 +54,7 @@
     font-size: 1.5rem;
     padding: 10px;
     color: #ffffff;
-    border: 1px solid var(--color-body);
+    box-shadow: 1px 1px 2px 1px rgb(69, 69, 69);
     text-shadow: 1px 1px 2px rgb(69, 69, 69);
     z-index: 199;
 }
@@ -211,13 +213,12 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        background-color: var(--bg-body-light);
+        background-color: var(--bg-body-dark);
         margin: 0;
         height: 50px;
         left: 0;
         width: 100%;
         top: 52px;
-        border-top: 1px solid var(--color-icons);
 
         box-shadow: 0px 3px 6px -6px var(--color-body);
         -webkit-box-shadow: 0px 3px 6px -6px var(--color-body);

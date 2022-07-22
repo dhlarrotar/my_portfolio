@@ -67,6 +67,7 @@
     min-height: 150px;
     text-align: center;
 
+
 }
 
 
@@ -95,6 +96,8 @@
     -webkit-background-clip: unset;
     -webkit-text-fill-color: #ffffff;
     transition: 0.5s ease-out;
+    text-shadow: 1px 1px 2px rgb(69, 69, 69);
+    font-weight: 600;
 }
 
 
@@ -178,7 +181,7 @@
     }
 
     .socialItem {
-        padding: 6px 10px 5px 10px;
+        padding: 6px 12px 5px 12px;
         background-color: var(--bg-button);
         color: var(--color-body);    
          margin-right: 20px;

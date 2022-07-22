@@ -64,7 +64,13 @@ headerArrowUp.style.display ="none";
 
 menuButton.onclick=showMenu;
 closeMenu.onclick=hideMenu;
-arrowTop.onclick=hideArrowTop;
+arrowTop.addEventListener("click",function(evt){
+  evt.preventDefault();
+  window.scrollTo(0,0);
+  hideArrowTop();
+
+});
+
 
 
 headerArrowDown.onclick=showSettings;

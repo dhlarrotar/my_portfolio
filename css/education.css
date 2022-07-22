@@ -100,5 +100,16 @@
 
 .educationDraw{
   height: 300px;
+  margin-bottom: 7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/man_with_documents.png);
 }
+
+.dark .educationDraw{
+
+  background-image: url(../img/man_with_documents_dark.png);
+}
+
+
 }
