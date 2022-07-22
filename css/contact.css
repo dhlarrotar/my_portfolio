@@ -81,7 +81,7 @@ form {
 .input-contacto:focus {
   outline: none !important;
   font-family: 'Montserrat', sans-serif;
-  border: 1.7px solid var(--color-1-main);
+  border: 1.7px solid var(--color-main);
 }
 
 
