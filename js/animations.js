@@ -56,13 +56,35 @@ var closeMenu=document.querySelector(".closeMenu");
 var header= document.querySelector("header");
 var arrowTop= document.querySelector(".arrowTopButton");
 
+var settingsSection=document.querySelector(".settingsContainer");
+var headerArrowDown=document.querySelector("#headerMenuShow");
+var headerArrowUp=document.querySelector("#headerMenuHide");
 
-
+headerArrowUp.style.display ="none"; 
 
 menuButton.onclick=showMenu;
 closeMenu.onclick=hideMenu;
 arrowTop.onclick=hideArrowTop;
 
+
+headerArrowDown.onclick=showSettings;
+
+
+headerArrowUp.onclick=hideSettings;
+
+
+
+function showSettings(){
+  headerArrowDown.style.display ="none"; 
+  headerArrowUp.style.display ="flex"; 
+  settingsSection.style.display ="flex"; 
+}
+
+function hideSettings(){
+  headerArrowUp.style.display ="none"; 
+  headerArrowDown.style.display ="flex";
+  settingsSection.style.display ="none";  
+}
 
 
 

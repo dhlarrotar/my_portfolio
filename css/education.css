@@ -31,12 +31,8 @@
  
 .educationImg{
   display: none;
-  /* width: 90%;
-  max-width: 270px;
-  height: auto;
-  margin-bottom: 5px;
-  border-radius: 10px; */
 }
+
  
 .educationContainer h3{
   line-height: 1.3rem;
@@ -47,11 +43,62 @@
 
 
 .educationItem:hover{
-  background-color: var( --color-main);
-  color: #fff;
+ border-color: var( --color-main);
 
 }
 
 .educationContainer p{
  margin: 4px;
+}
+
+
+
+@media screen and (min-width: 672px){
+ 
+  .educationContainer{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    height:calc(100vh-40px);
+  }
+
+
+  .educationItem{
+    flex-direction: row;
+    max-width: 750px;
+  }
+
+.education__imgContainer{
+  height: 60px;
+  width: 100px;
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+
+}
+
+  .educationImg{
+    display: flex;
+    height: min-content;
+    max-width:100%;
+    max-height:100%;
+  }
+  }
+
+
+
+
+
+  @media screen and (min-width: 1220px){
+  
+.educationContainer .draw-container{
+  display: inline;
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+ }
+
+.educationDraw{
+  height: 300px;
+}
 }

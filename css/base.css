@@ -1,7 +1,7 @@
 html {
   --color-body: #686868;
   --color-main: #0970e5;
-  --color-icons:rgb(194, 197, 206);
+  --color-icons:rgb(175, 177, 181);
   --color-border:rgba(193, 193, 193, 0.705);
   --color-error:rgb(229, 112, 40);
  
@@ -30,7 +30,7 @@ html {
 .dark {
   --color-body: #ffffff;
    --color-main: #ffd311;
-   --color-border:rgba(143, 142, 142, 0.635);
+   --color-border:rgba(39, 39, 39, 0.119);
    --color-error:rgb(255, 132, 94);
 
   --linear-bg-1: linear-gradient(90deg, #ffb301 0%, #ffff01 100%);
@@ -59,8 +59,11 @@ html {
   max-width: 330px;
   height: 100%;
   z-index: 200;
+  vertical-align: middle;
 
 }
+
+
 
 .headerPrincipal .container {
   width: 94%;
@@ -73,24 +76,26 @@ html {
 }
 
 
-.headerPrincipal i {
-  display: none;
-}
 
 .headerTitle {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+
   background: var(--linear-bg-1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.6rem;
   font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
 }
 
 
+.headerPrincipal .menu{
+  display: flex;
+  flex-direction: column;
+}
 
-
-.headerPrincipal a {
+.menu a {
   font-size: 1.1rem;
   display: flex;
   padding: 0.5rem;
@@ -99,13 +104,11 @@ html {
   letter-spacing: 0.5px;
   -webkit-user-select: none;
   text-decoration: none;
-  justify-content: left;
+  flex-direction: column;
   margin-top: 1rem;
-}
-
-.headerPrincipal nav a {
   border-bottom: 1px solid #d4d4d490;
 }
+
 
 .headerPrincipal p {
   color: var(--color-body);
@@ -113,12 +116,12 @@ html {
 }
 
 
-.headerPrincipal nav .active,
-.headerPrincipal nav a:hover {
+.headerPrincipal .active,
+.headerPrincipal a:hover {
   background: var(--linear-bg-1);
   -webkit-background-clip: unset;
   -webkit-text-fill-color: #ffffff;
-  transition: 0.5s ease-out;
+  transition: 0.1s ease-out;
 }
 
 
@@ -146,8 +149,6 @@ section:nth-child(2) {
 
 section:nth-child(3) {
   background-color: var(--bg-body-dark);
-    min-height: 100vh;
-
 }
 
 section:nth-child(4) {
@@ -263,7 +264,10 @@ a{
 
 
 
-
+/* @media screen and (min-height: 738px) and (min-width: 872px){
+  .skillsContainer,  .educationContainer{
+    padding: 5% !important;
+  } */
 
 
 
@@ -301,6 +305,34 @@ a{
   to {
     opacity: 1
   }
+}
+
+
+
+.draw-container{
+  display:none;
+}
+
+.draw-legend{
+  opacity: 0;
+  margin-top: 3px;
+}
+
+
+.draw-legend a{
+  background: var(--linear-bg-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000;
+  font-weight: 900;
+}
+
+.draw-container:hover .draw-legend{
+  opacity: 1 !important;
+}
+
+.draw-legend, .draw-legend a{
+  font-size: 13px !important;
 }
 
 
@@ -415,8 +447,94 @@ footer .icon-section i:hover {
 }
 
 
+@media screen and (min-width: 822px){
+  .header-border{
+    box-shadow: 0px 3px 6px -6px var(--color-2-body);
+    -webkit-box-shadow: 0px 3px 6px -6px var(--color-2-body);
+    -moz-box-shadow: 0px 3px 6px -6px var(--color-2-body);
+  }
 
-*/
+  .headerPrincipal {
+    display: flex;
+    width: 100%;
+   max-width: 100%;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+   justify-content: space-around;
+   padding: 7px;
+
+  
+  }
+
+  .headerPrincipal .active,
+.headerPrincipal a:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+
+  .menu li, .menu a, .menu p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+   justify-content: space-around;
+
+  }
+
+  .menu{
+   width:730px;
+   text-align: center;
+   vertical-align: middle;
+  justify-content: space-around;
+  }
+
+  
+  .menu a {
+    border-bottom: 0;
+    margin-top: 0;
+   
+  }
+  
+  .headerPrincipal .container, .headerPrincipal .menu {
+    flex-direction: row;
+ 
+  }
+  
+
+  .headerTitle{
+    display: flex;
+    font-size: 1rem;
+    height: 2.15rem;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+
+  }
+  
+  footer{
+    padding: 3%;
+  }
+
+  footer .icon-section{
+    justify-content: center;
+  }
+
+  footer .icon-section i{
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+}
+
+
+
+
+
+
+
 /*
 
 @media screen and (max-width: 1222px){

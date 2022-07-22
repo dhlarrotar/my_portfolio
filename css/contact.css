@@ -1,6 +1,4 @@
-
-
-.contactContainer{
+.contactContainer {
   flex-direction: column;
   justify-content: space-around;
   min-height: 100vh;
@@ -8,131 +6,197 @@
   color: var(--color-body);
 }
 
-.contactContainer h2{
+
+
+.contactContainer ul,
+.contactInfo p {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+
+}
+
+.contactContainer h2 {
   padding: 25px 0px 25px 0px;
 }
 
-.contactInfo,.formContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.contactInfo,
+.formContainer {
+
+  border: 1px solid #979797;
 }
 
-  
-  .contact-info{
+
+.contact-info {
+  line-height: 1.5rem;
+
+}
+
+.contact-info p,
+.contact-info a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+.contact-form,
+form {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  min-height: 130px;
-  line-height: 1.5rem;
-  }
-  
+}
 
-  
-  
-  
-  .input-contacto{
-  width: 95%;
+
+.input-contacto {
+  display: flex;
   border-radius: 3px;
   min-height: 27px;
   padding: 7px;
   border: 1px solid var(--color-border);
   font-size: 0.9rem;
-  }
-  
-  
-  
-  .input-contacto::placeholder{
-    font-family: 'Montserrat', sans-serif;
-    color:  var( --color-body);
-  }
-  
-  
-  
-  .contact-label{
-    background: var(--color-2-bg)!important;
-    display: block;
-    padding: 3px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-   color: var(--color-2-body);
-    font-weight: 500;
-  }
-  
-  
-  
-  
-  
-  .input-contacto:focus{
-    outline: none !important;
-    font-family: 'Montserrat', sans-serif;
-    border: 1.7px solid  var(--color-1-main);
-  }
-  
-  
-  .error-form{
-      border: 1.5px solid var(--color-error);
-
-  }
-  
-  
-  .error-form:focus{
-      border: 1.7px solid  var(--color-error);
-  }
-  
-  
-  form span{
-      display: block;
-      color: var(--color-error);
-      font-weight: 600;
-     font-size: 0.9rem;
-    margin-top: 7px;
-    margin-bottom: 12px;
-  }
-  
-  
-  
-  
-  .enviar{
-    font-family: 'Montserrat', sans-serif;
-    border: 1px solid rgba(140, 140, 140, 0.801);
-margin-top: 19px;
-    padding: 10px;
-    border-radius: 5px;
-    color: #fff;
-  }
-  
-  .enviar:enabled{
-    background-color:var(--color-main);
-  }
-  
-  .enviar:enabled:hover{
-    transform: scale(1.06);
-  }
-  
-  
-  
-  .enviar:disabled{
-    background-color: #979797;
-  }
-
-  
-
-.contactContainer i{
-      display: block;
-      align-items: center;
-      text-align: center;
-    color: var(--color-main);
-    font-size: 140px;
-    margin: 30px;
-    margin-left: calc(50%-70px);
-  }
+}
 
 
-  .success-text{
-    text-align: center;
+
+.input-contacto::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-body);
+}
+
+
+
+.contact-label {
+  background: var(--color-2-bg) !important;
+  display: flex;
+  padding: 3px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: var(--color-2-body);
+  font-weight: 500;
+}
+
+
+
+
+
+.input-contacto:focus {
+  outline: none !important;
+  font-family: 'Montserrat', sans-serif;
+  border: 1.7px solid var(--color-1-main);
+}
+
+
+.error-form {
+  border: 1.5px solid var(--color-error);
+
+}
+
+
+.error-form:focus {
+  border: 1.7px solid var(--color-error);
+}
+
+
+.contact-form span {
+  color: var(--color-error);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 7px;
+  margin-bottom: 12px;
+}
+
+
+
+
+.enviar {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid rgba(140, 140, 140, 0.801);
+  margin-top: 19px;
+  padding: 10px;
+  width: 90%;
+  max-width: 120px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.enviar:enabled {
+  background-color: var(--color-main);
+}
+
+.enviar:enabled:hover {
+  transform: scale(1.06);
+}
+
+
+
+.enviar:disabled {
+  background-color: #979797;
+}
+
+
+
+.contactContainer i {
+  display: block;
+  align-items: center;
+  text-align: center;
+  color: var(--color-main);
+  font-size: 140px;
+  margin: 30px;
+  margin-left: calc(50%-70px);
+}
+
+
+.success-text {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+
+@media screen and (min-width:900px) {
+
+  .contactContainer{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    height:calc(100vh-40px);
   }
+
+
+  .contactContainer ul {
+    
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+
+  .contactContainer li{
+    width: 33vw;
+  }
+
+  .contact-info p,
+  .contact-info a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+  .contactInfo {
+    justify-content: space-between;
+    margin-right: 30px;
+    width: 200px;
+  }
+
+
+
+
+  .contact-form {
+    padding: 20px;
+  }
+
   
+
+.contactContainer i {
+margin-top: 80px;
+}
+
+}

@@ -1,4 +1,4 @@
-.settingsContainer{
+.settingsContainer {
     display: flex;
     flex-direction: column;
     margin-right: 10%;
@@ -6,7 +6,9 @@
 }
 
 
-
+.headerButton{
+    display: none;
+}
 
 
 .theme-button,
@@ -22,7 +24,7 @@
 
 
 
-.menuButton{
+.menuButton {
     background: var(--color-main);
     width: auto;
     position: fixed;
@@ -30,7 +32,8 @@
     bottom: 3%;
     border-radius: 8px;
     font-size: 1.5rem;
-   text-shadow: 1px 1px 2px rgb(69, 69, 69); ;
+    text-shadow: 1px 1px 2px rgb(69, 69, 69);
+    ;
     padding: 10px;
     color: #ffffff;
     z-index: 199;
@@ -39,7 +42,7 @@
 
 
 .arrowTopButton {
-    display: none;    
+    display: none;
     background: var(--color-main);
     width: auto;
     position: fixed;
@@ -50,7 +53,7 @@
     padding: 10px;
     color: #ffffff;
     border: 1px solid var(--color-body);
-    text-shadow: 1px 1px 2px rgb(69, 69, 69); 
+    text-shadow: 1px 1px 2px rgb(69, 69, 69);
     z-index: 199;
 }
 
@@ -77,12 +80,12 @@
 
 .lang-list {
     display: flex;
-     width: 78px;
+    width: 78px;
     height: 30px;
     padding: 2px 4px;
     border-radius: 10px;
     font-size: 1rem;
-    color: var(--color-2-body);
+    color: #585858;
     letter-spacing: 0.5px;
     border: 1px solid var(--color-border);
     cursor: pointer;
@@ -195,4 +198,62 @@
 .theme-button input:checked+label .fa-moon {
     transform: translateX(0), rotate(0);
     opacity: 1;
+}
+
+
+
+
+@media screen and (min-width: 822px) {
+    .settingsContainer {
+        display: none;
+        position: fixed;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: var(--bg-body-light);
+        margin: 0;
+        height: 50px;
+        left: 0;
+        width: 100%;
+        top: 52px;
+        border-top: 1px solid var(--color-icons);
+
+        box-shadow: 0px 3px 6px -6px var(--color-body);
+        -webkit-box-shadow: 0px 3px 6px -6px var(--color-body);
+        -moz-box-shadow: 0px 3px 6px -6px var(--color-body);
+
+    }
+
+    .header-border{
+        box-shadow: 0px 3px 6px -6px var(--color-body);
+        -webkit-box-shadow: 0px 3px 6px -6px var(--color-body);
+        -moz-box-shadow: 0px 3px 6px -6px var(--color-body);
+      }
+
+      .headerButton{
+        display: inline;
+        font-size: 1.2rem;
+        color: var(--color-body);
+        margin-left: 20px;
+      }
+
+
+      .headerButton:hover{
+        background: var(--linear-bg-1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+
+
+    .menuButton{
+        display: none;
+    }
+
+    .settingsContainer li {
+        width: 160px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }

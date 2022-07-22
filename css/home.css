@@ -12,13 +12,14 @@
 
 
 
-.home_container p, .aboutContainer p{
+.home_container p,
+.aboutContainer p {
     color: var(--color-body);
 
 }
 
 
-.aboutContainer p{
+.aboutContainer p {
     line-height: 2.4rem;
 }
 
@@ -55,9 +56,7 @@
 
 
 
-.home__social-section i {
-    display: none;
-}
+
 
 .home__social-section {
     display: flex;
@@ -73,7 +72,7 @@
 
 .home__social-section p,
 .home__social-section i {
-    color: var(--color-body);
+    display: inline;
     font-size: 1rem;
 }
 
@@ -82,34 +81,38 @@
     background-color: var(--bg-button);
     border-radius: 7px;
     line-height: 1.8rem;
+
 }
 
 
-
-
-
-.socialItem:hover{
-  background: var(--linear-bg-1);
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: #ffffff;
-  transition: 0.5s ease-out;
+.socialItem i {
+    display: none;
 }
 
 
-.socialItem:hover p{
+.socialItem:hover {
+    background: var(--linear-bg-1);
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: #ffffff;
+    transition: 0.5s ease-out;
+}
+
+
+.socialItem:hover p,
+.socialItem:hover i {
     color: #ffffff;
 }
 
 
-.arrowContainer{
-position: absolute;
-bottom: 10%;
-left: calc(50% - 0.6rem);
-color: #ffffff;
+.arrowContainer {
+    position: absolute;
+    bottom: 10%;
+    left: calc(50% - 0.6rem);
+    color: #ffffff;
 }
 
 
-.arrowContainer i{
+.arrowContainer i {
     font-size: 1.2rem;
 }
 
@@ -124,8 +127,8 @@ color: #ffffff;
 
 
 
-.aboutContainer{
-     display: flex;
+.aboutContainer {
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     min-height: 100vh;
@@ -134,15 +137,66 @@ color: #ffffff;
 }
 
 
-.aboutContainer__text{
+.aboutContainer__text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   }
+}
 
 
- .aboutContainer p{
+.aboutContainer p {
     margin-top: 30px;
- }
+}
 
 
+
+@media screen and (min-width: 822px) {
+
+    .home_container {
+        height: calc(100vh-40px);
+    }
+
+
+    .greetingContainer {
+        padding-top: 5%;
+        padding-bottom: 3%;
+        min-height: 220px;
+        max-height: 230px;
+    }
+
+    .greetingLines {
+        max-height: 50px;
+        min-height: 32px;
+    }
+
+    .home__social-section {
+        flex-direction: row;
+        justify-content: center;
+   
+        max-height: 40px;
+        min-height: 30px;
+    }
+
+    .socialItem {
+        padding: 6px 10px 5px 10px;
+        background-color: var(--bg-button);
+        color: var(--color-body);    
+         margin-right: 20px;
+         margin-left: 20px;
+
+    }
+
+    .socialItem i {
+        display: inline;
+        padding: 7px;
+        color: var(--color-body);
+    }
+
+
+    .aboutContainer {
+        padding-top: 5%;
+        padding-bottom: 3%;
+        height: calc(100vh-40px);
+    }
+
+}

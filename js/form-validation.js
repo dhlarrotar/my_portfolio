@@ -1,7 +1,7 @@
 var inputContacto= document.querySelectorAll(".input-contacto");
 
 
-var form= document.getElementById("contact-form");
+var form= document.querySelector("form");
 var success= document.getElementById("message-success");
 
 

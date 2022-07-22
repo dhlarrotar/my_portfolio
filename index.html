@@ -39,30 +39,37 @@
       <h1 class="headerTitle">Daniel Larrota R.</h1>
 
       <nav>
-        <ul>
+        <ul class="menu">
 
-          <li><a href="#home" class="active" id="home-button"><i class="fa-solid fa-house"></i>
+          <li><a href="#home" class="active" id="home-button">
+            <!-- <i class="fa-solid fa-house"></i> -->
               <p class="home-title"></p>
             </a></li>
 
-          <li><a href="#about" id="about-button"><i class="fa-solid fa-user"></i>
+          <li><a href="#about" id="about-button">
+            <!-- <i class="fa-solid fa-user"></i> -->
               <p class="about-title"></p>
             </a></li>
-          <li><a href="#skills" id="skills-button"><i class="fa-solid fa-dumbbell"></i>
+          <li><a href="#skills" id="skills-button">
+            <!-- <i class="fa-solid fa-dumbbell"></i> -->
               <p class="skills-title"></p>
             </a></li>
-          <li><a href="#education" id="education-button"><i class="fa-solid fa-graduation-cap"></i>
+          <li><a href="#education" id="education-button">
+            <!-- <i class="fa-solid fa-graduation-cap"></i> -->
               <p class="education-title"></p>
             </a></li>
-          <li><a href="#projects" id="projects-button"><i class="fa-solid fa-suitcase"></i>
+          <li><a href="#projects" id="projects-button">
+            <!-- <i class="fa-solid fa-suitcase"></i> -->
               <p class="projects-title"></p>
             </a></li>
-          <li></i><a href="#contact" id="contact-button"><i class="fa-solid fa-envelope"></i>
+          <li></i><a href="#contact" id="contact-button">
+            <!-- <i class="fa-solid fa-envelope"></i> -->
               <p class="contact-title"></p>
             </a></li>
-
+            <li class="headerButton" id="headerMenuShow">   <i class="fa-solid fa-caret-down"></i></li>
+            <li class="headerButton" id="headerMenuHide">   <i class="fa-solid fa-caret-up"></i></li>
         </ul>
-
+     
 
       </nav>
 
@@ -144,7 +151,7 @@
   </div>
 
 
-  <div >
+  <div>
 
     <a class="arrowTopButton" href="#home">
 
@@ -158,7 +165,7 @@
   </div>
 
 
-  
+
 
 
   <div class="closeMenu"> </div>
@@ -482,12 +489,12 @@
               </div>
 
 
+              <div class="educationItem__info">
+                <h3>Oracle Next Education (ONE)</h3>
+                <p class="frontend-description"> Front-end + Java</p>
+                <p class="frontend-description">Oracle + Alura - 2022</p>
 
-              <h3>Oracle Next Education (ONE)</h3>
-              <p class="frontend-description"> Front-end + Java</p>
-              <p class="frontend-description">Oracle + Alura - 2022</p>
-
-
+              </div>
 
             </li>
 
@@ -501,12 +508,12 @@
               </div>
 
 
+              <div class="educationItem__info">
+                <h3 id="unesco-title"></h3>
+                <p class="unesco-description"></p>
+                <p class="unesco-description">UNESCO Open Learning</p>
 
-              <h3 id="unesco-title"></h3>
-              <p class="unesco-description"></p>
-              <p class="unesco-description">UNESCO Open Learning</p>
-
-
+              </div>
 
             </li>
 
@@ -518,10 +525,10 @@
               </div>
 
 
-
-              <h3 id="esri-title"></h3>
-              <p class="text-box-description" id="esri-description">Esri Training</p>
-
+              <div class="educationItem__info">
+                <h3 id="esri-title"></h3>
+                <p class="text-box-description" id="esri-description">Esri Training</p>
+              </div>
 
             </li>
 
@@ -539,10 +546,10 @@
               </div>
 
 
-
-              <h3 id="unal-title"></h3>
-              <p class="text-box-description" id="unal-description">Universidad Nacional de Colombia</p>
-
+              <div class="educationItem__info">
+                <h3 id="unal-title"></h3>
+                <p class="text-box-description" id="unal-description">Universidad Nacional de Colombia</p>
+              </div>
 
 
             </li>
@@ -553,7 +560,10 @@
 
 
 
-
+          <div class="draw-container">
+            <img class="educationDraw" src="img/man_with_documents.png" alt="man_documents">
+            <p class="draw-legend">Illustration by <a href="https://iradesign.io">IRA Design</a> </p>
+          </div>
 
 
 
@@ -607,7 +617,7 @@
               <div class="projectsItem">
                 <div class="hangmanImg">
                   <div class="box">
-                    <h3 id="hangman"></h3>
+                    <h3 class="hangman"></h3>
                   </div>
 
 
@@ -619,9 +629,12 @@
 
 
                 <div class="projectsItem__iconsContainer">
-                  <!-- <p class="projectDescription" id="hangman-description"></p> -->
+                  <div class="projectsItem__info">
+                    <h3 class="hangman"></h3>
+                    <p class="projectsItem__description" id="hangman-description"></p>
+                  </div>
 
-                  <ul>
+                  <ul class="usedTech">
                     <li class="projectsItem__iconItem">
                       <i class="fa-brands fa-html5"></i>
                       HTML5
@@ -645,28 +658,28 @@
 
 
 
-                </div>
-                <div class="projectsItem__buttonContainer">
 
-                  <ul>
-                    <li>
-                      <a href="https://dhlarrotar.github.io/hang_man/" class="launch">
-                        <i class="fa-solid fa-rocket"></i>
-                        <p class="probar"></p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/dhlarrotar/hang_man" class="more">
-                        <i class="fa-brands fa-github"></i>
-                        <p class="ver-mas"></p>
-                      </a>
-                    </li>
-                  </ul>
+                  <div class="projectsItem__buttonContainer">
+
+                    <ul>
+                      <li>
+                        <a href="https://dhlarrotar.github.io/hang_man/" class="launch">
+                          <i class="fa-solid fa-rocket"></i>
+                          <p class="probar"></p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/dhlarrotar/hang_man" class="more">
+                          <i class="fa-brands fa-github"></i>
+                          <p class="ver-mas"></p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+
+
               </div>
-
-
-
 
 
 
@@ -675,7 +688,7 @@
               <div class="projectsItem">
                 <div class="encryptorImg">
                   <div class="box">
-                    <h3 id="encryptor"></h3>
+                    <h3 class="encryptor"></h3>
                   </div>
 
                 </div>
@@ -683,9 +696,15 @@
 
 
                 <div class="projectsItem__iconsContainer">
-                  <!-- <p class="projectDescription" id="hangman-description"></p> -->
 
-                  <ul>
+
+                  <div class="projectsItem__info">
+                    <h3 class="encryptor"></h3>
+                    <p class="projectsItem__description" id="encryptor-description"></p>
+                  </div>
+
+
+                  <ul class="usedTech">
                     <li class="projectsItem__iconItem">
                       <i class="fa-brands fa-html5"></i>
                       HTML5
@@ -709,26 +728,26 @@
 
 
 
-                </div>
-                <div class="projectsItem__buttonContainer">
 
-                  <ul>
-                    <li>
-                      <a href="https://dhlarrotar.github.io/text_encryptor/" class="launch">
-                        <i class="fa-solid fa-rocket"></i>
-                        <p class="probar"></p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/dhlarrotar/text_encryptor" class="more">
-                        <i class="fa-brands fa-github"></i>
-                        <p class="ver-mas"></p>
-                      </a>
-                    </li>
-                  </ul>
+                  <div class="projectsItem__buttonContainer">
+
+                    <ul>
+                      <li>
+                        <a href="https://dhlarrotar.github.io/text_encryptor/" class="launch">
+                          <i class="fa-solid fa-rocket"></i>
+                          <p class="probar"></p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/dhlarrotar/text_encryptor" class="more">
+                          <i class="fa-brands fa-github"></i>
+                          <p class="ver-mas"></p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-
 
 
 
@@ -744,7 +763,7 @@
               <div class="projectsItem">
                 <div class="portfolioImg">
                   <div class="box">
-                    <h3 id="portfolio"></h3>
+                    <h3 class="portfolio"></h3>
                   </div>
 
                 </div>
@@ -752,9 +771,13 @@
 
 
                 <div class="projectsItem__iconsContainer">
-                  <!-- <p class="projectDescription" id="hangman-description"></p> -->
 
-                  <ul>
+                  <div class="projectsItem__info">
+                    <h3 class="portfolio"></h3>
+                    <p class="projectsItem__description" id="portfolio-description"></p>
+                  </div>
+
+                  <ul class="usedTech">
                     <li class="projectsItem__iconItem">
                       <i class="fa-brands fa-html5"></i>
                       HTML5
@@ -778,20 +801,20 @@
 
 
 
-                </div>
-                <div class="projectsItem__buttonContainer">
 
-                  <ul>
-                    <li>
-                      <a href="https://github.com/dhlarrotar/my_portfolio" class="more">
-                        <i class="fa-brands fa-github"></i>
-                        <p class="ver-mas"></p>
-                      </a>
-                    </li>
-                  </ul>
+                  <div class="projectsItem__buttonContainer">
+
+                    <ul>
+                      <li>
+                        <a href="https://github.com/dhlarrotar/my_portfolio" class="more">
+                          <i class="fa-brands fa-github"></i>
+                          <p class="ver-mas"></p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-
 
 
 
@@ -858,38 +881,41 @@
       <div class="container reveal fade-left">
         <div class="contactContainer">
 
-          <h2 class="contact-title"></h2>
-          <div class="contact-info">
-            <p class="contact-text1"></p>
-            <p class="contact-text2"></p><a id="mail"> <strong>dhlarrotar@outlook.com</strong></a>
-          </div>
+          <ul>
+            <li class="contact-info">
+              <h2 class="contact-title"></h2>
+              <p class="contact-text1"></p>
+              <p class="contact-text2"></p>
+              <a id="mail"> <strong>dhlarrotar@outlook.com</strong></a>
+            </li>
 
 
-          <div class="form-container">
-            <div class="hide" id="message-success">
-              <i class="fa-regular fa-circle-check"></i>
-              <p class="success-text"></p>
-            </div>
+            <li class="form-container">
+              <div class="hide" id="message-success">
+                <i class="fa-regular fa-circle-check"></i>
+                <p class="success-text"></p>
+              </div>
+              <div class="contact-form">
+                <form>
+                  <label for="full-name" class="contact-label" id="full-name-label"></label>
+                  <input type="text" id="full-name" title="full-name" class="input-contacto" required>
+                  <span class="hide" id="error-full-name"></span>
 
-            <form id="contact-form">
-              <label for="full-name" class="contact-label" id="full-name-label"></label>
-              <input type="text" id="full-name" title="full-name" class="input-contacto" required>
-              <span class="hide" id="error-full-name"></span>
+                  <label for="mail-input" class="contact-label" id="mail-label"></label>
+                  <input type="email" id="correoelectronico" title="mail-input" class="input-contacto" required>
+                  <span class="hide" id="error-mail-input"></span>
 
-              <label for="mail-input" class="contact-label" id="mail-label"></label>
-              <input type="email" id="correoelectronico" title="mail-input" class="input-contacto" required>
-              <span class="hide" id="error-mail-input"></span>
+                  <label for="message" class="contact-label" id="message-label"></label>
+                  <textarea cols="70" rows="10" id="message" class="input-contacto" title="message" required></textarea>
+                  <span class="hide" id="error-message"></span>
 
-              <label for="message" class="contact-label" id="message-label"></label>
-              <textarea cols="70" rows="10" id="message" class="input-contacto" title="message" required></textarea>
-              <span class="hide" id="error-message"></span>
+                  <input type="submit" class="enviar" disabled>
 
-              <input type="submit" class="enviar" disabled>
+                </form>
+              </div>
+            </li>
 
-            </form>
-          </div>
-
-
+          </ul>
 
 
 

@@ -43,11 +43,11 @@ var dataen = {
 
 
     "#projects-description":"Here you can explore my latest projects!",
-    "#hangman": "Hang Man!",
+    ".hangman": "Hang Man!",
     "#hangman-description": "Guess the secret word before you get hung up!",
-    "#encryptor": "Text encryptor",
+    ".encryptor": "Text encryptor",
     "#encryptor-description": "Encrypt and decrypt your secret messages!",
-    "#portfolio": "My portfolio",
+    ".portfolio": "My portfolio",
     "#portfolio-description":"Explore my background, latest projects, and get in touch!!",
     ".probar": "Launch!",
     ".ver-mas": "Github",
@@ -129,11 +129,11 @@ var dataes = {
 
 
     "#projects-description":"Aquí podrás explorar mis proyectos recientes",
-    "#hangman": "¡Ahorcado!",
+    ".hangman": "¡Ahorcado!",
     "#hangman-description": "¡Adivina la palabra secreta antes de quedar colgado!",
-    "#encryptor": "Encriptador de texto",
+    ".encryptor": "Encriptador de texto",
     "#encryptor-description": "¡Encripta y desencripta tus mensajes secretos!",
-    "#portfolio": "Mi portafolio",
+    ".portfolio": "Mi portafolio",
     "#portfolio-description":"Explora mi perfil, proyectos recientes y más!",
     ".probar": "¡Probar!",
     ".ver-mas": "Github",
