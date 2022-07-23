@@ -16,7 +16,7 @@ var dataen = {
 
 
     
-    "#about-text":"Hi! My name is Daniel and I’m a graduate in <strong>geology</strong>. As part of my studies and work experience, I have developed technical skills in geospatial data analysis, <strong>web design</strong>, and petrologic/geophysical methods. I’m passionate about exploring new technologies and innovative ideas to address socio-environmental issues and unravel the mysteries of our surroundings.",  
+    "#about-text":"I’m a <strong>web developer</strong> and <strong>geologist</strong> with technical skills in geospatial data management and analysis. I’m passionate about exploring new technologies and innovative ideas to address socio-environmental issues and unravel the mysteries of our surroundings.",  
     "#hobbies-description":"I'm fond of:",
 
     "#webdesign":"Web design",
@@ -98,7 +98,7 @@ var dataes = {
 
 
     
-    "#about-text":"¡Hola! Mi nombre es Daniel y soy <strong>geólogo</strong>. Como parte de mis estudios y experiencia laboral, he desarrollado habilidades técnicas en análisis de datos geoespaciales, <strong>diseño web</strong> y métodos petrológicos / geofísicos. Me apasiona explorar nuevas tecnologías e ideas innovadoras para abordar problemas socioambientales y desentrañar los misterios de nuestro entorno.",
+    "#about-text":"Soy <strong>desarrollador web</strong> y <strong>geólogo</strong> con habilidades para el manejo y análisis de datos geoespaciales. Me apasiona explorar nuevas tecnologías e ideas innovadoras para abordar problemas socioambientales y desentrañar los misterios de nuestro entorno.",
 
     "#hobbies-description":"Me apasiona:",    
     "#webdesign":"Diseño web",
