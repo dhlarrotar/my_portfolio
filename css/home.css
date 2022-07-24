@@ -20,7 +20,8 @@
 
 
 .aboutContainer p {
-    line-height: 2.4rem;
+    margin-top: 3vh;
+    line-height: 2.1rem;
 }
 
 .greetingContainer {
@@ -28,9 +29,9 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    height: 50vh;
-    min-height: 320px;
-    padding: 10%;
+    height: 60vh;
+    min-height: 290px;
+    padding: 12px 6% 12px 6% ;
     background-color: var(--bg-banner);
 }
 
@@ -51,7 +52,7 @@
 
 .greetingLines p {
     color: var(--color-body);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 
@@ -64,7 +65,7 @@
     justify-content: space-around;
     height: 24vh;
     max-height: 180px;
-    min-height: 150px;
+    min-height: 140px;
     text-align: center;
 
 
@@ -134,8 +135,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 100vh;
-    height: max-content;
+    height: 100vh;
     padding: 10%;
 }
 
@@ -147,9 +147,6 @@
 }
 
 
-.aboutContainer p {
-    margin-top: 30px;
-}
 
 .aboutContainer .draw-container{
     display: flex;
@@ -244,3 +241,33 @@
     
 
 }
+
+
+
+
+@media screen and (max-height: 622px) {
+
+
+.aboutDraw{
+    display: flex;
+    height: 110px;
+    width: 140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/about.png);
+  }
+
+}
+
+
+@media screen and (max-height: 502px){
+  .arrowContainer{
+    display: none;
+  }
+
+  .aboutContainer .draw-container{
+    display: none;
+  }
+  
+    }
+  

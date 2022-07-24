@@ -19,6 +19,8 @@
 }
 
 
+
+
 .projectsItem {
   display: flex;
   flex-direction: column;
@@ -36,6 +38,7 @@
 
 .projectsItem:hover {
   border-color: var(--color-main);
+  transform: scale(1.007);
 }
 
 
@@ -97,26 +100,26 @@
 
 }
 
-.projectsItem__iconsContainer {
+
+.projectsItem__info p{
+  display: none;
+}
+
+.projectsItem:hover .projectsItem__info p{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-top: 10px;
-  padding-bottom: 16px;
-  font-size: 13px;
-  border-top: 1px solid var(--color-body);
+  margin-bottom: 17px;
+  font-size: 1rem;
 }
 
 
-
-.projectsItem__info {
+.projectsItem__info h3{
   display: none;
 }
 
 
-.projectsItem__info h3 {
-  color: var(--color-main);
-}
+
+
+
 
 .projectsItem__description {
   margin-top: 15px;
@@ -131,8 +134,23 @@
   flex-direction: row;
   justify-content: space-around;
   min-height: 30px;
+  text-align: center;
+  margin: 10px;
 
 }
+
+
+
+.usedTech{
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-body-light);
+  border-radius:10px ;
+  font-size: 0.8rem;
+  padding: 1%;
+}
+
+
 
 .usedTech i {
   display: none;
@@ -147,7 +165,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 8px;
 }
 
 
@@ -177,6 +194,7 @@
   font-weight: 600;
   text-shadow: 1px 1px 2px rgb(69, 69, 69);
   transition: 0.1s ease-out;
+  transform: scale(1.007);
 }
 
 .projectsItem__buttonContainer i {
@@ -187,7 +205,7 @@
 
 
 
-@media screen and (min-width: 822px) {
+@media screen and (min-width: 822px)and (min-height: 522px) {
 
 
   .projectsContainer {
@@ -213,6 +231,18 @@
   }
 
 
+  .projectsItem .projectsItem__info p{
+    display: flex;
+    margin-bottom: 17px;
+    font-size: 1rem;
+  }
+
+  .projectsItem__info h3{
+    display: flex;
+   justify-content: center;
+   color: var(--color-main);
+  }
+
   .hangmanImg,
   .encryptorImg,
   .portfolioImg {
@@ -223,14 +253,9 @@
   }
 
 
-
-  .projectsItem__iconsContainer {
-    flex-direction: column;
-    width: 260px;
-    padding: 50px 20px 50px 20px;
-    border: 0;
-
-  }
+.usedTech{
+  padding: 10px;
+}
 
 
   .usedTech i {
@@ -269,269 +294,21 @@
 
 }
 
-/* #projects>div{
-    vertical-align: middle;
-  }
+
+
+
+@media screen and (min-width: 422px) and (max-height: 522px){
+  .hangmanImg,
+  .encryptorImg,
+  .portfolioImg {
+    max-width: 1000px;
+    height: 40px;
   
-  
-  
-  #projects ul:hover{
-    transform: scale(1.02);
-  
-  
-  }
-  
-  
-  .projects-grid{
-    display: grid;
-      grid-template-areas:
-          "header"
-          "container";
-      grid-template-columns: auto;
-      grid-template-rows: 50px auto
-      ;
-  }
-  
-  
-  .projects-grid__menu{
-    display: flex;
-    grid-area: header;
-    align-items: center;
-    padding: 0 2rem;
-    background: #ffffff27;
-  }
-  
-  .projects-grid__menu li{
-    padding: .5rem 1rem;
-  }
-  
-  
-  .projects-grid__container{
-    display: flex;
-    grid-area: container;
-  }
-  
-  
-  .projects-grid__container:nth-child(1) {
-    background: url(../img/fortnite.jpg) center / cover no-repeat;
-    grid-column: 1 / 4;
-    grid-row: 1 / 3;
-  }
-  
-  #projects ul li:hover{
-    font-weight: 600;
-    color: var(--color-1-main);
-  
-  }
-  
-  #projects nav .active{
-    color: var(--color-1-main);
-    font-weight: 600;
-  }
-  
-  
-  #projects .text-box {
-    padding: 20px; 
-   
-    background: var( --color-2-bg);
-    border-radius: 20px;
-      background-color: var( --color-2-bg);
-      box-shadow: 0px 8px 7px -4px rgba(46, 46, 46, 0.509);
-      -webkit-box-shadow: 0px 8px 7px -4px rgba(46, 46, 46, 0.509);
-      -moz-box-shadow: 0px 8px 7px -4px rgba(46, 46, 46, 0.509);
-  
-  }
-  
-  
-  
-  #projects h3:hover{
-    color: var(--color-1-main);
+
+
   }
 
-#projects p{
-    color: var(--color-2-body);
-  }
-  
-  
-  
-  #projects .icon-section{
-  color: var(--color-2-body);
-  font-weight: 500;
-  }
-  
-  .header-projects{
-    text-align: left;
-  }
-  
-  
-  
-  .header-projects li{
-    display: inline-block;
-    color: var(--color-1);
-    margin-right: 13px;
-    margin-top: 12px;
-    margin-bottom: 7px;
-  }
-  
-  
-  #projects h2{
-    background: none;
-    -webkit-background-clip: unset;
-    -webkit-text-fill-color: var(--color-1-main);
-    border: 0; 
-  }
-  
-  #projects h3{
-    font-size: 16px;
-  }
-  
-  #projects-description{
-    margin-top: 20px;
-    margin-bottom: 18px;
-  }
-  
-  
-  .research-description{
-   margin-top: 11px;
-    font-size: 18px;
-    line-height: 1.2rem;
-  }
-  
-  .research-title{
-    font-size: 20px !important;
-    margin-bottom: 20px !important;
-    max-width:460px ;
-  }
-  
-  
-   #projects .draw-container{
-     margin:70px;
-     vertical-align: bottom;
-  }
-   
-  
-  #projects-draw{
-    height: 200px;
-  }
-  
-  #projects .draw-container a, #projects .draw-container p{
-    color: var(--color-2-body);
-  }
-  
-  .project-info{
-    vertical-align: top;
-  }
-  
-  
-  
-  #projects .img-div {
-    z-index: 1;
-    text-align: center;
-    vertical-align: middle;
-    height: 100px;
-    margin: 20px;
-    border-radius: 12px;
-  
-  
-  }
-  
-  
-  #projects-gallery .tag-container{
-    position: relative;
-    left:160px;
-  }
-  
-  
-  #research-gallery .tag-container{
-    position: relative;
-    left:210px;
-  }
-  
-  #projects .img-text-box{
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--color-2-bg);
-    border: 0;
-    border: 1px solid #5e5e5e4f;
-    border-radius: 12px;
-  
-  }
-  
-  #projects .draw-container{
-    display: inline-block !important;
-  }
-  
-  .button-div{
-    margin-top: 4px;
-    margin-bottom: 10px;
-    display: inline-block;
-    background: var(--linear-bg-1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0px 0px #00000000;
-  }
-  
-  #projects .button-div a{
-  
-    display: inline-block;
-    padding:  8px;
-    margin: 8px;
-    margin-right: 4px;
-    margin-left: 4px;
-    
-    
-    font-size: 16px;
-    font-weight: 900;
-    border-radius: 10px;
-    background-color: #c6c3c30f;
-  
-  
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  #projects .button-div a:hover{
-    transform: scale(1.06);
-    background: var(--linear-bg-1)!important;
-    -webkit-background-clip: unset;
-    -webkit-text-fill-color: #ffffff;
-  
-  
-  
-  }
-  
-  
-  #projects .button-div a i, #projects .button-div a p{
-  font-size: 15px;
-   
-    
-  }
-  
-  
-  #projects .button-div a p{
-    display: inline-block;
-    color:  var( --color-2-body);
-    margin-top: 2px;
-    font-weight: 600;
-   
-    
-  }
-  
-  #projects .button-div a:hover p{
-    color: var(--color-1) !important;
-  }
-  
-  #projects .icon-section{
-    display: block;
-  }
-  
-   */
+
+
+
+}
