@@ -42,47 +42,35 @@
 }
 
 
-.hangmanImg {
-  width: 100%;
-  max-width: 600px;
-  height: 30vh;
-  display: flex;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/projects/hangman.png);
-  background-position: center center;
-  align-items: flex-end;
-  flex-direction: column-reverse;
 
-}
-
-.encryptorImg {
-  width: 100%;
-  max-width: 600px;
-  height: 30vh;
-  display: flex;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/projects/text-encryptor.png);
-  background-position: center center;
-  align-items: flex-end;
-  flex-direction: column-reverse;
-
-}
-
-
+.hangmanImg,
+.encryptorImg,
 .portfolioImg {
   width: 100%;
   max-width: 600px;
   height: 30vh;
   display: flex;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/projects/portfolio.png);
+  background-size: contain;
   background-position: center center;
   align-items: flex-end;
   flex-direction: column-reverse;
 
+}
+
+
+
+.hangmanImg {
+  background-image: url(../img/projects/hangman.png);
+}
+
+.encryptorImg {
+  background-image: url(../img/projects/text-encryptor.png);
+}
+
+
+.portfolioImg {
+  background-image: url(../img/projects/portfolio.png);
 }
 
 
@@ -108,6 +96,7 @@
 
 .projectsItem:hover .projectsItem__info p{
   display: flex;
+  justify-content: center;
   margin-bottom: 17px;
   font-size: 1rem;
 }
@@ -145,7 +134,7 @@
 .usedTech{
   display: flex;
   align-items: center;
-  background-color: var(--bg-body-light);
+  background-color: var(--bg-body-dark);
   border-radius:10px ;
   font-size: 0.8rem;
   padding: 1%;
@@ -304,8 +293,6 @@
     max-width: 1000px;
     height: 40px;
   
-
-
   }
 
 
