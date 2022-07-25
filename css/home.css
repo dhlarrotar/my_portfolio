@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    height: 60vh;
+    height: 50vh;
     min-height: 290px;
     padding: 12px 6% 12px 6% ;
     background-color: var(--bg-banner);
@@ -43,8 +43,8 @@
     text-align: center;
     height: 17vh;
     line-height: 1.9rem;
-    max-height: 130px;
-    min-height: 122px;
+    max-height: 110px;
+    min-height: 102px;
     border-radius: 15px;
 
 }
