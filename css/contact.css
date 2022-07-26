@@ -37,7 +37,9 @@
   margin-bottom: 10px;
 }
 
-
+.contact-info a:hover{
+  text-decoration: underline;
+}
 
 .contact-form,
 form {
@@ -84,6 +86,10 @@ form {
   border: 1.7px solid var(--color-main);
 }
 
+
+.input-contacto:hover{
+  border: 1.2px solid var(--color-main);
+}
 
 .error-form {
   border: 1.5px solid var(--color-error);
