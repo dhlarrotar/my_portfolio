@@ -2,7 +2,7 @@
   flex-direction: column;
   justify-content: space-around;
   min-height: 99vh;
-  padding: 0 6% 0 6% ;
+  padding: 6%;
   color: var(--color-body);
 }
 
@@ -161,6 +161,7 @@ form {
 @media screen and (min-width:900px) {
 
   .contactContainer{
+    padding: 0 ;
     padding-top: 12vh;
     height: 87vh;
 

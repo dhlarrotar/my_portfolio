@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 0 5% 0 5%;
+  padding:10%;
   min-height: 99vh;
   color: var(--color-body);
 }
@@ -52,7 +52,7 @@
 .portfolioImg, .volcanoesmapImg{
   width: 100%;
   max-width: 600px;
-  height: 30vh;
+  height: 160px;
   display: flex;
   background-repeat: no-repeat;
   background-size: contain;
@@ -85,8 +85,8 @@
   background-color: var(--bg-body-light);
   display: flex;
   width: 100%;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 3px;
+  padding-bottom: 2px;
   justify-content: center;
   text-align: center;
   color: var(--color-main);
@@ -124,9 +124,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  min-height: 30px;
+  min-height: 20px;
   text-align: center;
-  margin: 10px;
 
 }
 
@@ -135,12 +134,10 @@
 .usedTech{
   display: flex;
   align-items: center;
-  background-color: var(--bg-body-dark);
-  border-radius:10px ;
-  font-size: 0.8rem;
-  margin-top: 10px;
-  padding: 1%;
+  vertical-align: middle;
+  font-size: 0.7rem;
   -webkit-user-select: none;
+  padding: 5px;
   
 }
 
@@ -170,13 +167,14 @@
 }
 
 .projectsItem__buttonContainer a {
+  font-size: 0.8rem;
   display: flex;
   justify-content: center;
   vertical-align: middle;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: 3px;
+  margin-right: 3px;
   background-color: var(--bg-button-2);
-  padding: 10px;
+  padding: 7px;
   border-radius: 5px;
   color: var(--color-body);
   border: 1px solid #d9d9d91a;
@@ -198,113 +196,23 @@
 
 
 @media screen and (min-width: 822px) {
+.projectsContainer{
+  padding:0;
+}
+
+
   .projectsItem {
   display: inline-block;
   vertical-align: middle;
-  width: 220px;
-  height: 270px;
+  width: 195px;
   margin: 5px;
   position: relative;
   }
 
 
-  .hangmanImg,
-  .encryptorImg,
-  .portfolioImg, .volcanoesmapImg {
-
-    height: 160px
-
-  }
 
 
- /* .projectsItem__info p{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 17px;
-    font-size: 1rem;
-  } */
 
-  projectsItem__iconsContainer{
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-
-/* 
-
-
-@media screen and (min-width: 822px)and (min-height: 522px) {
-
-
-  .projectsContainer {
-    padding-top: 5%;
-    padding-bottom: 3%;
-  }
-
-  .projectsItem {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .box {
-    display: none;
-
-  }
-
-
-  .projectsItem__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-
-  .projectsItem .projectsItem__info p{
-    display: flex;
-    margin-bottom: 17px;
-    font-size: 1rem;
-  }
-
-  .projectsItem__info h3{
-    display: flex;
-   justify-content: center;
-   color: var(--color-main);
-  }
-
-  .hangmanImg,
-  .encryptorImg,
-  .portfolioImg {
-    max-width: 400px;
-    height: 270px;
-
-
-  }
-
-
-.usedTech{
-  padding: 10px;
-}
-
-
-  .usedTech i {
-    display: block;
-    font-size: 1.8rem;
-    margin-bottom: 6px;
-  }
-
-  .projectsItem__iconsContainer {
-    flex-direction: column;
-    width: 260px;
-    padding: 20px;
-    border: 0; */
-
-  }
-
-  /* .projectsItem__buttonContainer a{
-  transform: scale(1.2);
-  margin-right:25px ;
-} */
 
 
 
@@ -312,16 +220,6 @@
 
 
 
-/* 
-
-@media screen and (min-width: 1022px) {
-
-  .projectsContainer {
-    padding-left: 19%;
-    padding-right: 19%;
-  }
-
-}
 
 
 
@@ -329,7 +227,7 @@
 @media screen and (min-width: 422px) and (max-height: 522px){
   .hangmanImg,
   .encryptorImg,
-  .portfolioImg {
+  .portfolioImg, .volcanoesmapImg {
     max-width: 1000px;
     height: 40px;
   
@@ -338,4 +236,4 @@
 
 
 
-} */
+} 
