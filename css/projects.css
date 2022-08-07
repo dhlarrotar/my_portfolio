@@ -15,7 +15,7 @@
 
 
 .projectsContainer h3 {
-  font-size: 1.3rem;
+  font-size: 1.07rem;
   line-height: 1.7rem;
 
 }
@@ -82,11 +82,11 @@
 }
 
 .box {
-  background-color: var(--bg-body-light);
+  background-color: var(--bg-body-dark);
   display: flex;
   width: 100%;
   padding-top: 3px;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
   justify-content: center;
   text-align: center;
   color: var(--color-main);
@@ -164,6 +164,7 @@
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
+  margin-top:10px
 }
 
 .projectsItem__buttonContainer a {
@@ -171,9 +172,9 @@
   display: flex;
   justify-content: center;
   vertical-align: middle;
-  margin-left: 3px;
-  margin-right: 3px;
-  background-color: var(--bg-button-2);
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: var(--bg-body-dark);
   padding: 7px;
   border-radius: 5px;
   color: var(--color-body);
@@ -204,8 +205,8 @@
   .projectsItem {
   display: inline-block;
   vertical-align: middle;
-  width: 195px;
-  margin: 5px;
+  width: 198px;
+  margin: 7px;
   position: relative;
   }
 
