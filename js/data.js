@@ -49,6 +49,7 @@ var dataen = {
     "#encryptor-description": "Encrypt and decrypt your secret messages!",
     ".portfolio": "My portfolio",
     "#portfolio-description":"Explore my background, latest projects, and get in touch!!",
+    ".volcanoesmap": "World Volcanoes Map",
     ".probar": "Launch!",
     ".ver-mas": "Github",
 
@@ -135,6 +136,7 @@ var dataes = {
     "#encryptor-description": "¡Encripta y desencripta tus mensajes secretos!",
     ".portfolio": "Mi portafolio",
     "#portfolio-description":"Explora mi perfil, proyectos recientes y más!",
+    ".volcanoesmap": "Mapa global de volcanes",
     ".probar": "¡Probar!",
     ".ver-mas": "Github",
 

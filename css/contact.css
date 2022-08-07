@@ -1,8 +1,8 @@
 .contactContainer {
   flex-direction: column;
   justify-content: space-around;
-  min-height: 100vh;
-  padding: 10%;
+  min-height: 99vh;
+  padding: 0 6% 0 6% ;
   color: var(--color-body);
 }
 
@@ -117,7 +117,7 @@ form {
   display: flex;
   font-family: 'Montserrat', sans-serif;
   border: 1px solid rgba(140, 140, 140, 0.801);
-  margin-top: 19px;
+  margin: 19px 0 29px 0;
   padding: 10px;
   width: 90%;
   max-width: 120px;
@@ -161,9 +161,9 @@ form {
 @media screen and (min-width:900px) {
 
   .contactContainer{
-    padding-top: 5%;
-    padding-bottom: 3%;
-    height:calc(100vh-40px);
+    padding-top: 12vh;
+    height: 87vh;
+
   }
 
 
@@ -171,6 +171,7 @@ form {
     
     flex-direction: row;
     justify-content: space-around;
+    
 
   }
 
@@ -201,8 +202,5 @@ form {
 
   
 
-.contactContainer i {
-margin-top: 80px;
-}
 
 }

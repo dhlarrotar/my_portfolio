@@ -1,9 +1,10 @@
 .projectsContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
-  padding: 10%;
+  padding: 0 5% 0 5%;
+  min-height: 99vh;
   color: var(--color-body);
 }
 
@@ -14,7 +15,8 @@
 
 
 .projectsContainer h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
 
 }
 
@@ -27,25 +29,27 @@
   justify-content: center;
   padding: 16px;
   text-align: center;
-
+  max-width: 600px;
   background-color: var(--bg-banner);
   border: 1px solid var(--color-border);
   margin-bottom: 18px;
   border-radius: 10px;
 
+
 }
 
 
 .projectsItem:hover {
-  border-color: var(--color-main);
   transform: scale(1.007);
+  border-color: var(--color-main);
+  box-shadow: 0 1px 1px var(--color-main),0 3px 6px rgba(183, 183, 183, 0.05);
 }
 
 
 
 .hangmanImg,
 .encryptorImg,
-.portfolioImg {
+.portfolioImg, .volcanoesmapImg{
   width: 100%;
   max-width: 600px;
   height: 30vh;
@@ -73,19 +77,21 @@
   background-image: url(../img/projects/portfolio.png);
 }
 
-
+.volcanoesmapImg{
+  background-image: url(../img/projects/volcanoesmap.png);
+}
 
 .box {
   background-color: var(--bg-body-light);
   display: flex;
   width: 100%;
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   justify-content: center;
   text-align: center;
   color: var(--color-main);
-  font-size: 1.3rem;
   border: 2px solid var(--bg-body-light);
+  -webkit-user-select: none;
 
 }
 
@@ -94,12 +100,7 @@
   display: none;
 }
 
-.projectsItem:hover .projectsItem__info p{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 17px;
-  font-size: 1rem;
-}
+
 
 
 .projectsItem__info h3{
@@ -112,7 +113,7 @@
 
 
 .projectsItem__description {
-  margin-top: 15px;
+  margin-top: 5px;
   font-size: 0.9rem;
   line-height: 1.3rem;
 
@@ -137,7 +138,10 @@
   background-color: var(--bg-body-dark);
   border-radius:10px ;
   font-size: 0.8rem;
+  margin-top: 10px;
   padding: 1%;
+  -webkit-user-select: none;
+  
 }
 
 
@@ -148,6 +152,7 @@
 
 .projectsItem__iconItem:hover {
   color: var(--color-main);
+  font-weight: 600;
 }
 
 
@@ -192,7 +197,41 @@
 }
 
 
+@media screen and (min-width: 822px) {
+  .projectsItem {
+  display: inline-block;
+  vertical-align: middle;
+  width: 220px;
+  height: 270px;
+  margin: 5px;
+  position: relative;
+  }
 
+
+  .hangmanImg,
+  .encryptorImg,
+  .portfolioImg, .volcanoesmapImg {
+
+    height: 160px
+
+  }
+
+
+ /* .projectsItem__info p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17px;
+    font-size: 1rem;
+  } */
+
+  projectsItem__iconsContainer{
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+
+/* 
 
 
 @media screen and (min-width: 822px)and (min-height: 522px) {
@@ -258,7 +297,7 @@
     flex-direction: column;
     width: 260px;
     padding: 20px;
-    border: 0;
+    border: 0; */
 
   }
 
@@ -273,7 +312,7 @@
 
 
 
-
+/* 
 
 @media screen and (min-width: 1022px) {
 
@@ -299,4 +338,4 @@
 
 
 
-}
+} */
