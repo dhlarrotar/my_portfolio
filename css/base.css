@@ -259,7 +259,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 0px #00000000;
   font-family: 'Pacifico', cursive;
-  line-height: 3rem;
+  line-height: 4.4rem;
 }
 
 
@@ -537,6 +537,11 @@ footer .icon-section i:hover {
 
 
 @media screen and (min-width: 822px) {
+  
+  h1{
+    line-height: 6rem;
+  }
+  
   .header-border {
     box-shadow: 0px 3px 6px -6px var(--color-2-body);
     -webkit-box-shadow: 0px 3px 6px -6px var(--color-2-body);

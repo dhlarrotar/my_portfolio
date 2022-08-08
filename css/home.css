@@ -29,8 +29,8 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    height: 50vh;
-    min-height: 290px;
+    height: 60vh;
+    min-height: 320px;
     padding: 12px 6% 12px 6% ;
     background-color: var(--bg-banner);
 }
@@ -41,10 +41,9 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    height: 17vh;
-    line-height: 2.3rem;
-    max-height: 128px;
-    min-height: 118px;
+    height: 20vh;
+    max-height: 158px;
+    min-height: 138px;
     border-radius: 15px;
 
 }
@@ -143,7 +142,7 @@
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
-    padding: 0 6% 0 6% ;
+      padding: 10%;
 }
 
 
@@ -202,7 +201,7 @@
     .home__social-section {
         flex-direction: row;
         justify-content: center;
-   
+        margin-top: 20px;
         max-height: 40px;
         min-height: 30px;
     }
@@ -224,7 +223,7 @@
 
 
     .aboutContainer {
-        
+        padding: 0 ;
         height: 99vh;
         flex-direction: row;
         justify-content: center;
