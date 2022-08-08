@@ -43,6 +43,7 @@
 
 .contact-form,
 form {
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
 }
@@ -55,6 +56,7 @@ form {
   padding: 7px;
   border: 1px solid var(--color-border);
   font-size: 0.9rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.389),0 3px 6px rgba(0, 0, 0, .05);
 }
 
 
@@ -117,6 +119,7 @@ form {
   display: flex;
   font-family: 'Montserrat', sans-serif;
   border: 1px solid rgba(140, 140, 140, 0.801);
+  text-shadow: 1px 1px 2px rgb(69, 69, 69);
   margin: 19px 0 0 0;
   padding: 10px;
   width: 90%;
