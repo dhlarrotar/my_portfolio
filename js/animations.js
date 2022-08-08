@@ -84,12 +84,14 @@ function showSettings(){
   headerArrowDown.style.display ="none"; 
   headerArrowUp.style.display ="flex"; 
   settingsSection.style.display ="flex"; 
+  settingsSection.classList.add("fade-bottom")
 }
 
 function hideSettings(){
   headerArrowUp.style.display ="none"; 
   headerArrowDown.style.display ="flex";
-  settingsSection.style.display ="none";  
+  settingsSection.style.display ="none";
+
 }
 
 
@@ -107,6 +109,7 @@ function hideArrowTop(){
 function showMenu(){
   headerPrincipal.style.display ="flex";
   closeMenu.style.display ="flex";
+  settingsSection.classList.add("fade-left")
   
 }
 

@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: space-around;
  color: var(--color-body);
- max-height: 650px;
+ min-height: 100vh;
  padding: 10%;
  vertical-align: middle;
  }
@@ -64,6 +64,9 @@
 
 
  @media screen and (min-width:300px){
+  .skillsContainer{
+    min-height: 50px;
+  }
 
   .skillsContainer h2{
     justify-content: center;

@@ -15,8 +15,9 @@
 
 
 .projectsContainer h3 {
-  font-size: 1.07rem;
-  line-height: 1.7rem;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 2rem;
 
 }
 
@@ -90,8 +91,8 @@
   justify-content: center;
   text-align: center;
   color: var(--color-main);
-  border: 2px solid var(--bg-body-light);
-  -webkit-user-select: none;
+  border: 1px solid rgba(78, 78, 78, 0.428);
+    -webkit-user-select: none;
 
 }
 
@@ -124,7 +125,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  min-height: 20px;
+  height: 20px;
   text-align: center;
 
 }
@@ -137,7 +138,7 @@
   vertical-align: middle;
   font-size: 0.7rem;
   -webkit-user-select: none;
-  padding: 5px;
+  padding-top: 5px;
   
 }
 
@@ -168,17 +169,17 @@
 }
 
 .projectsItem__buttonContainer a {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   display: flex;
   justify-content: center;
   vertical-align: middle;
   margin-left: 5px;
   margin-right: 5px;
   background-color: var(--bg-body-dark);
-  padding: 7px;
+  padding: 8px;
   border-radius: 5px;
   color: var(--color-body);
-  border: 1px solid #d9d9d91a;
+  border: 1px solid rgba(78, 78, 78, 0.428);
 }
 
 
@@ -206,6 +207,7 @@
   display: inline-block;
   vertical-align: middle;
   width: 198px;
+  height: 280px;
   margin: 7px;
   position: relative;
   }
