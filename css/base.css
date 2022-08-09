@@ -187,8 +187,6 @@ html {
   text-decoration: none;
   flex-direction: column;
 
-  border-bottom: 2px solid var(--bg-body-dark);
-
 
 }
 
@@ -455,6 +453,7 @@ footer {
   justify-content: space-around;
   background: var(--bg-footer);
   color: #ffffff;
+  height: 20vh;
   padding-top: 6%;
   padding-bottom: 3%;
 
@@ -640,8 +639,9 @@ footer .icon-section i:hover {
 
   .menu a{
     padding: 4px;
-    margin: 8px;
+    margin: 12px;
   }
+
 }
 
 
