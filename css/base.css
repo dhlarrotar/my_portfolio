@@ -136,13 +136,16 @@ html {
   vertical-align: middle;
   text-align: center;
   align-items: center;
-  
+
 
 
 }
 
-nav{width: 100%;  justify-content: center;
-  text-align: center;}
+nav {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
 
 .headerPrincipal .container {
   width: 100%;
@@ -175,7 +178,7 @@ nav{width: 100%;  justify-content: center;
   margin-left: 10%;
   display: flex;
   flex-direction: column;
-  
+
   padding: 1px;
   width: 80%;
   justify-content: center;
@@ -197,11 +200,11 @@ nav{width: 100%;  justify-content: center;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  
+
 
   -webkit-user-select: none;
   text-decoration: none;
- 
+
 
 
 }
@@ -213,7 +216,7 @@ nav{width: 100%;  justify-content: center;
   width: 100%;
   justify-content: center;
   text-align: center;
- 
+
 }
 
 
@@ -559,11 +562,14 @@ footer .icon-section i:hover {
 
 @media screen and (min-width: 822px) {
 
-nav{text-align: left;justify-content: left; width: auto;}
+  nav {
+    text-align: left;
+    justify-content: left;
+    width: auto;
+  }
 
   .headerTitle {
-  width: 500px;
-  font-size: 1.1rem;
+    display: none;
   }
 
 
@@ -589,8 +595,8 @@ nav{text-align: left;justify-content: left; width: auto;}
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-  
-  
+
+
   }
 
 
@@ -606,7 +612,7 @@ nav{text-align: left;justify-content: left; width: auto;}
     vertical-align: middle;
     justify-content: space-around;
     padding: 7px;
-    
+
 
 
 
@@ -635,17 +641,18 @@ nav{text-align: left;justify-content: left; width: auto;}
   .menu {
     text-align: center;
     vertical-align: middle;
-    width: auto;
     justify-content: space-around;
-    margin-right: 50px;
+    width: 700px;
+    margin-right: 20px;
   }
 
 
   .menu a {
     font-size: 1.1rem;
-    border-bottom: 0;
-    margin: 13px;
-   
+    width: auto;
+
+    margin: 0;
+
 
   }
 
@@ -682,4 +689,12 @@ nav{text-align: left;justify-content: left; width: auto;}
   }
 
 
+}
+
+
+@media screen and (min-width: 1022px) {
+  .headerTitle {
+    display: flex;
+    font-size: 1.1rem;
+  }
 }
