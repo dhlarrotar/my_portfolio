@@ -1,7 +1,7 @@
 html {
   --color-body: #686868;
   --color-main: #0970e5;
-  --color-icons: rgb(141, 141, 141);
+  --color-icons: rgb(163, 163, 163);
   --color-border: rgba(193, 193, 193, 0.705);
   --color-error: rgb(229, 112, 40);
 
@@ -175,6 +175,7 @@ nav{width: 100%;  justify-content: center;
   margin-left: 10%;
   display: flex;
   flex-direction: column;
+  
   padding: 1px;
   width: 80%;
   justify-content: center;
