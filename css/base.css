@@ -171,6 +171,7 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.6rem;
+  -webkit-user-select: none;
 }
 
 
@@ -472,6 +473,7 @@ a {
 
 footer {
   display: flex;
+  font-family: 'Pacifico', cursive;  
   flex-direction: column;
   justify-content: space-around;
   background: var(--bg-footer);
@@ -486,13 +488,14 @@ footer div,
 footer p {
   display: flex;
   flex-direction: row;
-  justify-content: center
+  justify-content: center;
+
 }
 
 
 
 footer i {
-  font-size: 27px;
+  font-size: 30px;
   color: #ffffff;
   margin-right: 12px;
   margin-left: 12px;
@@ -510,7 +513,8 @@ footer .icon-section i:hover {
 
 .copyright {
   color: var(--color-1);
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 100;
   margin: 20px;
 
 }
