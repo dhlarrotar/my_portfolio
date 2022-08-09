@@ -8,6 +8,7 @@ var dataen = {
     ".skills-title":"Skills",
     ".hobbies-title":"hobbies",
     ".contact-title":"Let's connect!",    
+    "#headerClose":"Close",   
     
     "#hi":"Hi",
     "#myname":"I'm Daniel!",
@@ -85,7 +86,8 @@ var dataes = {
     ".education-title":"Formación",
     ".skills-title":"Aptitudes",
     ".projects-title":"Proyectos",
-    ".contact-title":"Contáctame",    
+    ".contact-title":"Contáctame", 
+    "#headerClose":"Cerrar",   
    
   
 

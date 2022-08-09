@@ -48,11 +48,22 @@ window.addEventListener("scroll", function(){
 
 
 
+var headerButtons=document.querySelectorAll(".menu a");
+
+
+for (let button in headerButtons){
+  if (screen.width<=822){
+    button.onclick=hideMenu
+  }
+}
+
+
+
 
 
 var headerPrincipal=document.querySelector(".headerPrincipal");
 var menuButton=document.querySelector(".menuButton");
-var closeMenu=document.querySelector(".closeMenu");
+var closeMenu=document.querySelector(".closeMenuButton");
 var header= document.querySelector("header");
 var arrowTop= document.querySelector(".arrowTopButton");
 
@@ -64,12 +75,17 @@ headerArrowUp.style.display ="none";
 
 menuButton.onclick=showMenu;
 closeMenu.onclick=hideMenu;
+
+
 arrowTop.addEventListener("click",function(evt){
   evt.preventDefault();
   window.scrollTo(0,0);
   hideArrowTop();
 
 });
+
+
+
 
 
 
@@ -109,7 +125,8 @@ function hideArrowTop(){
 function showMenu(){
   headerPrincipal.style.display ="flex";
   closeMenu.style.display ="flex";
-  settingsSection.classList.add("fade-left")
+  headerPrincipal.classList.add("fade-left");
+  menuButton.style.display ="none";
   
 }
 
@@ -117,6 +134,7 @@ function showMenu(){
 function hideMenu(){
   headerPrincipal.style.display ="none";
   closeMenu.style.display ="none";
+  menuButton.style.display ="flex";
   
 }
 
