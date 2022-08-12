@@ -1,13 +1,10 @@
-var myVar;
 
-function loadWebsite() {
-  myVar = setTimeout(showPage, 2000);
-}
-
-function showPage() {
-document.querySelector(".loader").style.display = "none";
-setTimeout(document.querySelector(".bodyContent").style.display = "block", 1000);
-;
-}
-
-
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    document.querySelector(".bodyContent").style.visibility = "hidden";
+    document.querySelector(".loader").style.visibility = "visible";
+  } else {
+    document.querySelector(".loader").style.display = "none";
+    document.querySelector(".bodyContent").style.visibility = "visible";
+  }
+};
