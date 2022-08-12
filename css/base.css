@@ -65,7 +65,7 @@ html {
   border-top: 16px solid #3498db;
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
-
+}
 
 @-webkit-keyframes spin {
   0% {
@@ -87,7 +87,7 @@ html {
   }
 }
 
-}
+
 
 /* Works on Firefox */
 * {
