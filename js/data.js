@@ -63,8 +63,8 @@ var dataen = {
     
     "#guaviare-title":"Petrography and geochemistry of the San José del Guaviare Nepheline Syenite in the vicinity of El Capricho",
 
-    ".contact-text1":"I'd love to hear from you!",
-    ".contact-text2":"You can fill out the next form or get in touch with me at: ",
+    ".contact-text1":"Do you have a project or idea in mind? let's talk!",
+    ".contact-text2":"Fill out the next form or get in touch with me at: ",
     
     "#mail-label":"Email",
     "#full-name-label":"Full name",
@@ -160,8 +160,8 @@ var dataes = {
 
 
 
-    ".contact-text1":"Me encantaría saber de ti!",
-    ".contact-text2":"Puedes llenar el formulario en esta sección o escribirme a: ",
+    ".contact-text1":"¿Tienes un proyecto o idea en mente? Conversemos!",
+    ".contact-text2":"Déjame tu mensaje en el siguiente formulario o escribirme a: ",
     
     "#mail-label":"Correo",
     "#full-name-label":"Nombre",
