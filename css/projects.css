@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding:10vh;
+  padding:10vh 10% 10vh 10%;
   min-height: 79vh;
   color: var(--color-body);
 }
@@ -202,7 +202,11 @@
 
 
 @media screen and (min-width: 822px) {
+  .projectsContainer {
+    padding:10vh 1% 10vh 1%;
 
+  }
+  
 
   .projectsItem {
   display: inline-block !important;

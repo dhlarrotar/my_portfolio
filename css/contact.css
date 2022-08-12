@@ -2,7 +2,7 @@
   flex-direction: column;
   justify-content: space-around;
   min-height: 79vh;
-  padding: 10vh;
+  padding:10vh 10% 10vh 10%;
   color: var(--color-body);
 }
 
