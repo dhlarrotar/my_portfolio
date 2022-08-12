@@ -465,7 +465,6 @@ a {
 
 footer {
   display: flex;
-  font-family: 'Pacifico', cursive;  
   flex-direction: column;
   justify-content: space-around;
   background: var(--bg-footer);
@@ -505,7 +504,7 @@ footer .icon-section i:hover {
 
 .copyright {
   color: var(--color-1);
-  font-size: 18px;
+  font-size: 0.9rem;
   font-weight: 100;
   margin: 20px;
 
