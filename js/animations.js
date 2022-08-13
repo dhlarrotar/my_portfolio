@@ -4,6 +4,8 @@ reveal();
 
 window.onscroll = () => {
   showArrowTop();
+  if(screen.width<=822){
+  hideMenu()};
    section.forEach((i) => {
     let top = window.scrollY;
     let offset = i.offsetTop - 150;
@@ -48,14 +50,6 @@ window.addEventListener("scroll", function(){
 
 
 
-var headerButtons=document.querySelectorAll(".menu a");
-
-
-for (let button in headerButtons){
-  if (screen.width<=822){
-    button.onclick=hideMenu
-  }
-}
 
 
 
