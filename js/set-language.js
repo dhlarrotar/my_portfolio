@@ -51,7 +51,7 @@ function setLanguage(){
         mail.href="mailto:dhlarrotar@outlook.com?&subject=Hola Daniel!";
         enviar.value="Enviar mensaje";
 
-        cv.setAttribute("href","daniel_larrota_cv_es.pdf");
+        cv.setAttribute("href",'Daniel_Larrota_Rincón-dev.pdf');
     
 
 
@@ -64,7 +64,7 @@ function setLanguage(){
         mail.href="mailto:dhlarrotar@outlook.com?&subject=Hi Daniel!";
         enviar.value="Send message";
 
-        cv.setAttribute("href","daniel_larrota_cv_en.pdf");
+        cv.setAttribute("href",'Daniel_Larrota_Rincón_dev_en.pdf');
 
    
     }
