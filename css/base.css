@@ -222,9 +222,8 @@ nav {
 .headerPrincipal .active,
 .headerPrincipal a:hover {
   background: var(--linear-bg-1);
-  background: var(--linear-bg-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff;
   transition: 0.1s ease-out;
   text-shadow: 2px 2px 2px rgb(69, 69, 69);
 
