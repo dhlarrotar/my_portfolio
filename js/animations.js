@@ -139,3 +139,36 @@ function showHeaderBorder(){
 }
 
 
+
+
+
+
+
+
+var researchGallery=document.querySelector(".researchGallery");
+var projectsGallery=document.querySelector(".projectsGallery");
+var projectButton=document.querySelector("#projectsWeb-button");
+var researchButton=document.querySelector("#research-button");
+
+
+
+
+
+function showResearch(){
+  projectsGallery.style.display="none";
+  researchGallery.style.display="inline-block";
+  researchButton.classList.add("active");
+  projectButton.classList.remove("active");
+}
+
+function showProjects(){
+  projectsGallery.style.display="inline-block";
+  researchGallery.style.display="none";
+  researchButton.classList.remove("active");
+  projectButton.classList.add("active");
+}
+
+projectButton.onclick=showProjects;
+researchButton.onclick=showResearch;
+
+showProjects()

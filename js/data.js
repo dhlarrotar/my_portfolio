@@ -55,7 +55,7 @@ var dataen = {
     ".ver-mas": "Github",
 
 
-    "#web-design-button":"Web design",
+    "#projectsWeb-button":"Web design",
     "#research-button":"Research",
     ".projects-tag":"Web design",
     ".research-tag1":"Earth Sciences",
@@ -144,7 +144,7 @@ var dataes = {
 
 
 
-    "#web-design-button":"Diseño web",
+    "#projectsWeb-button":"Diseño web",
     "#research-button":"Investigación",
     ".projects-tag":"Diseño web",
     ".research-tag1":"Ciencias de la Tierra",

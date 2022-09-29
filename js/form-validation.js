@@ -99,7 +99,9 @@ function validarValores(){
 
 
 
-var recievedMessages=[];
+
+
+
 
 function enviarFormulario(){
     var userMessage={};
@@ -109,7 +111,7 @@ function enviarFormulario(){
         userMessage[id]=value;
         element.value="";
     }
-    recievedMessages.push(userMessage);
+    localStorage.setItem("Message", userMessage)
     form.classList.add("hide");
     success.classList.remove("hide");
 
