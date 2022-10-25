@@ -126,15 +126,16 @@ html {
 .headerPrincipal {
   display: none;
   background: var(--bg-body-light);
-  opacity: 0.9998;
   position: fixed;
-  width: 100%;
+  width: 92%;
   height: 100%;
   z-index: 200;
   vertical-align: middle;
   text-align: center;
   align-items: center;
-
+  box-shadow: 1px 0px 9px 1px rgba(66,66,66,0.75);
+  -webkit-box-shadow: 1px 0px 9px 1px rgba(66,66,66,0.75);
+  -moz-box-shadow: 1px 0px 9px 1px rgba(66,66,66,0.75);
 
 
 }

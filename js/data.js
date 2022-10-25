@@ -42,7 +42,7 @@ var dataen = {
       <li> GIS and Remote sensing</li>
       <li> Geomorphology</li>
       <li>Geophysical methods</li>
-    </ul>>`,
+    </ul>`,
 
    "#skillsItem__title2":"GIS & Data Analysis",
    "#skillsItem__title3":"Web Development",
@@ -139,7 +139,7 @@ var dataes = {
     <li> SIG y sensores remotos</li>
     <li> Geomorfología</li>
     <li>Métodos geofísicos</li>
-    </ul>>`,
+    </ul>`,
 
 
     "#skillsItem__title2":"SIG y Análisis de datos",
