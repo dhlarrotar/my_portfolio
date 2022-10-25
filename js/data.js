@@ -17,9 +17,11 @@ var dataen = {
 
 
     
-    "#about-text":"I’m a <strong>web developer</strong> and <strong>geologist</strong> with technical skills in geospatial data management and analysis. I’m passionate about exploring new technologies and innovative ideas to address socio-environmental issues and unravel the mysteries of our surroundings.",  
+    "#about-text":"I’m passionate about exploring new technologies and innovative ideas to unravel the mysteries of our surroundings and addressing socio-environmental issues",  
     "#hobbies-description":"I'm fond of:",
 
+
+    
     "#webdesign":"Web design",
     "#data-science":"Data science",
     "#vector":"Vector & graphics",
@@ -30,6 +32,20 @@ var dataen = {
     "#swimming":"Swimming",
     "#basket":"Basketball",
 
+
+"#skillsItem_title1":"",
+
+    "#skillsItem1":`<h3 id="skillsItem__title1"> Earth Sciences</h3>
+    <ul id="skillsItem__list1">
+      <li> Igneous Petrology</li>
+      <li>Environmental studies</li>
+      <li> GIS and Remote sensing</li>
+      <li> Geomorphology</li>
+      <li>Geophysical methods</li>
+    </ul>>`,
+
+   "#skillsItem__title2":"GIS & Data Analysis",
+   "#skillsItem__title3":"Web Development",
 
 
     "#unal-title": "B.S. Geology",
@@ -62,6 +78,8 @@ var dataen = {
     ".read":"Read",
     
     "#guaviare-title":"Petrography and geochemistry of the San José del Guaviare Nepheline Syenite in the vicinity of El Capricho",
+
+    "#comingSoon":`More projects available soon...`,
 
     ".contact-text1":"Do you have a project or idea in mind? let's talk!",
     ".contact-text2":"Fill out the next form or get in touch with me at: ",
@@ -101,7 +119,7 @@ var dataes = {
 
 
     
-    "#about-text":"Soy <strong>desarrollador web</strong> y <strong>geólogo</strong> con habilidades para el manejo y análisis de datos geoespaciales. Me apasiona explorar nuevas tecnologías e ideas innovadoras para abordar problemas socioambientales y desentrañar los misterios de nuestro entorno.",
+    "#about-text":"Me apasiona explorar nuevas tecnologías e ideas innovadoras para abordar problemas socioambientales y desentrañar los misterios de nuestro entorno.",
 
     "#hobbies-description":"Me apasiona:",    
     "#webdesign":"Diseño web",
@@ -115,8 +133,17 @@ var dataes = {
     "#basket":"Baloncesto",
 
 
+    "#skillsItem1":`<h3 id="skillsItem__title1"> Ciencias de la Tierra</h3>
+    <ul id="skillsItem__list3">
+    <li>Estudios ambientales</li>
+    <li> SIG y sensores remotos</li>
+    <li> Geomorfología</li>
+    <li>Métodos geofísicos</li>
+    </ul>>`,
 
 
+    "#skillsItem__title2":"SIG y Análisis de datos",
+    "#skillsItem__title3":"Desarrollo Web",
 
     "#unal-title": "Geología",
     "#python-title": "Python para todos",
@@ -144,6 +171,7 @@ var dataes = {
 
 
 
+
     "#projectsWeb-button":"Diseño web",
     "#research-button":"Investigación",
     ".projects-tag":"Diseño web",
@@ -152,7 +180,7 @@ var dataes = {
     
     "#guaviare-title":"Petrografía y geoquímica de la Sienita Nefelínica de San José del Guaviare en cercanías de El Capricho",
 
-
+    "#comingSoon":`Más proyectos disponibles próximamente...`,
 
 
 

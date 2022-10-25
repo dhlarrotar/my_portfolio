@@ -24,12 +24,21 @@ margin: 15px;
 }
 
 
+.skillsContainer h3{
+ margin: 7px 0 15px 0;
+font-size: 1.3rem;
+line-height: 1.4rem;
+   
+ }
+
 .skillsContainer__hardSkills ul{
+  list-style: disc;
   display: flex;
   flex-direction: column;
  justify-content: space-around;
  height: 70vh;
  margin-bottom:15px ;
+ margin-left: 15px;
  max-height: 550px;
  max-width: 80%;
  
@@ -43,7 +52,6 @@ margin: 15px;
    padding: 5px 20px 5px 20px;
     align-items: center;
    background-color:var(--bg-banner);
-    margin:30px;
    border-radius: 10px;
    color: var(--color-body);
    border: 1px solid var(--color-border);
@@ -53,16 +61,24 @@ margin: 15px;
  }
 
 
- .skillsItem i {
- font-size: 2.1rem;
-
- vertical-align: middle;
+ .skillsItem li {
+ line-height: 1.5rem;
  }
 
 
+
  .skillsItem:hover{
-  color: var(--color-main);
   border-color: var( --color-main);
+ }
+
+ .skillsItem:hover h3{
+  color: var( --color-main);
+  font-weight: 500;
+ }
+
+ .skillsItem li:hover, .skillsItem h3:hover{
+  color: var( --color-main);
+  font-weight: 500;
  }
 
 
@@ -79,22 +95,23 @@ margin: 15px;
     display: inline-block;
     width: 100%;
     height: auto;
-    text-align: center;
+    text-align: left;
     
   }
   
   .skillsItem{
     display: inline-block;
-    width:80px;
-    height:83px;
+
     text-align: center;
     padding: 13px;
-    margin: 4px;
+    margin: 15px;
+    width: 220px;
+    min-height: 200px;
     vertical-align: bottom;
     font-size: 0.9rem;
     line-height: 1.1rem;
-    color: var(--color-icons);
     font-weight: 500;
+    cursor: pointer;
     
   }
 
@@ -115,10 +132,4 @@ margin: 15px;
    
   }
       
-
-  .skillsContainer{
-    padding: 5%;
-    min-height: 1vh;
-  }
-
 }
