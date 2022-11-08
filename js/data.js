@@ -135,6 +135,7 @@ var dataes = {
 
     "#skillsItem1":`<h3 id="skillsItem__title1"> Ciencias de la Tierra</h3>
     <ul id="skillsItem__list3">
+    <li>Petrología Ígnea</li>
     <li>Estudios ambientales</li>
     <li> SIG y sensores remotos</li>
     <li> Geomorfología</li>
