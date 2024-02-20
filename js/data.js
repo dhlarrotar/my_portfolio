@@ -66,6 +66,9 @@ var dataen = {
     ".portfolio": "My portfolio",
     "#portfolio-description":"Explore my background, latest projects, and get in touch!!",
     ".volcanoesmap": "World Volcanoes Map",
+    ".deforestation": "Vegetation changes in Guaviare Colombia for 2013- 2023 ",
+    ".greenareas": "Change detection of green areas in Enschede, Netherlands for 2006-2016",
+
     ".probar": "Launch!",
     ".ver-mas": "Github",
 
