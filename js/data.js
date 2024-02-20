@@ -12,12 +12,12 @@ var dataen = {
     
     "#hi":"Hi",
     "#myname":"I'm Daniel!",
-    "#mytitle":"Geologist | Web Developer",
+    "#mytitle":"Geologist and GIS professional ",
 
 
 
     
-    "#about-text":"I’m passionate about exploring new technologies and innovative ideas to unravel the mysteries of our surroundings and addressing socio-environmental issues",  
+    "#about-text":"I am a geologist and GIS professional interested in the use of geospatial data to address socio-environmental issues and deepen our understanding of Earth and other planetary bodies.", 
     "#hobbies-description":"I'm fond of:",
 
 
@@ -37,11 +37,10 @@ var dataen = {
 
     "#skillsItem1":`<h3 id="skillsItem__title1"> Earth Sciences</h3>
     <ul id="skillsItem__list1">
-      <li> Igneous Petrology</li>
-      <li>Environmental studies</li>
-      <li> GIS and Remote sensing</li>
-      <li> Geomorphology</li>
+      <li> GIS and Remote Sensing</li>
+       <li> Geology and Environment</li>
       <li>Geophysical methods</li>
+      <li>Astronomy</li>
     </ul>`,
 
    "#skillsItem__title2":"GIS & Data Analysis",
@@ -52,7 +51,7 @@ var dataen = {
     "#python-title": "Python for Everybody",
     "#deepl-title": "Deep Learning Specialization",
     "#esri-title": "Spatial Data Science",
-    "#unesco-title": "Programming for geospatial hydrological applications",
+    "#itc-title": "MS Geo-information Science & Earth Observation",
 
 
 
@@ -74,7 +73,7 @@ var dataen = {
     "#projectsWeb-button":"Web design",
     "#research-button":"Research",
     ".projects-tag":"Web design",
-    ".research-tag1":"Earth Sciences",
+    ".research-tag1":"Earth Science",
     ".read":"Read",
     
     "#guaviare-title":"Petrography and geochemistry of the San José del Guaviare Nepheline Syenite in the vicinity of El Capricho",
