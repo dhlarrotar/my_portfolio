@@ -149,16 +149,19 @@ var researchGallery=document.querySelector(".researchGallery");
 var projectsGallery=document.querySelector(".projectsGallery");
 var projectButton=document.querySelector("#projectsWeb-button");
 var researchButton=document.querySelector("#research-button");
+var gisButton=document.querySelector("#projectsgis-button");
+var gisGallery=document.querySelector(".gisGallery");
 
-
-
-
+gisGallery.style.display="none";
+gisButton.classList.remove("active");
 
 function showResearch(){
   projectsGallery.style.display="none";
   researchGallery.style.display="inline-block";
   researchButton.classList.add("active");
   projectButton.classList.remove("active");
+  gisGallery.style.display="none";
+  gisButton.classList.remove("active");
 }
 
 function showProjects(){
@@ -166,9 +169,25 @@ function showProjects(){
   researchGallery.style.display="none";
   researchButton.classList.remove("active");
   projectButton.classList.add("active");
+  gisGallery.style.display="none";
+  gisButton.classList.remove("active");
 }
+
+
+
+function showGis(){
+  projectsGallery.style.display="none";
+  researchGallery.style.display="none";
+  researchButton.classList.remove("active");
+  projectButton.classList.remove("active");
+  gisGallery.style.display="inline-block";
+  gisButton.classList.add("active");
+}
+
+
 
 projectButton.onclick=showProjects;
 researchButton.onclick=showResearch;
+gisButton.onclick=showGis;
 
-showProjects()
+showGis()

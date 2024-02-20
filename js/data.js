@@ -69,7 +69,7 @@ var dataen = {
     ".probar": "Launch!",
     ".ver-mas": "Github",
 
-
+    "#projectsgis-button":"GIS",
     "#projectsWeb-button":"Web design",
     "#research-button":"Research",
     ".projects-tag":"Web design",
