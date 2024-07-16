@@ -60,6 +60,7 @@
     padding:10vh;
     height:79vh;
     width: 70%;
+    max-width: 1000px;
     text-align: center;
   }
 
