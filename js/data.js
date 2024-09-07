@@ -17,7 +17,7 @@ var dataen = {
 
 
     
-    "#about-text":"I am a geologist and GIS professional interested in the use of geospatial data to address socio-environmental issues and deepen our understanding of Earth and other planetary bodies.", 
+    "#about-text":"I am an enthusiastic geologist and GIS professional with a solid academic background in geospatial data analysis and Earth observation. My skills include proficient use of GIS and remote sensing, complemented by programming skills in Python and JavaScript, and hands-on fieldwork in geological and geoenvironmental projects. Fluent in Spanish, English, and French, I am always eager to take on new challenges and explore innovative geoscience and geospatial intelligence solutions.", 
     "#hobbies-description":"I'm fond of:",
 
 
@@ -71,6 +71,7 @@ var dataen = {
 
     ".probar": "Launch!",
     ".ver-mas": "Github",
+    ".ver":"More info",
 
     "#projectsgis-button":"GIS",
     "#projectsWeb-button":"Web design",
@@ -121,7 +122,7 @@ var dataes = {
 
 
     
-    "#about-text":"Me apasiona explorar nuevas tecnologías e ideas innovadoras para abordar problemas socioambientales y desentrañar los misterios de nuestro entorno.",
+    "#about-text":"Soy geólogo y profesional de los SIG con una sólida formación en análisis de datos geoespaciales y observación de la Tierra. Manejo herramientas de SIG y teledetección, y tengo conocimientos de programación en Python y JavaScript. Además, he participado en trabajos de campo en proyectos geológicos y geoambientales. Hablo inglés y francés, y siempre estoy dispuesto a enfrentar nuevos retos y explorar soluciones innovadoras en geociencias e inteligencia geoespacial.",
 
     "#hobbies-description":"Me apasiona:",    
     "#webdesign":"Diseño web",
@@ -171,6 +172,7 @@ var dataes = {
     ".volcanoesmap": "Mapa global de volcanes",
     ".probar": "¡Probar!",
     ".ver-mas": "Github",
+    ".ver":"Saber más",
 
 
 

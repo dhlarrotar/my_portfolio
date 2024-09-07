@@ -1,3 +1,15 @@
+
+
+a:hover {
+  transition: color 0.2s ease-out; /* Reduce transition time for hover */
+}
+
+.reveal.active {
+  animation: fade-bottom 0.5s ease-in; /* Faster fade for smooth scroll */
+}
+
+
+
 html {
   --color-body: #686868;
   --color-main: #0970e5;
@@ -18,6 +30,8 @@ html {
 
   scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
+  --spacing-default: 16px; /* Add spacing variable */
+  --font-size-default: 1rem; /* Default font size */
 
 
 }
