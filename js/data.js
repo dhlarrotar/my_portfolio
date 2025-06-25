@@ -17,7 +17,7 @@ var dataen = {
 
 
     
-    "#about-text":"I am an enthusiastic geologist and GIS professional with a solid academic background in geospatial data analysis and Earth observation. My skills include proficient use of GIS and remote sensing, complemented by programming skills in Python and JavaScript, and hands-on fieldwork in geological and geoenvironmental projects. Fluent in Spanish, English, and French, I am always eager to take on new challenges and explore innovative geoscience and geospatial intelligence solutions.", 
+    "#about-text":"I am a GIS professional and geologist with solid experience in spatial data analysis, remote sensing, and geovisualization. My work ranges from satellite image processing to collaborative problem-solving in diverse, international teams. I focus on turning complex spatial data into clear, useful insights for environmental research, planetary science, and public applications.", 
     "#hobbies-description":"I'm fond of:",
 
 
@@ -81,7 +81,7 @@ var dataen = {
     ".read":"Read",
     
     "#guaviare-title":"Petrography and geochemistry of the San José del Guaviare Nepheline Syenite in the vicinity of El Capricho",
-
+    "#magma-title":"Tracing magmatic footprints: Influence of a CO2-rich melt on the mineral assemblage of the San José del Guaviare Syenite, SE Colombia",
     "#comingSoon":`More projects available soon...`,
 
     ".contact-text1":"Do you have a project or idea in mind? let's talk!",
@@ -114,7 +114,7 @@ var dataes = {
 
     "#hi":"¡Hola",
     "#myname":"soy Daniel!",
-    "#mytitle":"Geólogo | Desarrollador web",
+    "#mytitle":"Geólogo | Profesional SIG",
 
 
 
@@ -122,7 +122,7 @@ var dataes = {
 
 
     
-    "#about-text":"Soy geólogo y profesional de los SIG con una sólida formación en análisis de datos geoespaciales y observación de la Tierra. Manejo herramientas de SIG y teledetección, y tengo conocimientos de programación en Python y JavaScript. Además, he participado en trabajos de campo en proyectos geológicos y geoambientales. Hablo inglés y francés, y siempre estoy dispuesto a enfrentar nuevos retos y explorar soluciones innovadoras en geociencias e inteligencia geoespacial.",
+    "#about-text":"Soy geólogo y profesional de los SIG con una sólida experiencia en análisis de datos espaciales, teledetección y geovisualización. Mi trabajo abarca desde el procesamiento de imágenes por satélite hasta la resolución de problemas en colaboración con diversos equipos internacionales. Me centro en convertir datos espaciales complejos en ideas claras y útiles para la investigación medioambiental, la ciencia planetaria y las aplicaciones públicas.",
 
     "#hobbies-description":"Me apasiona:",    
     "#webdesign":"Diseño web",
@@ -184,7 +184,7 @@ var dataes = {
     ".read":"Leer",
     
     "#guaviare-title":"Petrografía y geoquímica de la Sienita Nefelínica de San José del Guaviare en cercanías de El Capricho",
-
+    "#magma-title":"Rastreando las huellas magmáticas: Influencia de fluidos ricos en CO2 en la composición mineralógica de la Sienita de San José del Guaviare, SE Colombia",
     "#comingSoon":`Más proyectos disponibles próximamente...`,
 
 
