@@ -35,6 +35,28 @@
     background-color: var(--bg-banner);
 }
 
+/* Profile Picture */
+.profile-picture-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing-default);
+  margin-left: 80px;
+}
+
+.profile-picture {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.03);
+}
+
 
 .greetingLines {
     display: flex;
@@ -168,7 +190,7 @@
     width: 220px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/about.png);
+    background-image: url(../img/photo.jpg);
     
   }
   
@@ -188,7 +210,6 @@
 
 
     .greetingContainer {
-        padding-top: 5%;
         padding-bottom: 3%;
         min-height: 210px;
         max-height: 220px;

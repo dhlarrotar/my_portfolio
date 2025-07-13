@@ -17,7 +17,7 @@ var dataen = {
 
 
     
-    "#about-text":"I am a GIS professional and geologist with solid experience in spatial data analysis, remote sensing, and geovisualization. My work ranges from satellite image processing to collaborative problem-solving in diverse, international teams. I focus on turning complex spatial data into clear, useful insights for environmental research, planetary science, and public applications.", 
+    "#about-text":"I am a GIS professional and geologist with solid experience in spatial data analysis, remote sensing, and geovisualization. My work ranges from satellite image processing to collaborative problem-solving in diverse, international teams. I focus on turning complex spatial data into clear, useful insights for environmental research, Geoscience, and public applications.", 
     "#hobbies-description":"I'm fond of:",
 
 
@@ -122,7 +122,7 @@ var dataes = {
 
 
     
-    "#about-text":"Soy geólogo y profesional de los SIG con una sólida experiencia en análisis de datos espaciales, teledetección y geovisualización. Mi trabajo abarca desde el procesamiento de imágenes por satélite hasta la resolución de problemas en colaboración con diversos equipos internacionales. Me centro en convertir datos espaciales complejos en ideas claras y útiles para la investigación medioambiental, la ciencia planetaria y las aplicaciones públicas.",
+    "#about-text":"Soy geólogo y profesional de los SIG con una sólida experiencia en análisis de datos espaciales, teledetección y geovisualización. Mi trabajo abarca desde el procesamiento de imágenes por satélite hasta la resolución de problemas en colaboración con diversos equipos internacionales. Me centro en convertir datos espaciales complejos en ideas claras y útiles para la investigación medioambiental, geociencias y las aplicaciones públicas.",
 
     "#hobbies-description":"Me apasiona:",    
     "#webdesign":"Diseño web",
