@@ -1,1298 +1,181 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title> My portfolio! -- Daniel Larrota Rincón</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/buttons.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/education.css">
-  <link rel="stylesheet" href="css/skills.css">
-  <link rel="stylesheet" href="css/projects.css">
-  <link rel="stylesheet" href="css/contact.css">
-
-
-
-
-  <meta property="og:title" content="Welcome to my portfolio! -- Daniel Larrota Rincón" />
-  <meta property="og:description" content="Explore my latest projects, background, and get in touch!" />
-  <meta property="og:image" content="https://i.postimg.cc/2yX8PfMY/portfolio.png">
-
-
-
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="mobile-web-app-capable" content="yes">
-
-
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
-  <script src="https://kit.fontawesome.com/9fb909ccd9.js" crossorigin="anonymous"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a1b">
+  <title>Daniel Larrota Rincón | Geologist & GIS professional</title>
+  <meta name="description" content="The portfolio of Daniel Larrota Rincón, a geologist researching petrology, remote sensing and AI/ML for Earth and planetary science.">
+  <meta property="og:title" content="Daniel Larrota Rincón | Geologist & GIS professional">
+  <meta property="og:description" content="Geology, petrology, multimodal remote sensing and computational methods for a changing planet.">
+  <meta property="og:image" content="img/photo.jpg">
+  <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#172323;--muted:#657271;--paper:#f4f5f0;--surface:#fff;--line:#dce3de;--accent:#3f8f96;--accent-2:#9bb9a0;--deep:#101a1b;--deep-muted:#9daead;--radius:24px;--shadow:0 18px 55px #17232312}
+    html[data-theme="dark"]{--paper:#101a1b;--surface:#182627;--ink:#edf2ec;--muted:#aab9b5;--line:#304141;--deep:#0b1213;--deep-muted:#aab9b5;--shadow:0 18px 55px #0005}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,system-ui,sans-serif;line-height:1.6;transition:background .35s,color .35s}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}img{display:block;max-width:100%}.container{width:min(1160px,calc(100% - 48px));margin:auto}.mono{font:500 11px/1.3 "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase}.eyebrow{color:var(--accent);display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:34px;height:1px;background:currentColor}.skip{position:absolute;left:16px;top:12px;transform:translateY(-150%);z-index:100;background:var(--accent);color:#fff;padding:10px 15px;border-radius:8px}.skip:focus{transform:none}
+    .site-header{position:fixed;top:0;left:0;right:0;z-index:20;border-bottom:1px solid transparent;transition:.3s;background:color-mix(in srgb,var(--paper) 82%,transparent);backdrop-filter:blur(18px)}.site-header.scrolled{border-color:var(--line);box-shadow:0 8px 30px #00000008}.header-inner{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.04em}.brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--ink);color:var(--paper);font:500 12px "DM Mono",monospace}.nav{display:flex;gap:30px;align-items:center;color:var(--muted);font-size:13px;font-weight:700}.nav a{transition:color .2s}.nav a:hover,.nav a.active{color:var(--accent)}.header-actions{display:flex;align-items:center;gap:9px}.icon-button,.menu-button{width:38px;height:38px;border:1px solid var(--line);background:transparent;border-radius:50%;display:grid;place-items:center;cursor:pointer}.icon-button:hover,.menu-button:hover{border-color:var(--accent);color:var(--accent)}.language{border:1px solid var(--line);background:transparent;border-radius:20px;padding:8px 11px;color:var(--muted);font:500 11px "DM Mono",monospace}.menu-button{display:none;border-radius:10px}
+    .hero{min-height:760px;padding:170px 0 100px;position:relative;overflow:hidden;background:var(--deep);color:#edf2ec}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 28%,#3f8f9630,transparent 31%),linear-gradient(110deg,transparent 0 45%,#9bb9a009 45% 45.2%,transparent 45.2%)}.hero:after{content:"";position:absolute;width:560px;height:560px;border:1px solid #9bb9a030;border-radius:50%;right:-170px;top:105px;box-shadow:0 0 0 45px #9bb9a00c,0 0 0 110px #9bb9a007}.hero-content{position:relative;z-index:1;max-width:1100px}.hero .eyebrow{color:#8fc8c5}.hero h1{font-size:clamp(3.5rem,7vw,7rem);line-height:.96;letter-spacing:-.08em;margin:26px 0 28px;max-width:1100px;white-space:nowrap}.hero h1 em{font-family:"Playfair Display",serif;font-weight:600;color:#8fc8c5;letter-spacing:-.06em}.hero-lede{max-width:600px;color:#bdc9c4;font-size:clamp(1rem,1.8vw,1.25rem);line-height:1.7}.hero-links{display:flex;align-items:center;gap:18px;margin-top:42px}.button{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;padding:13px 20px;font-weight:700;font-size:13px;transition:transform .2s,box-shadow .2s}.button:hover{transform:translateY(-3px);box-shadow:0 12px 24px #3f8f9640}.button.ghost{background:transparent;color:inherit;border-color:#72827d}.button.ghost:hover{border-color:var(--accent);color:#fff}.scroll-note{position:absolute;bottom:38px;left:max(24px,calc((100% - 1160px)/2));z-index:1;color:#869793;display:flex;align-items:center;gap:12px}.scroll-note span{width:28px;height:1px;background:var(--accent)}.geo-animation{position:absolute;right:5%;top:13%;width:min(42vw,520px);height:min(42vw,520px);opacity:.55;pointer-events:none}.geo-animation svg{width:100%;height:100%;overflow:visible}.contour{fill:none;stroke:#9bb9a055;stroke-width:1;stroke-dasharray:5 12;animation:drift 26s linear infinite}.contour:nth-child(2){animation-duration:34s;animation-direction:reverse}.contour:nth-child(3){animation-duration:42s}.geo-dot{fill:#8fc8c5;filter:drop-shadow(0 0 8px #8fc8c5);animation:pulse 4s ease-in-out infinite}.geo-dot:nth-of-type(2){animation-delay:1.3s}.geo-dot:nth-of-type(3){animation-delay:2.4s}.geo-orbit{fill:none;stroke:#8fc8c54d;stroke-width:1;stroke-dasharray:2 8;transform-origin:50% 50%;animation:spin 18s linear infinite}@keyframes drift{to{stroke-dashoffset:-240}}@keyframes pulse{0%,100%{opacity:.35;transform:scale(.75)}50%{opacity:1;transform:scale(1.2)}}@keyframes spin{to{transform:rotate(360deg)}}
+    .intro{padding:110px 0 80px}.intro-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:100px;align-items:center}.section-title{font-size:clamp(2rem,4vw,3.8rem);line-height:1.04;letter-spacing:-.06em;margin:18px 0 24px}.section-title em{font-family:"Playfair Display",serif;font-weight:600}.body-copy{color:var(--muted);font-size:17px;max-width:640px}.portrait-wrap{position:relative;justify-self:end;width:min(100%,300px)}.portrait-wrap:before{display:none}.portrait{position:relative;width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;z-index:1;filter:saturate(.82);border:8px solid var(--surface);box-shadow:0 0 0 1px var(--accent-2),0 18px 45px #17232318}.portrait-caption{position:static;margin:18px auto 0;text-align:center;font:500 11px/1.5 "DM Mono",monospace;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+    .stats{display:flex;gap:40px;border-top:1px solid var(--line);margin-top:42px;padding-top:25px}.stat strong{display:block;font-size:28px;font-weight:800;line-height:1;letter-spacing:-.06em}.stat-title{display:block;margin-top:8px;font-size:13px;font-weight:700;color:var(--ink)}.stat-detail{display:block;margin-top:3px;color:var(--muted);font-size:12px;line-height:1.5}.band{background:var(--surface);padding:105px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:46px}.section-head .section-title{margin-bottom:0}.section-head>p{max-width:360px;color:var(--muted);font-size:14px}
+    .background{padding:105px 0;background:var(--paper)}.background-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:80px;align-items:start}.background-intro{color:var(--muted);font-size:15px;max-width:390px}.timeline{border-top:1px solid var(--line)}.timeline-item{display:grid;grid-template-columns:145px 1fr;gap:28px;padding:24px 0;border-bottom:1px solid var(--line)}.timeline-date{color:var(--accent);padding-top:4px}.timeline-item h3{font-size:18px;line-height:1.3;margin:0 0 5px;letter-spacing:-.03em}.timeline-item p{font-size:13px;color:var(--muted);margin:0}.timeline-item strong{font-weight:700}
+    .capabilities{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}.capability{background:var(--surface);padding:30px 25px;min-height:235px}.capability:hover{background:color-mix(in srgb,var(--surface) 85%,var(--accent-2))}.cap-number{color:var(--accent);font:500 12px "DM Mono",monospace}.capability h3{font-size:19px;line-height:1.2;margin:47px 0 12px;letter-spacing:-.04em}.capability p{font-size:13px;color:var(--muted);margin:0}
+    .projects{padding:110px 0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 34px}.filter{cursor:pointer;border:1px solid var(--line);background:transparent;border-radius:999px;padding:10px 15px;color:var(--muted);font-size:12px}.filter.active,.filter:hover{border-color:var(--accent);background:var(--accent);color:#fff}.project-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}.project-card{grid-column:span 4;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 0 0 transparent;transition:transform .3s,box-shadow .3s;border-bottom:3px solid transparent}.project-card.featured{grid-column:span 8}.project-card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-bottom-color:var(--accent)}.project-image{height:220px;width:100%;object-fit:cover;background:#dce4df}.featured .project-image{height:290px}.project-body{padding:22px 23px 24px}.project-meta{display:flex;justify-content:space-between;color:var(--accent);font:500 10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em}.project-card h3{font-size:20px;line-height:1.2;letter-spacing:-.04em;margin:16px 0 10px}.project-card p{font-size:13px;color:var(--muted);margin:0 0 18px}.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{font:500 10px "DM Mono",monospace;color:var(--muted);background:var(--paper);border-radius:4px;padding:5px 7px}.project-links{display:flex;gap:15px;margin-top:20px;font-size:12px;font-weight:700;color:var(--accent)}                .all-tools-label{grid-column:1/-1;color:var(--muted);margin:8px 0 -6px}.all-list,.project-card.all-list.featured{grid-column:span 3;display:flex;align-items:center;gap:10px;min-height:48px;height:62px;padding:10px 12px;border-radius:14px;border-bottom:1px solid var(--line);box-shadow:none;cursor:pointer}.all-list.all-tool-start{grid-column:1 / span 3}.all-list:hover{transform:none;box-shadow:none;background:var(--surface)}.all-list .project-image,.project-card.all-list.featured .project-image{width:28px;height:28px;flex:0 0 28px;border-radius:7px;object-fit:cover}.all-list .project-body{padding:0}.all-list .project-meta,.all-list p,.all-list .tags,.all-list .project-links{display:none}.all-list h3{font-size:13px;margin:0;line-height:1.3}.empty{text-align:center;color:var(--muted);grid-column:1/-1;padding:40px}
+    .projects{padding:110px 0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 34px}.filter{cursor:pointer;border:1px solid var(--line);background:transparent;border-radius:999px;padding:10px 15px;color:var(--muted);font-size:12px}.filter.active,.filter:hover{border-color:var(--accent);background:var(--accent);color:#fff}.project-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}.project-card{grid-column:span 4;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 0 0 transparent;transition:transform .3s,box-shadow .3s;border-bottom:3px solid transparent}.project-card.featured{grid-column:span 8}.project-card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-bottom-color:var(--accent)}.project-image{height:220px;width:100%;object-fit:cover;background:#dce4df}.featured .project-image{height:290px}.project-body{padding:22px 23px 24px}.project-meta{display:flex;justify-content:space-between;color:var(--accent);font:500 10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em}.project-card h3{font-size:20px;line-height:1.2;letter-spacing:-.04em;margin:16px 0 10px}.project-card p{font-size:13px;color:var(--muted);margin:0 0 18px}.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{font:500 10px "DM Mono",monospace;color:var(--muted);background:var(--paper);border-radius:4px;padding:5px 7px}.project-links{display:flex;gap:15px;margin-top:20px;font-size:12px;font-weight:700;color:var(--accent)}.project-card.modal-card .project-links a:first-child{cursor:pointer}.all-tools-label{grid-column:1/-1;color:var(--muted);margin:8px 0 -6px}.all-list,.project-card.all-list.featured{grid-column:span 3;display:flex;align-items:center;gap:10px;min-height:48px;height:62px;padding:10px 12px;border-radius:14px;border-bottom:1px solid var(--line);box-shadow:none;cursor:pointer}.all-list.all-tool-start{grid-column:1 / span 3}.all-list:hover{transform:none;box-shadow:none;background:var(--surface)}.all-list .project-image,.project-card.all-list.featured .project-image{width:28px;height:28px;flex:0 0 28px;border-radius:7px;object-fit:cover}.all-list .project-body{padding:0}.all-list .project-meta,.all-list p,.all-list .tags,.all-list .project-links{display:none}.all-list h3{font-size:13px;margin:0;line-height:1.3}.empty{text-align:center;color:var(--muted);grid-column:1/-1;padding:40px}
+    .project-modal{position:fixed;inset:0;z-index:40;display:none;place-items:center;padding:24px;background:#101a1bcc}.project-modal.open{display:grid}.project-modal-content{position:relative;width:min(680px,100%);max-height:90vh;overflow:auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px}.project-modal-content img{width:100%;max-height:280px;object-fit:cover;border-radius:16px;margin-bottom:24px}.project-modal-content h2{margin:0 36px 10px 0;line-height:1.1}.project-modal-content p{color:var(--muted);font-size:14px}.modal-close{position:absolute;top:18px;right:18px;width:34px;height:34px;border:1px solid var(--line);border-radius:50%;background:transparent;cursor:pointer;font-size:20px}.modal-close:hover{border-color:var(--accent);color:var(--accent)}
+    .contact{background:var(--deep);color:#edf2ec;padding:110px 0;position:relative;overflow:hidden}.contact:after{content:"";position:absolute;width:500px;height:500px;border:1px solid #9bb9a026;border-radius:50%;right:-180px;top:-160px}.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:100px;align-items:end;position:relative;z-index:1}.contact .section-title{font-size:clamp(2.6rem,6vw,5.5rem);margin-bottom:0}.contact .section-title em{color:#8fc8c5}.contact-copy{color:#bdc9c4;max-width:400px}.contact-mail{display:inline-flex;margin:30px 0 35px}.socials{display:flex;gap:16px;color:#bdc9c4;font-size:13px}.socials a:hover{color:#8fc8c5}.footer{background:var(--deep);border-top:1px solid #304141;color:#84948f;padding:20px 0;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:20px}.footer a:hover{color:#fff}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.in{opacity:1;transform:none}    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.project-card,.button,.contour,.geo-dot,.geo-orbit{animation:none;transition:none}}
+    @media(max-width:800px){.container{width:min(100% - 36px,600px)}.header-inner{height:68px}.nav{position:absolute;top:68px;left:18px;right:18px;display:none;flex-direction:column;align-items:stretch;gap:0;padding:8px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.nav.open{display:flex}.nav a{padding:13px 14px}.menu-button{display:grid}.hero{min-height:700px;padding:140px 0 100px}.hero h1{font-size:clamp(3.2rem,16vw,6rem)}.geo-animation{width:430px;height:430px;right:-190px;top:80px;opacity:.35}.scroll-note{left:18px}.intro{padding:80px 0 65px}.intro-grid,.contact-grid,.background-grid{grid-template-columns:1fr;gap:55px}.portrait-wrap{justify-self:center;width:min(100%,260px)}.portrait-wrap:before{inset:-10px}.portrait-caption{right:8px;bottom:14px}.section-head{display:block}.section-head>p{margin-top:18px}.background{padding:78px 0}.band,.projects,.contact{padding:78px 0}.capabilities{grid-template-columns:1fr 1fr}.project-card,.project-card.featured{grid-column:span 6}.project-image,.featured .project-image{height:210px}.all-list{grid-column:span 6}.all-list.all-tool-start{grid-column:1 / span 6}.contact-grid{gap:30px}.footer-inner{display:block}.footer-inner span:last-child{display:block;margin-top:8px}} 
+    @media(min-width:521px) and (max-width:800px){.hero h1{font-size:clamp(2.8rem,7.5vw,4.8rem)}} 
+    @media(max-width:520px){.hero h1{white-space:normal}}
+    @media(max-width:520px){.language{display:none}.hero-links{flex-wrap:wrap}.stats{gap:22px}.stat strong{font-size:23px}.capabilities{grid-template-columns:1fr}.capability{min-height:0}.capability h3{margin-top:28px}.timeline-item{grid-template-columns:1fr;gap:5px}.project-card,.project-card.featured{grid-column:1/-1}.project-image,.featured .project-image{height:230px}.all-list,.all-list.all-tool-start{grid-column:1/-1}}
+    @media(min-width:801px){.hero{margin-top:78px;min-height:calc(100vh - 78px);display:flex;align-items:center;padding:110px 0 80px}}
+  </style>
 </head>
-
 <body>
-  <div class="bodyContent">
-    <header class="headerPrincipal">
-      <div class="container">
-
-        <h1 class="headerTitle">Daniel Larrota R.</h1>
-
-        <nav>
-          <ul class="menu">
-
-            <li><a href="#home" class="active" id="home-button">
-                <!-- <i class="fa-solid fa-house"></i> -->
-                <p class="home-title"></p>
-              </a></li>
-
-            <li><a href="#about" id="about-button">
-                <!-- <i class="fa-solid fa-user"></i> -->
-                <p class="about-title"></p>
-              </a></li>
-            <li><a href="#skills" id="skills-button">
-                <!-- <i class="fa-solid fa-dumbbell"></i> -->
-                <p class="skills-title"></p>
-              </a></li>
-            <li><a href="#education" id="education-button">
-                <!-- <i class="fa-solid fa-graduation-cap"></i> -->
-                <p class="education-title"></p>
-              </a></li>
-            <li><a href="#projects" id="projects-button">
-                <!-- <i class="fa-solid fa-suitcase"></i> -->
-                <p class="projects-title"></p>
-              </a></li>
-            <li></i><a href="#contact" id="contact-button">
-                <!-- <i class="fa-solid fa-envelope"></i> -->
-                <p class="contact-title"></p>
-              </a></li>
-
-            <li class="headerButton" id="headerMenuShow"> <i class="fa-solid fa-gear"></i></li>
-            <li class="headerButton" id="headerMenuHide"> <i class="fa-solid fa-caret-up"></i></li>
-          </ul>
-
-
-        </nav>
-
-
-
-
-
-        <div class="settingsContainer">
-          <ul class="settingsList">
-            <li class="settingsItem">
-
-              <ul class="theme-button">
-                <li>
-                  <p id="theme"></p>
-                </li>
-                <li>
-                  <input type="checkbox" id="switch" title="lang-check-box" />
-                  <label for="switch">
-                    <i class="fas fa-sun"></i>
-                    <i class="fas fa-moon"></i>
-                    <span class="ball"></span>
-
-                  </label>
-                </li>
-
-
-
-              </ul>
-
-            </li>
-
-            <li class="settingsItem">
-
-
-              <ul class="lang-button">
-                <li>
-                  <p id="lang-text"></p>
-                </li>
-
-
-                <li>
-
-                  <select class="lang-list" title="lang-list">
-                    <option value=en class="language" id="en">English</option>
-                    <option value=es class="language" id="es">Español</option>
-                  </select>
-
-
-                </li>
-
-              </ul>
-
-
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="closeMenuButton">
-
-          <div class="float-text">
-            <p id="headerClose"></p>
-            <!-- <i class="fa-solid fa-xmark"></i> -->
-
-
-          </div>
-
-
-
-        </div>
-
-
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="menuButton">
-
-      <div class="float-text">
-
-        <i class="fa-solid fa-bars"></i>
-
-
-      </div>
-
-
-
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Daniel Larrota home"><span class="brand-mark">DLR</span><span>Daniel Larrota</span></a>
+      <nav class="nav" id="nav" aria-label="Main navigation"><a href="#about">About</a><a href="#background">Background</a><a href="#expertise">Expertise</a><a href="#projects">Selected work</a><a href="#contact">Contact</a></nav>
+      <div class="header-actions"><select class="language" id="language" aria-label="Language"><option>EN</option><option>ES</option><option>FR</option><option>NL</option></select><button class="icon-button" id="theme" aria-label="Switch theme" title="Switch theme">◐</button><button class="menu-button" id="menu" aria-label="Open menu" aria-expanded="false">☰</button></div>
     </div>
-
-
-
-    <div>
-
-      <a class="arrowTopButton" href="#home">
-
-        <i class="fa-solid fa-arrow-up"></i>
-
-
-      </a>
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <main>
-
-
-
- <section id="home">
-  <div class="container reveal fade-bottom">
-    <div class="home_container">
-
-      <div class="greetingContainer">
-        <ul class="greetingLines">
-          <li><p class="greeting" id="hi"></p></li>
-          <li><h1 class="title" id="myname"></h1></li>
-          <li><p class="personalDescription" id="mytitle"></p></li>
-        </ul>
-
-        <ul class="home__social-section">
-          <li class="socialItem">
-            <a href="https://www.linkedin.com/in/dhlarrotar/">
-              <i class="fa-brands fa-linkedin"></i><p>LinkedIn</p>
-            </a>
-          </li>
-          <li class="socialItem">
-            <a href="https://github.com/dhlarrotar">
-              <i class="fa-brands fa-github"></i><p>GitHub</p>
-            </a>
-          </li>
-          <li class="socialItem">
-            <a href="https://www.researchgate.net/profile/Daniel-Larrota-Rincon">
-              <i class="fa-brands fa-researchgate"></i><p>ResearchGate</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      
-      
-    </div>
-    <div class="arrowContainer">
-      <i class="fa-solid fa-circle-arrow-down"></i>
+  </header>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="geo-animation" aria-hidden="true"><svg viewBox="0 0 520 520" role="presentation"><path class="contour" d="M55 260C85 90 250 45 395 100s115 211-20 300S75 425 55 260Z"/><path class="contour" d="M115 250C140 140 255 95 350 135s74 155-24 220-190 9-211-105Z"/><path class="contour" d="M175 250c19-65 82-95 139-65s42 95-16 132-113-5-123-67Z"/><ellipse class="geo-orbit" cx="260" cy="260" rx="205" ry="90" transform="rotate(-28 260 260)"/><circle class="geo-dot" cx="120" cy="190" r="4"/><circle class="geo-dot" cx="365" cy="142" r="4"/><circle class="geo-dot" cx="328" cy="356" r="4"/></svg></div>
+      <div class="container hero-content reveal"><p class="eyebrow mono">Geologist · Remote sensing · Petrology</p><h1>Making sense of<br><em>a changing planet.</em></h1><p class="hero-lede">I enjoy bringing together rocks, images and code to learn more about Earth and planetary surfaces. Here you can explore some of the questions I have been curious enough to investigate.</p><div class="hero-links"><a class="button" href="#projects">Take a look around <span>↗</span></a><a class="button ghost" href="#contact">Contact me!</a></div></div>
+      <div class="scroll-note mono"><span></span>Scroll to explore</div>
+    </section>
+    <section class="intro" id="about"><div class="container intro-grid"><div class="reveal"><p class="eyebrow mono">A little context</p><h2 class="section-title">Science, maps<br>and <em>meaningful</em> tools.</h2><p class="body-copy">Hi, I’m Daniel. I’m a geologist with an MSc in Applied Remote Sensing for Earth Science from the University of Twente (ITC). I like connecting igneous petrology and geochemistry with different kinds of remote sensing data, including hyperspectral and radar observations.</p><p class="body-copy">I use Python, geovisualisation and emerging AI/ML methods to look at evidence from several angles. I’m especially interested in making that process clear, repeatable and useful to the people exploring it with me.</p><div class="stats"><div class="stat"><strong>3</strong><span class="stat-title">Areas</span><span class="stat-detail">Petrology, remote sensing<br>and AI/ML</span></div><div class="stat"><strong>4</strong><span class="stat-title">Languages</span><span class="stat-detail">ES · EN · NL · FR</span></div><div class="stat"><strong>∞</strong><span class="stat-title">Curiosity for</span><span class="stat-detail">Earth & planetary science<br>through data and code</span></div></div></div><div class="portrait-wrap reveal"><img class="portrait" src="img/photo.jpg" alt="Daniel Larrota Rincón" width="720" height="720"><div class="portrait-caption">Geology · Remote sensing · AI/ML</div></div></div></section>
+    <section class="background" id="background"><div class="container background-grid"><div class="reveal"><p class="eyebrow mono">The long view</p><h2 class="section-title">A background<br>in <em>Earth systems.</em></h2><p class="background-intro">My path has taken me from field geology and laboratory work to remote sensing and computational methods. I am now continuing that journey through doctoral research at KU Leuven, where I am exploring the connection between petrology and AI/ML.</p></div><div class="timeline reveal"><article class="timeline-item"><span class="timeline-date mono">2026-2028</span><div><h3>PhD · Geology, Petrology & AI/ML</h3><p><strong>KU Leuven, Belgium</strong><br>Exploring how machine learning can help us study and classify igneous materials.</p></div></article><article class="timeline-item"><span class="timeline-date mono">2023-2025</span><div><h3>MSc · Applied Remote Sensing for Earth Science</h3><p><strong>University of Twente, ITC, Netherlands</strong><br>Studying Earth observation, multimodal sensing, geoinformatics and planetary surfaces.</p></div></article><article class="timeline-item"><span class="timeline-date mono">2013-2018</span><div><h3>BSc · Geology</h3><p><strong>National University of Colombia</strong><br>Building a foundation in field geology, igneous petrology, geochemistry and Earth science research.</p></div></article></div></div></section>
+    <section class="band" id="expertise"><div class="container"><div class="section-head reveal"><div><p class="eyebrow mono">How I stay curious</p><h2 class="section-title">More than one<br>way to <em>see.</em></h2></div><p>I like to approach a place or a rock from different angles. Combining field knowledge with images, spectra, radar and code can reveal a much more complete picture.</p></div><div class="capabilities reveal"><article class="capability"><span class="cap-number">01</span><h3>Rocks tell stories</h3><p>Petrology and geochemistry help me understand how igneous rocks formed and what their minerals can reveal.</p></article><article class="capability"><span class="cap-number">02</span><h3>Many views, one place</h3><p>I combine hyperspectral, radar and optical data to study composition, structure and change from different perspectives.</p></article><article class="capability"><span class="cap-number">03</span><h3>Curiosity becomes code</h3><p>Python and AI/ML help me test ideas, repeat analyses and find patterns worth investigating further.</p></article><article class="capability"><span class="cap-number">04</span><h3>Make it easy to explore</h3><p>Maps and visual tools turn technical results into something researchers and wider audiences can inspect for themselves.</p></article></div></div></section>
+    <section class="projects" id="projects"><div class="container"><div class="section-head reveal"><div><p class="eyebrow mono">Research first, tools second</p><h2 class="section-title">From signals<br>to <em>understanding.</em></h2></div><p>Explore published research and planetary studies first, followed by a compact selection of maps, applications and games.</p></div><div class="filters reveal" role="tablist" aria-label="Filter projects"><button class="filter active" data-filter="all" role="tab" aria-selected="true">All work</button><button class="filter" data-filter="publications" role="tab" aria-selected="false">Publications</button><button class="filter" data-filter="gis" role="tab" aria-selected="false">GIS & mapping</button><button class="filter" data-filter="web" role="tab" aria-selected="false">Web apps</button><button class="filter" data-filter="games" role="tab" aria-selected="false">Games</button></div><div class="project-grid" id="project-grid"></div></div></section>
+    <section class="contact" id="contact"><div class="container contact-grid"><div class="reveal"><p class="eyebrow mono">Let’s connect</p><h2 class="section-title">Let’s have<br>a <em>chat!</em></h2></div><div class="reveal"><p class="contact-copy">Have a project, a question or simply an idea you would like to talk through? Drop me a line. I’m always happy to meet curious people and hear what they are working on.</p><a class="button ghost contact-mail" href="mailto:dhlarrotar@outlook.com">Send me a mail ↗</a><div class="socials"><a href="https://www.linkedin.com/in/dhlarrotar/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/dhlarrotar" target="_blank" rel="noopener">GitHub</a></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>© 2026 Daniel Larrota Rincón</span><span>Designed with curiosity for a changing planet.</span></div></footer>
+  <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="project-modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close project details">×</button>
+      <img id="modal-image" src="" alt="">
+      <p class="eyebrow mono" id="modal-category"></p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
     </div>
   </div>
-</section>
-
-
-
-
-
-
-
-
-
-      <section id="about">
-
-
-        <div class="container reveal fade-bottom">
-          <div class="aboutContainer">
-            <div class="aboutContainer__text">
-              <h2 class="about-title"></h2>
-              <p class="about-text" id="about-text"></p>
-
-            </div>
-
-            <div class="photoContainer">
-        <div class="profile-picture-wrapper">
-          <img src="img/photo.jpg" alt="Daniel Larrota profile picture" class="profile-picture">
-        </div>
-
-
-          </div>
-
-      </section>
-
-
-
-
-      <section id="skills">
-
-        <div class="container reveal fade-bottom">
-          <div class="skillsContainer">
-
-
-
-            <h2 class="skills-title" id="skills-title-text"></h2>
-            <div class="skillsContainer__hardSkills">
-
-
-
-
-
-
-
-              <div class="skillsItem" id="skillsItem1">
-                <h3 id="skillsItem__title1"></h3>
-                <ul id="skillsItem__list1">
-                  <li> Igneous Petrology</li>
-                  <li>Environmental studies</li>
-                  <li> GIS and Remote sensing</li>
-                  <li> Geomorphology</li>
-                  <li>Geophysical methods</li>
-                </ul>
-              </div>
-
-
-              <div class="skillsItem">
-                <h3 id="skillsItem__title2"> GIS & Data Analysis</h3>
-                <ul>
-                  <li> ArcGIS · QGIS</li>
-                  <li>Google Earth Engine</li>
-                  <li>Python</li>
-                  <li>JavaScript</li>
-                  <li>SQL</li>
-
-                </ul>
-              </div>
-
-
-              <div class="skillsItem">
-                <h3 id="skillsItem__title3">Web development</h3>
-                <ul>
-                  <li>HTML5</li>
-                  <li>JavaScript</li>
-                  <li>CSS3</li>
-                  <li>Figma</li>
-                  <li> Git · GitHub</li>
-                </ul>
-              </div>
-
-
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-            <!-- 
-
-          <p id="hobbies-name">Hobbies</p>
-
-
-          <div class="skillsContainer__hobbies">
-
-       
-      
-
-            <ul>
-
-              <li class="skillsItem">
-                <i class="fa-solid fa-plane"></i>
-                <p id="travel"></p>
-
-              </li>
-
-              <li class="skillsItem">
-                <i class="fa-solid fa-camera"></i>
-                <p id="photo"></p>
-              </li>
-
-              <li class="skillsItem">
-                <i class="fa-solid fa-microscope"></i>
-                <p id="science"></p>
-              </li>
-
-              <li class="skillsItem">
-                <i class="fa-solid fa-user-astronaut"></i>
-                <p id="astronomy"></p>
-              </li>
-
-              <li class="skillsItem">
-                <i class="fa-solid fa-person-swimming"></i>
-                <p id="swimming"></p>
-              </li>
-
-              <li class="skillsItem">
-                <i class="fa-regular fa-futbol"></i>
-                <p>Fútbol</p>
-              </li>
-
-
-              <li class="skillsItem">
-                <i class="fa-solid fa-basketball"></i>
-                <p id="basket"></p>
-
-              </li>
-
-
-
-
-
-            </ul>
-
-
-
-          </div>
- -->
-
-
-          </div>
-
-
-        </div>
-
-      </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <section id="education">
-
-        <div class="container reveal fade-left">
-
-
-
-
-
-          <div class="educationContainer">
-
-            <h2 class="education-title"></h2>
-
-            <ul class="educationList">
-
-              <li class="educationItem">
-                <div class="education__imgContainer">
-                  <img src="img/education/itc.jpg" class="educationImg" alt="itc">
-                </div>
-
-
-                <div class="educationItem__info">
-                  <h3 id="itc-title"></h3>
-                  <p class="itc-description">ITC University of Twente</p>
-                 
-
-                </div>
-
-              </li>
-
-
-
-
-              <li class="educationItem">
-                <div class="education__imgContainer">
-                  <img src="img/education/one.png" class="educationImg" alt="ONE logo">
-                </div>
-
-
-                <div class="educationItem__info">
-                  <h3>Oracle Next Education (ONE)</h3>
-                  <p class="frontend-description"> Front-end + Java</p>
-                  <p class="frontend-description">Oracle + Alura - 2022</p>
-
-                </div>
-
-              </li>
-
-
-
-
-
-
-
-
-
-              <li class="educationItem">
-                <div class="education__imgContainer">
-                  <img src="img/education/esri.jpeg" class="educationImg" alt="ESRI logo">
-                </div>
-
-
-                <div class="educationItem__info">
-                  <h3 id="esri-title"></h3>
-                  <p class="text-box-description" id="esri-description">Esri Training</p>
-                </div>
-
-              </li>
-
-
-
-
-
-
-
-
-
-              <li class="educationItem">
-                <div class="education__imgContainer">
-                  <img src="img/education/unal.png" class="educationImg" alt="unal logo">
-                </div>
-
-
-                <div class="educationItem__info">
-                  <h3 id="unal-title"></h3>
-                  <p class="text-box-description" id="unal-description">Universidad Nacional de Colombia</p>
-                </div>
-
-
-              </li>
-
-
-            </ul>
-
-
-
-
-            <div class="draw-container">
-              <div class="educationDraw"></div>
-              <p class="draw-legend">Illustration by <a href="https://iradesign.io">IRA Design</a> </p>
-            </div>
-
-
-
-
-
-
-          </div>
-      </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <section id="projects">
-        <div class="container reveal fade-bottom">
-
-
-
-          <div class="projectsContainer">
-            <h2 class="projects-title"></h2>
-
-
-            <nav class="projects__menu">
-              <ul>
-                <li><a id="projectsgis-button"></a> </li>
-                <li><a id="projectsWeb-button"></a> </li>
-                <li><a id="research-button"></a> </li>
-
-              </ul>
-            </nav>
-
-
-
-
-            <div class="projectsContainer__grid">
-
-
-
-
-
-              <div class="gisGallery">
-
-                <div class="projectsItem">
-                     <!--dforetation-->
-                  <div class="deforestationImg">
-                    <div class="box">
-                      <h3 class="deforestation"></h3>
-                    </div>
-
-                  </div>
-
-
-
-                  <div class="projectsItem__iconsContainer">
-
-                    <div class="projectsItem__info">
-                      <h3 class="deforestation"></h3>
-                      <p class="projectsItem__description" id="deforestation-description"></p>
-                    </div>
-
-                    <ul class="usedTech">
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-html5"></i>
-                        GEE
-                      </li>
-
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-js-square"></i>
-
-                        Landsat 8 
-                      </li>
-
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-css3"></i>
-
-                        Time series
-                      </li>
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-css3"></i>
-
-                        EVI
-                      </li>
-                    </ul>
-
-
-
-
-
-
-                    <div class="projectsItem__buttonContainer">
-
-                      <ul>
-                       
-                        <li>
-                          <a href="" class="more">
-                            <i class="fa-solid fa-circle-info"></i>
-                            <p class="ver"></p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-
-
-
-                
-                <div class="projectsItem">
-                  <!--greenareas-->
-               <div class="greenareasImg">
-                 <div class="box">
-                   <h3 class="greenareas"></h3>
-                 </div>
-
-               </div>
-
-
-
-               <div class="projectsItem__iconsContainer">
-
-                 <div class="projectsItem__info">
-                   <h3 class="greenareas"></h3>
-                   <p class="projectsItem__description" id="greenareas-description"></p>
-                 </div>
-
-                 <ul class="usedTech">
-                   <li class="projectsItem__iconItem">
-                     <i class="fa-brands fa-html5"></i>
-                     QGIS
-                   </li>
-
-                   <li class="projectsItem__iconItem">
-                     <i class="fa-brands fa-js-square"></i>
-
-                     Sentinel 2A
-                   </li>
-
-                   <li class="projectsItem__iconItem">
-                     <i class="fa-brands fa-css3"></i>
-                      SCP
-                  
-                   </li>
-
-                 </ul>
-
-
-
-
-
-
-                 <div class="projectsItem__buttonContainer">
-
-                   <ul>
-                    
-                     <li>
-                       <a href="" class="more">
-                    
- 
-
-                        <i class="fa-solid fa-circle-info"></i>
-                         <p class="ver"></p>
-                       </a>
-                     </li>
-                   </ul>
-                 </div>
-               </div>
-             </div>
-
-
-
-
-
-
-
-
-
-             <div class="projectsItem">
-              <!--volcanoes-->
-           <div class="volcanoesmapImg">
-             <div class="box">
-               <h3 class="volcanoesmap"></h3>
-             </div>
-
-           </div>
-
-
-
-           <div class="projectsItem__iconsContainer">
-
-             <div class="projectsItem__info">
-               <h3 class="volcanoesmap"></h3>
-               <p class="projectsItem__description" id="volcanoesmap-description"></p>
-             </div>
-
-             <ul class="usedTech">
-               <li class="projectsItem__iconItem">
-                 <i class="fa-brands fa-html5"></i>
-                 JavaScript
-               </li>
-
-               <li class="projectsItem__iconItem">
-                 <i class="fa-brands fa-js-square"></i>
-
-                 Leaflet
-               </li>
-
-               <li class="projectsItem__iconItem">
-                 <i class="fa-brands fa-css3"></i>
-
-                 CSS3
-               </li>
-
-             </ul>
-
-
-
-
-
-
-             <div class="projectsItem__buttonContainer">
-
-               <ul>
-                 <li>
-                   <a href="https://worldvolcanoesmap.netlify.app/" class="launch">
-                     <i class="fa-solid fa-rocket"></i>
-                     <p class="probar"></p>
-                   </a>
-                 </li>
-                 <li>
-                   <a href="https://github.com/dhlarrotar/world_volcanoes_map" class="more">
-                     <i class="fa-brands fa-github"></i>
-                     <p class="ver-mas"></p>
-                   </a>
-                 </li>
-               </ul>
-             </div>
-           </div>
-         </div>
-
-
-
-
-
-              </div>
-
-
-
-
-
-
-
-
-
-
-
-
-           
-
-              <div class="projectsGallery">
-
-                <div class="projectsItem">
-                     <!--volcanoes-->
-                  <div class="volcanoesmapImg">
-                    <div class="box">
-                      <h3 class="volcanoesmap"></h3>
-                    </div>
-
-                  </div>
-
-
-
-                  <div class="projectsItem__iconsContainer">
-
-                    <div class="projectsItem__info">
-                      <h3 class="volcanoesmap"></h3>
-                      <p class="projectsItem__description" id="volcanoesmap-description"></p>
-                    </div>
-
-                    <ul class="usedTech">
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-html5"></i>
-                        JavaScript
-                      </li>
-
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-js-square"></i>
-
-                        Leaflet
-                      </li>
-
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-css3"></i>
-
-                        CSS3
-                      </li>
-
-                    </ul>
-
-
-
-
-
-
-                    <div class="projectsItem__buttonContainer">
-
-                      <ul>
-                        <li>
-                          <a href="https://worldvolcanoesmap.netlify.app/" class="launch">
-                            <i class="fa-solid fa-rocket"></i>
-                            <p class="probar"></p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://github.com/dhlarrotar/world_volcanoes_map" class="more">
-                            <i class="fa-brands fa-github"></i>
-                            <p class="ver-mas"></p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="projectsItem">
-                  <div class="hangmanImg">
-                    <div class="box">
-                      <h3 class="hangman"></h3>
-                    </div>
-
-
-
-
-                  </div>
-
-
-
-
-                  <div class="projectsItem__iconsContainer">
-                    <div class="projectsItem__info">
-                      <h3 class="hangman"></h3>
-                      <p class="projectsItem__description" id="hangman-description"></p>
-                    </div>
-
-                    <ul class="usedTech">
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-html5"></i>
-                        HTML5
-                      </li>
-
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-js-square"></i>
-
-                        JavaScript
-                      </li>
-
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-css3"></i>
-
-                        CSS3
-                      </li>
-
-                    </ul>
-
-
-
-
-
-
-                    <div class="projectsItem__buttonContainer">
-
-                      <ul>
-                        <li>
-                          <a href="https://hang-man.netlify.app/" class="launch">
-                            <i class="fa-solid fa-rocket"></i>
-                            <p class="probar"></p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://github.com/dhlarrotar/hang_man" class="more">
-                            <i class="fa-brands fa-github"></i>
-                            <p class="ver-mas"></p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-
-                </div>
-
-
-
-
-
-                <div class="projectsItem">
-                  <div class="encryptorImg">
-                    <div class="box">
-                      <h3 class="encryptor"></h3>
-                    </div>
-
-                  </div>
-
-
-
-                  <div class="projectsItem__iconsContainer">
-
-
-                    <div class="projectsItem__info">
-                      <h3 class="encryptor"></h3>
-                      <p class="projectsItem__description" id="encryptor-description"></p>
-                    </div>
-
-
-                    <ul class="usedTech">
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-html5"></i>
-                        HTML5
-                      </li>
-
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-js-square"></i>
-
-                        JavaScript
-                      </li>
-
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-css3"></i>
-
-                        CSS3
-                      </li>
-
-                    </ul>
-
-
-
-
-
-
-                    <div class="projectsItem__buttonContainer">
-
-                      <ul>
-                        <li>
-                          <a href="https://textencryptor.netlify.app/" class="launch">
-                            <i class="fa-solid fa-rocket"></i>
-                            <p class="probar"></p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://github.com/dhlarrotar/text_encryptor" class="more">
-                            <i class="fa-brands fa-github"></i>
-                            <p class="ver-mas"></p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-
-
-                <!--Portfolio-->
-
-
-
-
-
-                <div class="projectsItem">
-                  <div class="portfolioImg">
-                    <div class="box">
-                      <h3 class="portfolio"></h3>
-                    </div>
-
-                  </div>
-
-
-
-                  <div class="projectsItem__iconsContainer">
-
-                    <div class="projectsItem__info">
-                      <h3 class="portfolio"></h3>
-                      <p class="projectsItem__description" id="portfolio-description"></p>
-                    </div>
-
-                    <ul class="usedTech">
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-html5"></i>
-                        HTML5
-                      </li>
-
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-js-square"></i>
-
-                        JavaScript
-                      </li>
-
-                      <li class="projectsItem__iconItem">
-                        <i class="fa-brands fa-css3"></i>
-
-                        CSS3
-                      </li>
-
-                    </ul>
-
-
-
-
-
-
-                    <div class="projectsItem__buttonContainer">
-
-                      <ul>
-                        <li>
-                          <a href="https://github.com/dhlarrotar/my_portfolio" class="more">
-                            <i class="fa-brands fa-github"></i>
-                            <p class="ver-mas"></p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-
-
-
-
-
-
-              </div>
-
-
-
-              <div class="researchGallery">
-
-
-
-
-
-
-
-
-
-
-                <div class="projectsItem">
-
-
-
-                  <div class="researchItem__info">
-                    <div class="tag-container">
-                      <p class="research-tag1"></p>
-                    </div>
-                    <p class="research-description" id="magma-authors">
-                    Altenberger, U.; Concha-Perdomo, A.; Larrota-Rincón, D.; Günter, C.; Lorenz, M.
-                    </p>
-                    <p class="research-title" id="magma-title"></p>
-                    <p class="research-info" id="magma-info">Andean Geology Vol.51 N.3 (2024)</p>
-
-                    <div class="projectsItem__buttonContainer">
-                      <a href="http://www.andeangeology.cl/index.php/revista1/article/view/V51n3-3691" class="launch">
-                        <i class="fa-solid fa-book-open-reader"></i>
-                        <p class="read"></p>
-                      </a>
-
-
-                    </div>
-                  </div>
-
-                </div>
-
-
-
-
-
-
-                <div class="projectsItem">
-
-
-
-                  <div class="researchItem__info">
-                    <div class="tag-container">
-                      <p class="research-tag1"></p>
-                    </div>
-                    <p class="research-description" id="guaviare-authors">Larrota Rincón, D. H., & Concha Perdomo, A.
-                      E.
-                    </p>
-                    <p class="research-title" id="guaviare-title"></p>
-                    <p class="research-info" id="guaviare-info">Geología Colombiana vol 41 (2021)</p>
-
-                    <div class="projectsItem__buttonContainer">
-                      <a href="https://revistas.unal.edu.co/index.php/geocol/article/view/77446" class="launch">
-                        <i class="fa-solid fa-book-open-reader"></i>
-                        <p class="read"></p>
-                      </a>
-
-
-                    </div>
-                  </div>
-
-                </div>
-
-
-
-
-                <div class="projectsItem">
-
-
-
-                  <div class="researchItem__info">
-                 
-                    <i class="fa-solid fa-screwdriver-wrench" id="commingSoonIcon"></i>
-                    <p id="comingSoon">More projects available soon...</p>
-                 
-
-                  
-
-
-                    </div>
-                  </div>
-
-                </div>
-
-
-
-
-
-
-
-
-
-              </div>
-
-
-
-              <!-- <div class="draw-container">
-                <img class="draw" id="projects-draw" src="img/man_with_documents.png" alt="man_documents">
-                <p class="draw-legend">Illustration by <a href="https://iradesign.io">IRA Design</a> </p>
-              </div> -->
-
-
-
-
-
-
-
-
-
-
-
-      </section>
-
-
-
-
-
-
-      <section id="contact">
-        <div class="container reveal fade-left">
-          <div class="contactContainer">
-
-            <ul>
-              <li class="contact-info">
-                <h2 class="contact-title"></h2>
-                <p class="contact-text1"></p>
-                <p class="contact-text2"></p>
-                <a id="mail"> <strong>dhlarrotar@outlook.com</strong></a>
-              </li>
-
-
-              <li class="form-container">
-                <div class="hide" id="message-success">
-                  <i class="fa-regular fa-circle-check"></i>
-                  <p class="success-text"></p>
-                </div>
-                <div class="contact-form">
-                  <form>
-                    <label for="full-name" class="contact-label" id="full-name-label"></label>
-                    <input type="text" id="full-name" title="full-name" class="input-contacto" required>
-                    <span class="hide" id="error-full-name"></span>
-
-                    <label for="mail-input" class="contact-label" id="mail-label"></label>
-                    <input type="email" id="correoelectronico" title="mail-input" class="input-contacto" required>
-                    <span class="hide" id="error-mail-input"></span>
-
-                    <label for="message" class="contact-label" id="message-label"></label>
-                    <textarea cols="70" rows="10" id="message" class="input-contacto" title="message"
-                      required></textarea>
-                    <span class="hide" id="error-message"></span>
-
-                    <input type="submit" class="enviar" disabled>
-
-                  </form>
-                </div>
-              </li>
-
-            </ul>
-
-
-
-
-          </div>
-        </div>
-      </section>
-    </main>
-
-
-    <footer>
-      <div class="icon-section">
-        <a href="https://www.linkedin.com/in/dhlarrotar/" class="icon-div">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-
-        <a href="https://github.com/dhlarrotar" class="icon-div">
-          <i class="fa-brands fa-github"></i>
-
-        </a>
-
-        <a href="https://www.researchgate.net/profile/Daniel-Larrota-Rincon" class="icon-div">
-          <i class="fa-brands fa-researchgate"></i>
-      </div>
-      <p class="copyright">&copy Daniel Larrota R · 2025</p>
-    </footer>
-
-
-    <div class=" container reveal fade-bottom">
-      <div class="loader">
-        <div class="spinner"></div>
-      </div>
-    </div>
-  <script src="js/apod-request.js"></script> 
-
-    <script src="js/loader.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/form-validation.js"></script>
-    <script src="js/dark-mode.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/set-language.js"></script>
-  </div>
-
-
-
+  <script>
+    const projects=[
+      {id:"egu26",title:"Integration of Spectral Datasets and Radargrams in Mawrth Vallis, Mars",type:"publications",sortOrder:8,category:"EGU General Assembly 2026 · EGU26-311",image:"img/egu26.png",desc:"An integrated study using HRSC, OMEGA, CRISM and SHARAD data to relate surface mineralogy, radar backscatter and possible subsurface reflectors in Mawrth Vallis.",tags:["Mars","Hyperspectral data","SHARAD"],link:"https://doi.org/10.5194/egusphere-egu26-311"},
+      {id:"magma",title:"Tracing Magmatic Footprints",type:"publications",sortOrder:7,category:"Publication · 2024",image:"img/footprints.png",desc:"A published geochemical and petrological study of CO₂-rich melt influences on the San José del Guaviare syenite.",tags:["Geochemistry","Petrology"],link:"https://www.andeangeology.cl/index.php/revista1/article/view/V51n3-3691"},
+      {id:"syenite",title:"Petrography and Geochemistry of the San José del Guaviare Nepheline Syenite",type:"publications",sortOrder:6,category:"Publication · 2021",image:"img/syenite.jpg",desc:"A published study combining field, petrographic and geochemical evidence to characterise the San José del Guaviare nepheline syenite.",tags:["Petrography","Geochemistry"],link:"https://www.researchgate.net/publication/327381913_Petrography_and_geochemistry_of_the_San_Jose_del_Guaviare_Nepheline_Syenite"},
+      {id:"seismic",title:"Seismic Monitor & Dashboard",type:"web",sortOrder:5,category:"Web app",image:"img/seismic-monitor.png",desc:"I turned a live USGS feed into an explorable map and dashboard, so it is easy to browse earthquake magnitude, depth and location.",tags:["Leaflet","Chart.js","USGS API"],link:"https://seismicmonitor.netlify.app/",repo:"https://github.com/dhlarrotar/seismic-monitor"},
+      {id:"volcanoes",title:"World Volcanoes Map",type:"web",sortOrder:4,category:"Web map",image:"img/volcanoesmap.png",desc:"A simple way to browse volcanoes around the world and see each location in its wider geographic setting.",tags:["JavaScript","Leaflet","HTML5"],link:"https://worldvolcanoesmap.netlify.app/",repo:"https://github.com/dhlarrotar/world_volcanoes_map"},
+      {id:"deforestation",title:"Vegetation dynamics in Guaviare",type:"gis",sortOrder:3,category:"GIS analysis · 2015-2022",image:"img/deforestation.png",desc:"I used an EVI time series in Google Earth Engine to look at where vegetation loss persisted and where change was more temporary in Guaviare.",tags:["GEE","Landsat 8","EVI"],link:"projects/deforestation.html"},
+      {id:"greenareas",title:"Change detection of green areas",type:"gis",sortOrder:2,category:"GIS analysis · 2006-2016",image:"img/greenareas.png",desc:"A supervised Sentinel-2A classification that helped me compare how green areas were distributed across Enschede over time.",tags:["QGIS","Sentinel-2A","Classification"],link:"projects/greenareas.html"},
+      {id:"geoguesser",title:"Geo-Guesser: World Tour",type:"games",sortOrder:1,category:"Game",image:"https://placehold.co/800x500/6a5acd/ffffff?text=GeoGuesser",desc:"A timed geography game that turns country recognition into a simple interaction with a world map.",tags:["JavaScript","Tailwind CSS"],link:"https://geoguessergame.netlify.app/",repo:"https://github.com/dhlarrotar/geoguesser"},
+      {id:"hangman",title:"Hang Man",type:"games",sortOrder:0,category:"Game · Open source",image:"img/hangman.png",desc:"A small open-source word game: guess the secret word before you are hanged.",tags:["JavaScript","Game"],link:"https://hang-man.netlify.app/",repo:"https://github.com/dhlarrotar/hang_man"}
+    ].sort((a,b)=>b.sortOrder-a.sortOrder);
+    const translations={
+      en:{
+        nav:["About","Background","Expertise","Selected work","Contact"],heroEyebrow:"Geologist · Remote sensing · Petrology",heroTitle:"Making sense of<br><em>a changing planet.</em>",heroCopy:"I enjoy bringing together rocks, images and code to learn more about Earth and planetary surfaces. Here you can explore some of the questions I have been curious enough to investigate.",heroPrimary:"Take a look around",heroSecondary:"Contact me!",scroll:"Scroll to explore",aboutEyebrow:"A little context",aboutTitle:"Science, maps<br>and <em>meaningful</em> tools.",aboutCopy:["Hi, I’m Daniel. I’m a geologist with an MSc in Applied Remote Sensing for Earth Science from the University of Twente (ITC). I like connecting igneous petrology and geochemistry with different kinds of remote sensing data, including hyperspectral and radar observations.","I use Python, geovisualisation and emerging AI/ML methods to look at evidence from several angles. I’m especially interested in making that process clear, repeatable and useful to the people exploring it with me."],stats:["Petrology, remote sensing<br>and AI/ML","ES · EN · NL · FR","Earth & planetary science<br>through data and code"],portrait:"Geology · Remote sensing · AI/ML",backgroundEyebrow:"The long view",backgroundTitle:"A background<br>in <em>Earth systems.</em>",backgroundCopy:"My path has taken me from field geology and laboratory work to remote sensing and computational methods. I am now continuing that journey through doctoral research at KU Leuven, where I am exploring the connection between petrology and AI/ML.",expertiseEyebrow:"How I stay curious",expertiseTitle:"More than one<br>way to <em>see.</em>",expertiseCopy:"I like to approach a place or a rock from different angles. Combining field knowledge with images, spectra, radar and code can reveal a much more complete picture.",projectEyebrow:"Research first, tools second",projectTitle:"From signals<br>to <em>understanding.</em>",projectCopy:"Explore published research and planetary studies first, followed by a compact selection of maps, applications and games.",filters:["All work","Publications","GIS & mapping","Web apps","Games"],contactEyebrow:"Let’s connect",contactTitle:"Let’s have<br>a <em>chat!</em>",contactCopy:"Have a project, a question or simply an idea you would like to talk through? Drop me a line. I’m always happy to meet curious people and hear what they are working on."},
+      es:{
+        nav:["Sobre mí","Formación","Especialidades","Proyectos","Contacto"],heroEyebrow:"Geólogo · Teledetección · Petrología",heroTitle:"Entender<br><em>un planeta cambiante.</em>",heroCopy:"Me gusta unir rocas, imágenes y código para aprender más sobre la Tierra y las superficies planetarias. Aquí puedes explorar algunas de las preguntas que me han despertado curiosidad.",heroPrimary:"Explora mi trabajo",heroSecondary:"¡Contáctame!",scroll:"Desplázate para explorar",aboutEyebrow:"Un poco sobre mí",aboutTitle:"Ciencia, mapas<br>y herramientas <em>útiles.</em>",aboutCopy:["Hola, soy Daniel. Soy geólogo y tengo un MSc en Teledetección Aplicada a las Ciencias de la Tierra por la Universidad de Twente (ITC). Me gusta conectar la petrología ígnea y la geoquímica con distintos tipos de datos de teledetección, incluyendo observaciones hiperespectrales y de radar.","Utilizo Python, geovisualización y métodos emergentes de IA/ML para estudiar la evidencia desde varios ángulos. Me interesa que este proceso sea claro, reproducible y útil para quienes lo exploran conmigo."],stats:["Petrología, sensores<br>e IA/ML","ES · EN · NL · FR","Ciencia terrestre y planetaria<br>a través de datos y código"],portrait:"Geología · Teledetección · IA/ML",backgroundEyebrow:"Una mirada amplia",backgroundTitle:"Una formación<br>en <em>sistemas terrestres.</em>",backgroundCopy:"Mi camino comenzó con la geología de campo y el trabajo de laboratorio, continuó con la teledetección y ahora sigue con mi investigación doctoral en KU Leuven sobre la conexión entre petrología e IA/ML.",expertiseEyebrow:"Cómo mantengo la curiosidad",expertiseTitle:"Más de una forma<br>de <em>mirar.</em>",expertiseCopy:"Me gusta acercarme a un lugar o una roca desde distintos ángulos. Combinar conocimiento de campo con imágenes, espectros, radar y código puede revelar una visión mucho más completa.",projectEyebrow:"Investigación primero, herramientas después",projectTitle:"De las señales<br>a la <em>comprensión.</em>",projectCopy:"Explora investigaciones publicadas y estudios planetarios, seguidos de una selección compacta de mapas, aplicaciones y herramientas.",        filters:["Todo","Publicaciones","GIS y mapas","Aplicaciones web","Juegos"],contactEyebrow:"Conectemos",contactTitle:"¡Hablemos!",contactCopy:"¿Tienes un proyecto, una pregunta o simplemente una idea que quieres conversar? Escríbeme. Siempre me alegra conocer personas curiosas y descubrir en qué están trabajando."},
+      fr:{
+        nav:["À propos","Formation","Expertise","Projets","Contact"],heroEyebrow:"Géologue · Télédétection · Pétrologie",heroTitle:"Comprendre<br><em>une planète en changement.</em>",heroCopy:"J’aime réunir roches, images et code pour mieux comprendre la Terre et les surfaces planétaires. Découvrez ici quelques questions qui ont éveillé ma curiosité.",heroPrimary:"Découvrir mon travail",heroSecondary:"Contactez-moi !",scroll:"Faites défiler pour explorer",aboutEyebrow:"Un peu sur moi",aboutTitle:"Sciences, cartes<br>et outils <em>utiles.</em>",aboutCopy:["Bonjour, je suis Daniel. Géologue, je suis titulaire d’un MSc en Télédétection appliquée aux sciences de la Terre de l’Université de Twente (ITC). J’aime relier pétrologie ignée et géochimie à différents types de données de télédétection, notamment hyperspectrales et radar.","J’utilise Python, la géovisualisation et des méthodes émergentes d’IA/ML pour examiner les données sous plusieurs angles. Je cherche à rendre ce travail clair, reproductible et utile à celles et ceux qui l’explorent avec moi."],stats:["Pétrologie, capteurs<br>et IA/ML","ES · EN · NL · FR","Sciences de la Terre et planétaires<br>par les données et le code"],portrait:"Géologie · Télédétection · IA/ML",backgroundEyebrow:"Une vue d’ensemble",backgroundTitle:"Une formation<br>en <em>systèmes terrestres.</em>",backgroundCopy:"Mon parcours va de la géologie de terrain et du laboratoire à la télédétection et aux méthodes computationnelles. Je poursuis maintenant ce chemin avec une recherche doctorale à KU Leuven sur le lien entre pétrologie et IA/ML.",expertiseEyebrow:"Ce qui nourrit ma curiosité",expertiseTitle:"Plus d’une façon<br>de <em>voir.</em>",expertiseCopy:"J’aime étudier un lieu ou une roche sous plusieurs angles. Associer connaissances de terrain, images, spectres, radar et code peut donner une compréhension bien plus complète.",projectEyebrow:"Recherche d’abord, outils ensuite",projectTitle:"Des signaux<br>à la <em>compréhension.</em>",projectCopy:"Découvrez des recherches publiées et des études planétaires, suivies d’une sélection compacte de cartes, applications et outils.",        filters:["Tout","Publications","SIG et cartes","Applications web","Jeux"],contactEyebrow:"Restons en contact",contactTitle:"Faisons<br><em>connaissance !</em>",contactCopy:"Vous avez un projet, une question ou simplement une idée à partager ? Écrivez-moi. Je suis toujours heureux de rencontrer des personnes curieuses et de découvrir leurs projets."},
+      nl:{
+        nav:["Over mij","Achtergrond","Expertise","Projecten","Contact"],heroEyebrow:"Geoloog · Remote sensing · Petrologie",heroTitle:"Een veranderende<br><em>planeet begrijpen.</em>",heroCopy:"Ik breng gesteenten, beelden en code samen om de aarde en planetaire oppervlakken beter te begrijpen. Hier ontdek je enkele vragen die mijn nieuwsgierigheid hebben gewekt.",heroPrimary:"Bekijk mijn werk",heroSecondary:"Neem contact op!",scroll:"Scroll om te ontdekken",aboutEyebrow:"Even voorstellen",aboutTitle:"Wetenschap, kaarten<br>en <em>bruikbare</em> tools.",aboutCopy:["Hoi, ik ben Daniel. Ik ben geoloog en heb een MSc in Applied Remote Sensing for Earth Science van de Universiteit Twente (ITC). Ik verbind graag stollingspetrologie en geochemie met verschillende soorten remote-sensingdata, waaronder hyperspectrale en radargegevens.","Ik gebruik Python, geovisualisatie en nieuwe AI/ML-methoden om gegevens vanuit meerdere hoeken te bekijken. Ik wil dit proces helder, reproduceerbaar en nuttig maken voor iedereen die het met mij verkent."],stats:["Petrologie, sensoren<br>en AI/ML","ES · EN · NL · FR","Aarde en planetaire wetenschap<br>met data en code"],portrait:"Geologie · Remote sensing · AI/ML",backgroundEyebrow:"Het grotere verhaal",backgroundTitle:"Een achtergrond<br>in <em>aardse systemen.</em>",backgroundCopy:"Mijn pad liep van veldgeologie en laboratoriumwerk naar remote sensing en computationele methoden. Nu zet ik die reis voort met promotieonderzoek aan KU Leuven naar de verbinding tussen petrologie en AI/ML.",expertiseEyebrow:"Zo blijf ik nieuwsgierig",expertiseTitle:"Meer dan één manier<br>om te <em>kijken.</em>",expertiseCopy:"Ik bekijk een plek of gesteente graag vanuit verschillende hoeken. Veldkennis combineren met beelden, spectra, radar en code kan een veel completer beeld geven.",projectEyebrow:"Een paar dingen die ik heb gemaakt",projectTitle:"Van signalen<br>naar <em>inzicht.</em>",projectCopy:"Bekijk interactieve webapps, kaarten en gepubliceerd onderzoek. Hopelijk vind je iets dat een vraag oproept of een bruikbaar vertrekpunt biedt.",                        filters:["Alles","Publicaties","GIS en kaarten","Webapps","Spellen"],contactEyebrow:"Laten we contact maken",contactTitle:"Laten we<br><em>praten!</em>",contactCopy:"Heb je een project, een vraag of gewoon een idee om te bespreken? Stuur me een bericht. Ik ontmoet graag nieuwsgierige mensen en hoor graag waar zij aan werken."}
+    };
+    const cardTranslations={
+      en:{
+        education:[
+          ["PhD · Geology, Petrology & AI/ML","KU Leuven, Belgium","Exploring how machine learning can help us study and classify igneous materials."],
+          ["MSc · Applied Remote Sensing for Earth Science","University of Twente, ITC, Netherlands","Studying Earth observation, multimodal sensing, geoinformatics and planetary surfaces."],
+          ["BSc · Geology","National University of Colombia","Building a foundation in field geology, igneous petrology, geochemistry and Earth science research."]
+        ],
+        expertise:[["Rocks tell stories","Petrology and geochemistry help me understand how igneous rocks formed and what their minerals can reveal."],["Many views, one place","I combine hyperspectral, radar and optical data to study composition, structure and change from different perspectives."],["Curiosity becomes code","Python and AI/ML help me test ideas, repeat analyses and find patterns worth investigating further."],["Make it easy to explore","Maps and visual tools turn technical results into something researchers and wider audiences can inspect for themselves."]],
+        projects:{}
+      },
+      es:{
+        education:[
+          ["Doctorado · Geología, Petrología e IA/ML","KU Leuven, Bélgica","Investigación doctoral sobre el uso del aprendizaje automático para estudiar y clasificar materiales ígneos."],
+          ["MSc · Teledetección Aplicada a las Ciencias de la Tierra","Universidad de Twente, ITC, Países Bajos","Formación en observación de la Tierra, sensores multimodales, geoinformática y superficies planetarias."],
+          ["BSc · Geología","Universidad Nacional de Colombia","Bases en geología de campo, petrología ígnea, geoquímica e investigación en ciencias de la Tierra."]
+        ],
+        expertise:[["Las rocas cuentan historias","La petrología y la geoquímica me ayudan a entender cómo se formaron las rocas ígneas y qué revelan sus minerales."],["Muchas vistas, un lugar","Combino datos hiperespectrales, radar y ópticos para estudiar composición, estructura y cambio desde distintas perspectivas."],["La curiosidad se vuelve código","Python y la IA/ML me ayudan a probar ideas, repetir análisis y encontrar patrones que merecen más investigación."],["Hazlo fácil de explorar","Los mapas y las herramientas visuales convierten resultados técnicos en algo que otras personas pueden examinar por sí mismas."]],
+        projects:{
+          seismic:["Monitor y panel sísmico","Aplicación web","Convertí un flujo de datos en vivo del USGS en un mapa y panel para consultar magnitud, profundidad y ubicación.","Ver proyecto"],
+          volcanoes:["Mapa mundial de volcanes","Mapa interactivo","Una forma sencilla de explorar volcanes de todo el mundo y ver cada ubicación en su contexto geográfico.","Ver proyecto"],
+          deforestation:["Dinámica de la vegetación en Guaviare","Análisis SIG · 2015-2022","Usé una serie temporal de EVI en Google Earth Engine para estudiar dónde la pérdida de vegetación fue persistente o temporal.","Ver proyecto"],
+          greenareas:["Cambios en áreas verdes","Análisis SIG · 2006-2016","Una clasificación supervisada con Sentinel-2A para comparar cómo se distribuyeron las áreas verdes de Enschede a lo largo del tiempo.","Ver proyecto"],
+          geoguesser:["Geo-Guesser: vuelta al mundo","Aplicación web","Un juego geográfico con tiempo que convierte el reconocimiento de países en una interacción sencilla con un mapa mundial.","Ver proyecto"],
+          magma:["Huellas magmáticas","Publicación · 2024","Estudio geoquímico y petrológico publicado sobre la influencia de fundidos ricos en CO₂ en la sienita de San José del Guaviare.","Leer publicación"],
+          syenite:["Petrografía y geoquímica de la sienita nefelínica","Publicación · 2021","Estudio publicado que combina evidencia de campo, petrográfica y geoquímica para caracterizar la sienita nefelínica de San José del Guaviare.","Leer publicación"]
+        }
+      },
+      fr:{
+        education:[["Doctorat · Géologie, Pétrologie et IA/ML","KU Leuven, Belgique","Recherche doctorale sur l’utilisation de l’apprentissage automatique pour étudier et classer les matériaux ignés."],["MSc · Télédétection appliquée aux sciences de la Terre","Université de Twente, ITC, Pays-Bas","Formation en observation de la Terre, capteurs multimodaux, géoinformatique et surfaces planétaires."],["Licence · Géologie","Université nationale de Colombie","Bases en géologie de terrain, pétrologie ignée, géochimie et recherche en sciences de la Terre."]],
+        expertise:[["Les roches racontent des histoires","La pétrologie et la géochimie m’aident à comprendre la formation des roches ignées et ce que leurs minéraux peuvent révéler."],["Plusieurs vues, un même lieu","J’associe données hyperspectrales, radar et optiques pour étudier composition, structure et changements sous plusieurs angles."],["La curiosité devient du code","Python et l’IA/ML m’aident à tester des idées, répéter des analyses et repérer des motifs à approfondir."],["Rendre l’exploration simple","Les cartes et outils visuels rendent les résultats techniques plus faciles à examiner par d’autres personnes."]],
+        projects:{
+          seismic:["Tableau de bord sismique","Application web","Un flux USGS en direct transformé en carte et tableau de bord pour consulter magnitude, profondeur et localisation.","Voir le projet"],
+          volcanoes:["Carte mondiale des volcans","Carte interactive","Une manière simple d’explorer les volcans du monde et de voir chaque emplacement dans son contexte géographique.","Voir le projet"],
+          deforestation:["Dynamique de la végétation à Guaviare","Analyse SIG · 2015-2022","Une série temporelle EVI dans Google Earth Engine pour distinguer les pertes de végétation persistantes des changements temporaires.","Voir le projet"],
+          greenareas:["Évolution des espaces verts","Analyse SIG · 2006-2016","Une classification supervisée Sentinel-2A pour comparer la répartition des espaces verts à Enschede au fil du temps.","Voir le projet"],
+          geoguesser:["Geo-Guesser : tour du monde","Application web","Un jeu géographique chronométré qui transforme la reconnaissance des pays en une interaction simple avec une carte du monde.","Voir le projet"],
+          magma:["Empreintes magmatiques","Publication · 2024","Étude géochimique et pétrologique publiée sur l’influence de liquides riches en CO₂ sur la syénite de San José del Guaviare.","Lire la publication"],
+          syenite:["Pétrographie et géochimie de la syénite néphélinique","Publication · 2021","Étude publiée combinant données de terrain, analyses pétrographiques et géochimiques de la syénite néphélinique de San José del Guaviare.","Lire la publication"]
+        }
+      },
+      nl:{
+        education:[["Promotie · Geologie, Petrologie en AI/ML","KU Leuven, België","Promotieonderzoek naar het gebruik van machine learning voor het bestuderen en classificeren van stollingsgesteenten."],["MSc · Applied Remote Sensing for Earth Science","Universiteit Twente, ITC, Nederland","Opleiding in aardobservatie, multimodale sensoren, geoinformatica en planetaire oppervlakken."],["BSc · Geologie","Nationale Universiteit van Colombia","Basis in veldgeologie, stollingspetrologie, geochemie en aardwetenschappelijk onderzoek."]],
+        expertise:[["Gesteenten vertellen verhalen","Petrologie en geochemie helpen me begrijpen hoe stollingsgesteenten zijn gevormd en wat hun mineralen onthullen."],["Meerdere beelden, één plek","Ik combineer hyperspectrale, radar- en optische gegevens om samenstelling, structuur en verandering vanuit meerdere kanten te bekijken."],["Nieuwsgierigheid wordt code","Python en AI/ML helpen me ideeën te testen, analyses te herhalen en patronen te vinden voor verder onderzoek."],["Maak het makkelijk te verkennen","Kaarten en visuele tools maken technische resultaten toegankelijker om zelf te bekijken."]],
+        projects:{
+          seismic:["Seismische monitor en dashboard","Webapp","Een live USGS-datastroom omgezet in een kaart en dashboard voor magnitude, diepte en locatie.","Bekijk project"],
+          volcanoes:["Wereldkaart van vulkanen","Interactieve kaart","Een eenvoudige manier om vulkanen wereldwijd te verkennen en elke locatie in haar geografische context te zien.","Bekijk project"],
+          deforestation:["Vegetatiedynamiek in Guaviare","GIS-analyse · 2015-2022","Een EVI-tijdreeks in Google Earth Engine om aanhoudend vegetatieverlies van tijdelijke veranderingen te onderscheiden.","Bekijk project"],
+          greenareas:["Verandering van groene gebieden","GIS-analyse · 2006-2016","Een gesuperviseerde Sentinel-2A-classificatie om de verdeling van groene gebieden in Enschede door de tijd te vergelijken.","Bekijk project"],
+          geoguesser:["Geo-Guesser: wereldtour","Webapp","Een geografisch spel tegen de klok dat landen herkennen verandert in een eenvoudige interactie met een wereldkaart.","Bekijk project"],
+          magma:["Magmatische voetafdrukken","Publicatie · 2024","Een gepubliceerde geochemische en petrologische studie naar CO₂-rijke smelten in de San José del Guaviare-syeniet.","Lees publicatie"],
+          syenite:["Petrografie en geochemie van nephelien-syeniet","Publicatie · 2021","Een gepubliceerde studie met veld-, petrografische en geochemische gegevens over de nephelien-syeniet van San José del Guaviare.","Lees publicatie"]
+        }
+      }
+    };
+    const grid=document.getElementById("project-grid");
+    function applyLanguage(lang){
+      const t=translations[lang]||translations.en;
+      document.documentElement.lang=lang;
+      document.querySelectorAll(".nav a").forEach((el,i)=>el.textContent=t.nav[i]);
+      document.querySelector(".hero .eyebrow").textContent=t.heroEyebrow;document.querySelector(".hero h1").innerHTML=t.heroTitle;document.querySelector(".hero-lede").textContent=t.heroCopy;document.querySelector(".hero .button").firstChild.textContent=`${t.heroPrimary} `;document.querySelector(".hero .button.ghost").textContent=t.heroSecondary;document.querySelector(".contact-mail").innerHTML=({en:"Send me a mail",es:"Envíame un correo",fr:"Envoyez-moi un e-mail",nl:"Stuur me een e-mail"}[lang]||"Send me a mail")+" ↗";document.querySelector(".scroll-note").lastChild.textContent=t.scroll;
+      document.querySelector("#about .eyebrow").textContent=t.aboutEyebrow;document.querySelector("#about .section-title").innerHTML=t.aboutTitle;document.querySelectorAll("#about .body-copy").forEach((el,i)=>el.textContent=t.aboutCopy[i]);document.querySelectorAll("#about .stat-detail").forEach((el,i)=>el.innerHTML=t.stats[i]);document.querySelector(".portrait-caption").textContent=t.portrait;
+      document.querySelector("#background .eyebrow").textContent=t.backgroundEyebrow;document.querySelector("#background .section-title").innerHTML=t.backgroundTitle;document.querySelector(".background-intro").textContent=t.backgroundCopy;
+      document.querySelector("#expertise .eyebrow").textContent=t.expertiseEyebrow;document.querySelector("#expertise .section-title").innerHTML=t.expertiseTitle;document.querySelector("#expertise .section-head>p").textContent=t.expertiseCopy;
+      document.querySelector("#projects .eyebrow").textContent=t.projectEyebrow;document.querySelector("#projects .section-title").innerHTML=t.projectTitle;document.querySelector("#projects .section-head>p").textContent=t.projectCopy;document.querySelectorAll(".filter").forEach((el,i)=>el.textContent=t.filters[i]);
+      document.querySelector("#contact .eyebrow").textContent=t.contactEyebrow;document.querySelector("#contact .section-title").innerHTML=t.contactTitle;document.querySelector(".contact-copy").textContent=t.contactCopy;
+      const cards=cardTranslations[lang];
+      if(cards){
+        document.querySelectorAll(".timeline-item").forEach((item,i)=>{const copy=cards.education[i];item.querySelector("h3").textContent=copy[0];item.querySelector("strong").textContent=copy[1];item.querySelector("p").lastChild.textContent=copy[2]});
+        document.querySelectorAll(".capability").forEach((item,i)=>{const copy=cards.expertise[i];item.querySelector("h3").textContent=copy[0];item.querySelector("p").textContent=copy[1]});
+      }
+      localStorage.setItem("portfolio-language",lang);
+      render(document.querySelector(".filter.active")?.dataset.filter||"all",lang);
+    }
+    function render(filter="all",lang="en"){const list=filter==="all"?projects:projects.filter(p=>p.type===filter),localized=cardTranslations[lang]?.projects||{};const cards=list.map((p,i)=>{const copy=localized[p.id],title=copy?.[0]||p.title,category=copy?.[1]||p.category,desc=copy?.[2]||p.desc,action=p.id==="deforestation"||p.id==="greenareas"?"Learn more":copy?.[3]||(p.type==="publications"?"Read publication":"View project"),isTool=filter==="all"&&p.type!=="publications",startsTools=isTool&&list[i-1]?.type==="publications",allClass=isTool?`all-list${startsTools?" all-tool-start":""}`:"",target=isTool?` data-filter-target="${p.type}" tabindex="0" role="button"`:"",modal=p.id==="deforestation"||p.id==="greenareas",link=modal?`href="#project-details" data-modal-project="${p.id}"`:`href="${p.link}" target="_blank" rel="noopener"`;return `<article class="project-card ${allClass}"${target}><img class="project-image" src="${p.image}" alt="${title}" loading="lazy"><div class="project-body"><div class="project-meta"><span>${category}</span><span>0${i+1}</span></div><h3>${title}</h3><p>${desc}</p><div class="tags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>${!isTool?`<div class="project-links"><a ${link}>${action} ${modal?"↗":"↗"}</a>${p.repo?`<a href="${p.repo}" target="_blank" rel="noopener">Source ↗</a>`:""}</div>`:""}</div></article>`});grid.innerHTML=filter==="all"?cards.filter((_,i)=>list[i].type==="publications").join("")+`<h3 class="all-tools-label">Tools & mapping</h3>`+cards.filter((_,i)=>list[i].type!=="publications").join(""):cards.join("")}
+    function selectFilter(filter){const btn=document.querySelector(`.filter[data-filter="${filter}"]`);if(btn)btn.click()}
+    render();document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{document.querySelector(".filter.active").classList.remove("active");document.querySelectorAll(".filter").forEach(b=>b.setAttribute("aria-selected","false"));btn.classList.add("active");btn.setAttribute("aria-selected","true");render(btn.dataset.filter,document.documentElement.lang||"en")}));
+    grid.addEventListener("click",event=>{const card=event.target.closest("[data-filter-target]");if(card&&!event.target.closest("a"))selectFilter(card.dataset.filterTarget)});
+    grid.addEventListener("keydown",event=>{if(event.key==="Enter"||event.key===" "){const card=event.target.closest("[data-filter-target]");if(card){event.preventDefault();selectFilter(card.dataset.filterTarget)}}});
+    const modal=document.getElementById("project-modal"),modalClose=document.getElementById("modal-close"),modalImage=document.getElementById("modal-image"),modalCategory=document.getElementById("modal-category"),modalTitle=document.getElementById("modal-title"),modalDescription=document.getElementById("modal-description"),modalProjects={deforestation:{title:"Vegetation dynamics in Guaviare",category:"GIS analysis · 2015-2022",image:"img/deforestation.png",description:"This project uses an EVI time series in Google Earth Engine to identify where vegetation loss persisted and where change was more temporary across Guaviare. The analysis helps distinguish long-term landscape transformation from short-lived variation."},greenareas:{title:"Change detection of green areas",category:"GIS analysis · 2006-2016",image:"img/greenareas.png",description:"This project applies a supervised Sentinel-2A classification to compare the distribution of green areas across Enschede over time, making it easier to examine how the urban landscape changed."}};
+    function closeModal(){modal.classList.remove("open");document.body.style.overflow=""}
+    grid.addEventListener("click",event=>{const link=event.target.closest("[data-modal-project]");if(!link)return;event.preventDefault();const project=modalProjects[link.dataset.modalProject];if(!project)return;modalImage.src=project.image;modalImage.alt=project.title;modalCategory.textContent=project.category;modalTitle.textContent=project.title;modalDescription.textContent=project.description;modal.classList.add("open");document.body.style.overflow="hidden"});
+    modalClose.addEventListener("click",closeModal);modal.addEventListener("click",event=>{if(event.target===modal)closeModal()});document.addEventListener("keydown",event=>{if(event.key==="Escape"&&modal.classList.contains("open"))closeModal()});
+    const header=document.getElementById("header");window.addEventListener("scroll",()=>header.classList.toggle("scrolled",scrollY>20),{passive:true});
+    const nav=document.getElementById("nav"),menu=document.getElementById("menu");menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",open)});nav.addEventListener("click",e=>{if(e.target.tagName==="A"){nav.classList.remove("open");menu.setAttribute("aria-expanded","false")}});
+    const root=document.documentElement, saved=localStorage.getItem("portfolio-theme");if(saved)root.dataset.theme=saved;document.getElementById("theme").addEventListener("click",()=>{const next=root.dataset.theme==="dark"?"light":"dark";root.dataset.theme=next;localStorage.setItem("portfolio-theme",next)});
+    const languageSelect=document.getElementById("language"),savedLanguage=localStorage.getItem("portfolio-language")||"en";languageSelect.value=savedLanguage.toUpperCase();languageSelect.addEventListener("change",event=>applyLanguage(event.target.value.toLowerCase()));applyLanguage(savedLanguage);
+    const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("in")}),{threshold:.12});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+    const sections=[...document.querySelectorAll("main section")],links=[...document.querySelectorAll(".nav a")],sectionObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.classList.toggle("active",l.getAttribute("href")===`#${e.target.id}`))}),{rootMargin:"-45% 0px -50%"});sections.forEach(section=>sectionObserver.observe(section));
+  </script>
 </body>
-
 </html>
